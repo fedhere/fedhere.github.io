@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?php
+  $bg = array('satellites.gif', 'eta03a3themovie.gif', 'loversvsjesuslovers.png', 'titleholders.gif');
+
+  $i = rand(0, count($bg)-1); // generate random number size of the array
+  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<meta charset="utf-8">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<style>
+
+@import url(../style.css?aea6f0a);
+
+text {
+  font: 10px sans-serif;
+}
+
+.background {
+  fill: none;
+  pointer-events: all;
+}
+
+#chart2, #chart3 {
+  width: 600px;
+  height: 180px;
+  border: solid 1px #ccc;
+}
+
+#chart2 path, #chart3 line {
+  fill: none;
+  stroke: #333;
+}
+
+#chart3 line {
+  shape-rendering: crispEdges;
+}
+
+.collection {
+  position: relative;
+  text-align: left;
+  height: 320px;
+  font-family: "nyt-franklin", Arial;
+  position: relative;
+  display: block;
+  margin: 0 0 20px 0;
+  padding: 0 0 20px 0;
+}
+
+.collection:last-child {
+  border-bottom: none;
+}
+
+.collection canvas,
+.collection img {
+  border: solid 1px #444;
+  border-top-color: #000;
+  border-bottom-color: #555;
+  background: #000;
+  position: absolute;
+  left: 260px;
+  top: 0;
+}
+
+.collection .description {
+  font-size: 15px;
+  line-height: 1.4em;
+  margin: 0 20px 0 0;
+  color: #999;
+  width: 220px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.collection .description h3 {
+  display: inline;
+  color: #ddd;
+  font-size: 22px;
+  font-weight: 200;
+  margin: 0 0 0 0;
+}
+
+.description p {
+  margin: 4px 0;
+}
+
+.description p.related {
+  font-size: 12px;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: solid 1px #333;
+}
+
+.collection .collection-button {
+  background: #2c2c2c;
+  color: #666;
+  border-radius: 2px;
+  margin: 6px 0;
+  padding: 1px 6px 0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 9px;
+  font-family: Arial;
+}
+
+.annotations {
+  font-family: Arial;
+  position: absolute;
+  left: 255px;
+  top: 225px;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+}
+
+.annotations li {
+  position: absolute;
+  top: 10px;
+  margin: 0;
+  list-style-type: none;
+  padding: 10px 0 0 10px;
+}
+
+.annotation {
+  position: relative;
+  background: #222;
+  font-size: 11px;
+  line-height: 12px;
+  color: #888;
+  width: 90px;
+  height: 50px;
+  -webkit-text-size-adjust: 85%;
+  text-shadow: 0 1px 0 #000;
+}
+
+.annotation:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 10px;
+  top: 0;
+  left: -20px;
+  height: 60px;
+  border-right: solid 10px #222;
+  background: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(34,34,34,0)), to(#222));
+  background-image: -webkit-linear-gradient(left, rgba(34,34,34,0), #222);
+  background-image: -moz-linear-gradient(left, rgba(34,34,34,0), #222);
+  background-image: -o-linear-gradient(left, rgba(34,34,34,0), #222);
+  background-image: linear-gradient(to right, rgba(34,34,34,0), #222);
+}
+
+.annotation-bar {
+  position: absolute;
+  min-width: 1px;
+  left: 11px;
+  right: -1px;
+  top: 0;
+  border-bottom: solid 1px;
+  border-right: solid 1px;
+  border-left: solid 1px;
+  border-color: #666;
+  height: 3px;
+}
+
+</style>
+
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <meta name="Generator" content="iWeb 3.0.3" />
+    <meta name="iWeb-Build" content="local-build-20111027" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=700" />
+    <title>visualizations</title>
+    <link rel="icon" href="diffraction_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" media="screen,print" href="Welcome_files/Welcome.css" />
+    <link rel="stylesheet" href="Welcome_files/Welcome.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Welcome_files/WelcomeIE.css'/><![endif]-->
+    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+ 
+    <script type="text/javascript" src="../Scripts/iWebSite.js"></script>
+    <script type="text/javascript" src="../Scripts/Widgets/SharedResources/WidgetCommon.js"></script>
+    <script type="text/javascript" src="../Scripts/Widgets/Navbar/navbar.js"></script>
+    <script type="text/javascript" src="../Scripts/iWebImage.js"></script>
+    <script type="text/javascript" src="Welcome_files/Welcome.js"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script> 
+
+<script language="Javascript"> 
+
+<!-- 
+function showPic(pic){
+if (pic.style.visibility=="hidden"){
+pic.style.visibility="visible";
+}
+else {
+pic.style.visibility="hidden";
+}
+}
+
+//--> 
+</script>
+
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+
+//Page Flip on hover
+
+$("#pageflip").hover(function() {
+$("#pageflip img , .msg_block").stop()
+.animate({
+width: '307px', 
+height: '100px'
+}, 500); 
+} , function() {
+$("#pageflip img").stop() 
+.animate({
+width: '5px', 
+height: '5px'
+}, 220);
+$(".msg_block").stop() 
+.animate({
+width: '5px', 
+height: '5px'
+}, 200);
+});
+
+
+});
+</script> 
+<script type = "text/javascript">
+
+function fadeInAfterDelay() {
+setTimeout("fadetext()",4000);
+}
+
+var hex=255; // Initial color value.
+
+function fadetext(){ 
+document.getElementById("sample").style.visibility = "visible";
+if (hex > 0) { //if color is not black yet
+hex-=5; // increase color darkness
+document.getElementById("sample").style.color="rgb("+hex+","+hex+","+hex+")";
+setTimeout("fadetext()",75); 
+}
+else {
+hex = 255;  //reset hex value
+}
+} 
+
+</script>
+
+<style type="text/css">
+<!--
+body {position: relative; background: black; margin: 0; padding: 0;}
+
+-->
+</style>
+
+</head>
+
+<body style="background: rgb(255, 255, 255) url(Welcome_files/PhotoGray_browser_bg-2.jpg) repeat scroll top left; margin: 0pt; " onload="onPageLoad();" onunload="onPageUnload();">
+
+
+
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 0px; margin-left: auto; margin-right: auto; margin-top: 0px; overflow: hidden; position: relative; word-wrap: break-word;  text-align: left; width: 700px; " id="body_content">
+     
+
+   <div style="background: transparent url(Welcome_files/PhotoGray_bg_c-1.jpg) repeat scroll top left; width: 700px; ">
+          <div style="margin-left: 0px; position: relative; width: 700px; z-index: 0; " id="nav_layer">
+            <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+            <div style="height: 1px; line-height: 1px; " class="tinyText"> </div>
+            <div class="com-apple-iweb-widget-navbar flowDefining" id="widget0" style="margin-left: 0px; margin-top: 43px; opacity: 1.00; position: relative; width: 700px; z-index: 1; ">
+    
+              <div id="widget0-navbar" class="navbar">
+
+      
+                <div id="widget0-bg" class="navbar-bg">
+
+        
+                  <ul id="widget0-navbar-list" class="navbar-list">
+ <li></li> 
+</ul>
+                  
+      
+</div>
+                
+    
+</div>
+            	    
+
+</div>
+
+            <script type="text/javascript"><!--//--><![CDATA[//><!--
+new NavBar('widget0', 'Scripts/Widgets/Navbar', 'Scripts/Widgets/SharedResources', '.', {"path-to-root": "", "navbar-css": ".navbar {\n\tfont-family: Futura, 'Trebuchet MS', sans-serif;\n\ttext-transform: uppercase;\n\tfont-size: .7em;\n\tcolor: #C1C1C1;\n\tline-height: 25px;\n\ttext-align: center;\n\tpadding: 0px;\n\tbackground-image: url(Welcome_files\/PhotoGray_nav_bg.png);\n\t_background-image: url(Welcome_files\/PhotoGray_nav_bg.jpg);\n\tbackground-repeat: repeat-y;\n\tborder-top: 1px solid #999;\n\tborder-bottom: 1px solid #999;\n}\n\n.navbar-bg {\n\tpadding: 6px 0px 4px 0px;\n}\n\n.navbar ul {\n\tlist-style: none;\n\tmargin: 0px;\n\tpadding: 0px 10px 0px 10px;\n}\n\n.navbar ul li {\n\tdisplay: inline; \n\tlist-style-type: none;\n\tmargin: 0px;\n\tpadding: 0px 10px 0px 10px;\n}\n\n\n.noncurrent-page  a:visited {\n\ttext-decoration: none;\n\tcolor: #C1C1C1;\n\ttext-shadow: 0px -1px 2px #333;\n}\n\n.noncurrent-page  a {\n\ttext-decoration: none;\n\tcolor: #C1C1C1;\n\ttext-shadow: 0px -1px 2px #333;\n}\n\n\n.noncurrent-page a:hover {\n\ttext-decoration: none;\n\tcolor: #EC001E;\n\ttext-shadow: 0px -1px 2px #333;\n}\n\n.current-page a\n{\n\ttext-decoration: none;\n\tcolor: #000;\n\ttext-shadow: 0px -1px 2px #7E7E7E;\n}\n\n.current-page a:visited\n{\n\ttext-decoration: none;\n\tcolor: #000;\n\ttext-shadow: 0px -1px 2px #7E7E7E;\n}\n\n", "current-page-GUID": "8A4534DF-1666-4904-94FA-CE9DC6FD43FF", "isCollectionPage": "NO";}//--><!]]></script>
+
+
+            <div style=" width: 700px;  height: 700px; left: 0px; position: absolute; top: -80px; width: 700px; z-index: 1; " class="tinyText style_SkipStroke" float:right>
+              <img src="Welcome_files/Darkroom_spotlight.jpg" alt="" style="border: none; height: 700px; width: 700px; " />
+            </div>
+            <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+          </div>
+          <div style="float: left; height: 0px; line-height: 0px; margin-left: 0px; position: relative; width: 700px; z-index: 10; " id="header_layer">
+            <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          </div>
+          <div style="margin-left: 0px; position: relative; width: 100%px; z-index: 5; " id="body_layer">
+            <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+            <div id="id1" style="height: 106px; left: 207px; position: absolute; top: 35px; width: 568px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_0">
+              <div class="text-content graphic_shape_layout_style_default_External_164_102" style="padding: 2px; ">
+                <div class="graphic_shape_layout_style_default"></div>
+              </div>
+            </div>
+            <div style="height: 1px; line-height: 1px; " class="tinyText"> </div>
+            <div style="margin-left: 25px; margin-top: 471px; position: relative; width: 650px; z-index: 1; " class="style_SkipStroke_2 shape-with-text flowDefining">
+              <div class="text-content style_External_485_446" style="padding: 0px; ">
+
+
+              <div class="style">
+                  <p style="padding-top: 100pt; " class="Body">
+
+		    
+
+
+	      </div>
+
+
+
+                <div style="height:708px; line-height: 208px; " class="tinyText"> </div>
+              </div>
+            </div>
+            
+
+
+            <div id="id2" style="height: 187px; left: 578px; position: absolute; top: 104px; width: 138px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
+              <div class="text-content graphic_textbox_layout_style_default_External_138_187" style="padding: 0px; ">
+                <div class="graphic_textbox_layout_style_default">
+                  <p style="padding-top: 0pt; " class="Caption2">contact:<br /></p>
+                  <p class="Caption2"><a title="mailto:fb55@nyu.edu" href="mailto:fb55@nyu.edu">fb55 at nyu.edu</a><br /></p>
+                  <p class="Caption"><br /></p>
+<!--                  <p style="padding-bottom: 0pt; " class="Caption"><a title="Welcome_files/cv.pdf" href="Welcome_files/cv.pdf">cv</a></p>
+-->
+                </div>
+              </div>
+            </div>
+            
+
+<img src="Media/li-1.gif" alt="" style="height: 111px; left: 210px; position: absolute; top: 37px; width: 161px; z-index: 1; " />
+
+
+            <div style="height: 110px; width: 122px;  height: 110px; left: 145px; position: absolute; top: 142px; width: 122px; z-index: 1; " class="tinyText stroke_1">
+              <div style="position: relative; width: 122px; background: rgb(88,88,88)">
+                <img src="Welcome_files/shapeimage_1.png" alt="" style="height: 110px; left: 0px; position: absolute; top: 0px; width: 122px; " />
+              </div>
+            </div>
+            
+
+
+            <div style="height: 110px; width: 122px;  height: 110px; left: 252px; position: absolute; top: 146px; width: 122px; z-index: 1; " class="tinyText stroke_1">
+              <div style="position: relative; width: 122px; ">
+                <img src="Welcome_files/shapeimage_2.png" alt="" style="height: 110px; left: 0px; position: absolute; top: 0px; width: 122px; " />
+              </div>
+            </div>
+            
+
+
+            <div style="height: 221px; width: 203px;  height: 221px; left: 369px; position: absolute; top: 17px; width: 203px; z-index: 1; " class="tinyText stroke_2">
+              <div style="position: relative; width: 203px; ">
+                <img src="Welcome_files/shapeimage_3.png" alt="" style="height: 221px; left: 0px; position: absolute; top: 0px; width: 203px; " />
+            
+
+              </div>
+            </div>
+
+            <div id="id3" style="height: 100px; left: 10px; position: absolute; top: 279px; width: 681px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
+              <div class="text-content graphic_textbox_layout_style_default_External_651_100" style="padding: 0px; ">
+
+		<div class="main_menu" id="menu"></div>
+                <div class="graphic_textbox_layout_style_default">
+                  <p class="Free_Form"><br /></p>
+        <p class="Body"><br ></p>
+
+                  <p style="padding-top: 10pt; " class="Free_Form">
+
+
+                </div>
+            
+<script>loadmenu()</script>
+<div class="graphic_textbox_layout_style_default">
+                  <p class="Free_Form"><br /></p>
+        <p class="Body"><br ></p>
+                  <p style="padding-top: 30pt;" class="Free_Form"> visualizations of scientific data, realized in python, d3, processing</p>
+                  <p class="Free_Form"><br /></p>
+                </div>
+<p id="chart3">
+<div class="graphic_textbox_layout_style_default">
+                  <p class="Free_Form"><br /></p>
+        <p class="Body"><br ></p>
+                  <p style="padding-top: 120pt;" class="Free_Form">  <a href="satellitesizes.html">
+                                <p class="portfolio-description">Solar System satellite sizes</p></a>
+			      <a href="eta03a3themovie.html">
+				<p class="portfolio-description">motion of Eta Carinae light echoes</p></a>
+<a href="astrotrend/arxiv2.html">
+                              <p class="portfolio-description">this weeks arxiv rate & co-occurrence </p></a>   
+<a href="dmviz/index.html">
+                              <p class="portfolio-description">galaxy rotation under the influence of dark matter </p></a>   
+<a href="boxersage/titleholders.html">                                                                            
+                                <p class="portfolio-description">boxers statistics</p></a>   
+<a href="loversvsjesuslovers.html">                                                                               
+                                <p class="portfolio-description">lovers vs Jesus-lovers</p></a>      
+</div>
+
+<!--<table border=1>
+
+
+
+<tr><td >
+		      <div id='portfolio-section' class='homepage-section'>
+     			<ul id='portfolio-items' >
+			  <li >
+			    <img width=200 src="videos/satellites.gif">
+			      <div class="overlay">
+				
+			      </div>
+			      <a href="satellitesizes.html">				
+				<p class="portfolio-description">Solar System satellite sizes</p>
+			      </a>
+			    </li>
+
+			  <li >
+			    <img  width=200 src="videos/eta03a3themovie.gif">
+			      <div class="overlay">
+				
+			      </div>
+			      <a href="eta03a3themovie.html">
+				<p class="portfolio-description">motion of Eta Carinae light echoes</p></a>
+			      </a>
+			    </li>
+			  <li >
+			    <a href="astrotrend/arxiv2.html"> 			    
+			      <img src="videos/2014-10-31_cooccurrence.png"></a>
+			      <div class="overlay">
+				
+			      </div>
+			      <p class="portfolio-description">this weeks arxiv rate & co-occurrence
+			      </a>
+			    </li>
+</ul>
+</div>
+
+<td>
+		      <div id='portfolio-section' class='homepage-section'>
+     			<ul id='portfolio-items' >
+			  <li >
+			    <img  width=200 src="videos/loversvsjesuslovers.png">
+			      <div class="overlay">
+				
+			      </div>
+			      <a href="loversvsjesuslovers.html">
+				<p class="portfolio-description">lovers vs Jesus-lovers</p></a>
+			      </a>
+			    </li>
+
+			  <li >
+			    <img  width=200 src="videos/titleholders.gif" >
+			      <div class="overlay">
+				
+			      </div>
+			      <a href="boxersage/titleholders.html">
+				<p class="portfolio-description">boxers statistics</p></a>
+			      </a>
+			    </li>
+
+
+<!--
+			<td aligh=left width=33%>
+			  <p>playing with data! check some of my visualizations:</p>
+			  <ul>
+			    <li><a href="satellitesizes.html">solar system satellite sizes</a></li>
+			    <li><a href="eta03a3themovie.html">eta car light echoes traveling</a></li>
+			    <li><a href=
+			    <li><a href="boxersage/titleholders.html">boxers statistics</a></li>
+			  </ul>
+
+			  </td>
+			<td align=right height=400>	  
+			  
+			  
+			  
+			  <img src="videos/<?php echo $selectedBg; ?>" style="width: 80%; align:center; " > </a>
+		  </td>
+-->
+<!--   </div></ul></td></tr></table>-->
+                </div>
+              </div>
+            </div>
+            
+      </div>
+  <div class="graphic_textbox_layout_style_default">
+    <p style="padding-bottom: 20pt; " class="Caption">powered by <a href=http://d3js.org>d3</a>, maintained by <a title="mailto:fb55@nyu.edu" href="mailto:fb55@nyu.edu">fbb</a> -- all rights reserved<br /></p>
+    <p class="Caption"><br /></p>
+    </div>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=7460819; 
+var sc_invisible=0; 
+var sc_security="65cadbea"; 
+var sc_text=5; 
+document.body.scrollTop = 300;
+</script>
+<a href="http://statcounter.com/p7460819/?guest=1">
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="web stats"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/7460819/0/65cadbea/1000/"
+alt="web stats"></a></div></noscript>
+
+</a>
+
+<script type="text/javascript" language="javascript" src="Welcome_files/tooltips.js"></script>  </body>
+
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="../Welcome_files/fisheye.js"></script>
+<script>
+
+var rowLen = 6;
+
+
+var pics = [
+    "videos/satellites.gif",
+    "videos/eta03a3themovie.gif", 
+    "videos/2014-10-31_cooccurrence.png",
+    "videos/dmviz.png",
+    "videos/titleholders.gif",
+    "videos/loversvsjesuslovers.png"];
+//,["satellitesizes.html", "eta03a3themovie.html","astrotrend/arxiv2.html","bozersage/titleholders.html","loversvsjesuslovers.html"]];
+   
+console.log(pics[0]);
+var dataset = [];
+
+
+(function chart3() {
+  var width = 650,
+      height = 400,
+       boxes = rowLen,
+      xSteps =  d3.range(0, width, width/rowLen), 
+      ySteps =  d3.range(0, height, height/rowLen),
+       boxSteps = d3.range(boxes*boxes);
+     
+     //set scale and origin focus
+  var xFisheye = d3.fisheye.scale(d3.scale.identity).domain([0, width]).focus(width/2),
+      yFisheye = d3.fisheye.scale(d3.scale.identity).domain([0, height]).focus(height);
+       fontSizeFisheye = d3.fisheye.scale(d3.scale.log).domain([3,150]).range([8,15]).focus(12),
+       fontOpacityFisheye = d3.fisheye.scale(d3.scale.log).domain([8,50]).range([0,1]).focus(1)
+  var svg = d3.select("#chart3").append("svg")
+      .attr("width", width)
+      .attr("height", height)
+    .append("g")
+      .attr("transform", "translate(-.5,-.5)");
+
+  
+  svg.append("rect")
+      .attr("class", "background")
+      .attr("width", width)
+      .attr("height", height); 
+  
+ //added this
+  
+
+
+
+  
+var pictures = svg.selectAll("image")
+      .data(pics)
+//      .data(function(d, 0) { console.log(d); return d; })
+      .enter().append("image")
+      .attr("xlink:href", function(d) {console.log(d); return d;})
+      .attr("preserveAspectRatio", "xMidYMid slice");
+
+
+  redraw();
+
+  svg.on("mousemove", function() {
+    var mouse = d3.mouse(this);// this returns an array with the coordinates
+    xFisheye.focus(mouse[0]); 
+    yFisheye.focus(mouse[1]); 
+    redraw();
+  });
+svg.on("click", function(d) {
+    window.location.htrf=d.url;
+  });
+
+
+   
+
+
+  function redraw() { 
+    
+    
+     pictures.attr("x", function(d,i){
+          return xFisheye(xSteps[i%rowLen]);
+     }) 
+     
+     .attr("y", function(d,i){
+          var rowNum = Math.floor(i/rowLen);
+          return yFisheye(ySteps[rowNum-1] || 0) + (yFisheye(ySteps[rowNum]) - yFisheye(ySteps[rowNum-1] || 0))})
+          
+     .attr("width", function(d,i){
+          var rowNum = Math.floor(i/rowLen);
+          return (xFisheye(xSteps[(i+1)%rowLen] || width) - xFisheye(xSteps[i%rowLen]))})
+          
+     .attr("height", "400")
+     }
+ 
+})();
+
+ 
+</script>
+</html>
+
+

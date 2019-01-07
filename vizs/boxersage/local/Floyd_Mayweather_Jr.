@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MediaWiki API Result</title>
+</head>
+<body>
+<br />
+<small>
+You are looking at the HTML representation of the XML format.<br />
+HTML is good for debugging, but is unsuitable for application use.<br />
+Specify the format parameter to change the output format.<br />
+To see the non HTML representation of the XML format, set format=xml.<br />
+See the <a href='https://www.mediawiki.org/wiki/API'>complete documentation</a>, or
+<a href='/w/api.php'>API help</a> for more information.
+</small>
+<pre style='white-space: pre-wrap;'>
+<span style="color:blue;">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span style="color:blue;">&lt;api&gt;</span>
+  <span style="color:blue;">&lt;query&gt;</span>
+    <span style="color:blue;">&lt;normalized&gt;</span>
+      <span style="color:blue;">&lt;n from=&quot;Floyd_Mayweather_Jr.&quot; to=&quot;Floyd Mayweather Jr.&quot; /&gt;</span>
+    <span style="color:blue;">&lt;/normalized&gt;</span>
+    <span style="color:blue;">&lt;redirects&gt;</span>
+      <span style="color:blue;">&lt;r from=&quot;Floyd Mayweather Jr.&quot; to=&quot;Floyd Mayweather, Jr.&quot; /&gt;</span>
+    <span style="color:blue;">&lt;/redirects&gt;</span>
+    <span style="color:blue;">&lt;pages&gt;</span>
+      <span style="color:blue;">&lt;page pageid=&quot;1388019&quot; ns=&quot;0&quot; title=&quot;Floyd Mayweather, Jr.&quot;&gt;</span>
+        <span style="color:blue;">&lt;revisions&gt;</span>
+          <span style="color:blue;">&lt;rev contentformat=&quot;text/x-wiki&quot; contentmodel=&quot;wikitext&quot; xml:space=&quot;preserve&quot;&gt;</span>{{Redirect|Floyd Mayweather|his father|Floyd Mayweather, Sr.}}
+{{Use mdy dates|date=April 2012}}
+&amp;lt;!--as Floyd Mayweather redirects here--&amp;gt;
+{{pp-semi-blp|small=yes}}
+{{pp-move-indef}}
+{{Infobox boxer
+|image        = Floyd Mayweather, Jr. at DeWalt event.jpg|Floyd Mayweather, Jr. at DeWalt event
+|caption      = Mayweather in June 2011
+|image_size  = 215
+|name         = Floyd Mayweather, Jr.
+|realname     = Floyd Joy Mayweather, Jr.
+|nickname     = Pretty Boy&amp;lt;br /&amp;gt;Money
+|weight       = [[Super featherweight|Super Featherweight (130 lb)]]&amp;lt;br /&amp;gt;[[Lightweight|Lightweight (135 lb)]]&amp;lt;br /&amp;gt;[[Light welterweight|Light Welterweight (140 lb)]]&amp;lt;br /&amp;gt;[[Welterweight|Welterweight (147 lb)]]&amp;lt;br /&amp;gt;[[Light middleweight|Light Middleweight (154 lb)]]
+|height       = {{height|ft=5|in=8}}
+|reach        = {{convert|72|in|cm|0|abbr=on}}
+|nationality  = American
+|birth_date   = {{birth date and age|mf=yes|1977|2|24}}
+|birth_place  = {{nowrap|[[Grand Rapids, Michigan|Grand Rapids]], [[Michigan]], [[United States|U.S.]]}}
+|home         = {{city-state|Las Vegas|Nevada}}
+|style        = [[Orthodox stance|Orthodox]]
+|total        = 44
+|wins         = 44
+|KO           = 26
+|losses       = 0
+|draws        = 0
+|no contests  = 0
+|medaltemplates={{MedalSport | Men’s [[Boxing]]}}
+{{MedalCountry | {{USA}} }}
+| medaltemplates=
+{{MedalCompetition|[[Olympic Games]] }}
+{{MedalBronze| [[1996 Summer Olympics|1996 Atlanta]] | [[Boxing at the 1996 Summer Olympics|Featherweight]]}}
+}}
+
+'''Floyd Mayweather, Jr.''' (born '''Floyd Sinclair'''; February 24, 1977) is an American professional [[boxing|boxer]], currently undefeated as a [[professional boxing|professional]]. He is a [[Quintuple Champion|five-division world champion]], who has won [[List of boxing quintuple champions|eight world titles]] and the [[Lineal championship]] in three different weight classes.{{citation needed|date=December 2012}} Mayweather is a two-time ''[[Ring Magazine|Ring]]'' [[Ring Magazine fighters of the year|Fighter of the Year]] (winning the award in 1998 and 2007); he also won the [[Boxing Writers Association of America]] (BWAA) Fighter of the Year award in 2007 and the [[Best Fighter ESPY Award]] in 2007, 2008, 2010 and 2012.&amp;lt;ref&amp;gt;{{cite news|url=<a href="http://sports.yahoo.com/news/floyd-mayweather-wins-espys-fighter-award-fourth-time-104100930--box.html}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite">http://sports.yahoo.com/news/floyd-mayweather-wins-espys-fighter-award-fourth-time-104100930--box.html}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite</a> news|url=<a href="http://www.nowboxing.com/2010/07/floyd-mayweather-wins-espy-beats-pacquiao-and-georges-st-pierre/12044/}}&amp;lt;/ref&amp;gt;">http://www.nowboxing.com/2010/07/floyd-mayweather-wins-espy-beats-pacquiao-and-georges-st-pierre/12044/}}&amp;lt;/ref&amp;gt;</a>
+
+Mayweather is the [[World Boxing Council|WBC]] [[welterweight]] champion,&amp;lt;ref&amp;gt;{{cite web|url=<a href="http://wbcboxing.com/wbcEng25/index.php?option=com_content&amp;amp;view=article&amp;amp;id=128:campeones-actuales-2&amp;amp;catid=9:campeones">http://wbcboxing.com/wbcEng25/index.php?option=com_content&amp;amp;view=article&amp;amp;id=128:campeones-actuales-2&amp;amp;catid=9:campeones</a> |title=Current Champions |publisher=Wbcboxing.com |date=March 10, 2013 |accessdate=March 10, 2013}}&amp;lt;/ref&amp;gt; [[World Boxing Association|WBA (Super)]] [[List of super welterweight boxing champions|super welterweight champion]],&amp;lt;ref&amp;gt;{{cite web|title=World Boxing Association Current Champions|url=<a href="http://wbanews.com/artman/publish/campionshipChampions/index.shtml}}&amp;lt;/ref&amp;gt;">http://wbanews.com/artman/publish/campionshipChampions/index.shtml}}&amp;lt;/ref&amp;gt;</a> recipient of the [[World Boxing Council|WBC diamond]] [[super welterweight]] belt,&amp;lt;ref&amp;gt;{{cite news|url=<a href="http://www.doghouseboxing.com/John/Raspanti041712.htm}}&amp;lt;/ref&amp;gt;">http://www.doghouseboxing.com/John/Raspanti041712.htm}}&amp;lt;/ref&amp;gt;</a> current ''Ring'' #1 ranked welterweight,&amp;lt;ref&amp;gt;{{cite news|url=<a href="http://ringtv.craveonline.com/ratings/welterweight}}&amp;lt;/ref&amp;gt;">http://ringtv.craveonline.com/ratings/welterweight}}&amp;lt;/ref&amp;gt;</a> and ''Ring'' #1 ranked junior middleweight.&amp;lt;ref&amp;gt;{{cite news|url=<a href="http://ringtv.craveonline.com/ratings/jr-middleweight}}&amp;lt;/ref&amp;gt;">http://ringtv.craveonline.com/ratings/jr-middleweight}}&amp;lt;/ref&amp;gt;</a> He is also rated as the [[Pound for pound|best pound-for-pound boxer]] in the world by many sporting news and boxing websites, including ''Ring'', [[Sports Illustrated]], [[ESPN]], [[BoxRec]], [[Fox Sports (United States)|Fox Sports]], and [[Yahoo! Sports]].&amp;lt;ref&amp;gt;{{cite news|url=<a href="http://ringtv.craveonline.com/ratings}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite">http://ringtv.craveonline.com/ratings}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite</a> news|url=<a href="http://sportsillustrated.cnn.com/2011/mma/boxing/pound-for-pound-ratings/index.html">http://sportsillustrated.cnn.com/2011/mma/boxing/pound-for-pound-ratings/index.html</a> |title=Pound-For-Pound Top 15 |work=Sports Illustrated |date=November 14, 2011 |accessdate=November 17, 2011}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite web|url=<a href="http://msn.foxsports.com/boxing/lists/Boxing-pound-for-pound-list-061511#photo-title=Floyd%20Mayweather%20Jr.,%20welterweight%20%20(42-0,%2026%20KOs)&amp;amp;photo=29899156">http://msn.foxsports.com/boxing/lists/Boxing-pound-for-pound-list-061511#photo-title=Floyd%20Mayweather%20Jr.,%20welterweight%20%20(42-0,%2026%20KOs)&amp;amp;photo=29899156</a> |title=Boxing pound-for-pound top 10 |publisher=Foxsports |date=November 11, 2011 |accessdate=November 18, 2011}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite web|url=<a href="http://espn.go.com/boxing/story/_/id/7241680/ranking-top-pound-pound-boxers-nos-1-3">http://espn.go.com/boxing/story/_/id/7241680/ranking-top-pound-pound-boxers-nos-1-3</a> |title=Top three pound-for-pound fighters |publisher=ESPN |date=November 16, 2011 |accessdate=November 17, 2011}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite news|url=<a href="http://boxrec.com}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite">http://boxrec.com}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite</a> web|url=<a href="http://sports.yahoo.com/box/news;_ylt=AgN1F2OevG7ctQ0BN94sjIqUxLYF?slug=ki-iole_rankings_mayweather_pacquiao111711">http://sports.yahoo.com/box/news;_ylt=AgN1F2OevG7ctQ0BN94sjIqUxLYF?slug=ki-iole_rankings_mayweather_pacquiao111711</a> |title=Rankings: Mayweather takes over top spot |publisher=Yahoo! Sports |date=November 19, 2011 |accessdate=November 19, 2011}}&amp;lt;/ref&amp;gt; Mayweather topped the ''[[Forbes]]''  and ''[[Sports Illustrated]]'' lists of the 50 highest-paid athletes of 2012.&amp;lt;ref&amp;gt;{{cite news| url=<a href="http://www.bbc.co.uk/sport/0/18504482">http://www.bbc.co.uk/sport/0/18504482</a> | title=Floyd Mayweather knocks Tiger Woods off the top of Forbes list | date=19 June 2012}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite news|url=<a href="http://www.rantfinance.com/2012/07/19/floyd-mayweather-jr-tops-sports-illustrateds-fortunate-50/}}&amp;lt;/ref&amp;gt;&amp;lt;ref">http://www.rantfinance.com/2012/07/19/floyd-mayweather-jr-tops-sports-illustrateds-fortunate-50/}}&amp;lt;/ref&amp;gt;&amp;lt;ref</a> name=&amp;quot;nytimes.com&amp;quot;&amp;gt;<a href="http://www.nytimes.com/2011/12/18/sports/behind-the-scenes-haymon-is-shaking-up-the-fight-game.html?_r=2&amp;amp;pagewanted=all&amp;lt;/ref&amp;gt;">http://www.nytimes.com/2011/12/18/sports/behind-the-scenes-haymon-is-shaking-up-the-fight-game.html?_r=2&amp;amp;pagewanted=all&amp;lt;/ref&amp;gt;</a><span style="color:blue;">&lt;/rev&gt;</span>
+        <span style="color:blue;">&lt;/revisions&gt;</span>
+      <span style="color:blue;">&lt;/page&gt;</span>
+    <span style="color:blue;">&lt;/pages&gt;</span>
+  <span style="color:blue;">&lt;/query&gt;</span>
+<span style="color:blue;">&lt;/api&gt;</span>
+</pre>
+</body>
+</html>
+<!-- Served by mw1190 in 0.071 secs. -->

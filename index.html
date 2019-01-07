@@ -1,211 +1,413 @@
-<!DOCTYPE HTML>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <meta name="Generator" content="iWeb 3.0.3" />
+    <meta name="iWeb-Build" content="local-build-20111027" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=700" />
+    <title>fbb</title>
+<link rel="icon" href="diffraction_icon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" media="screen,print" href="Welcome_files/Welcome.css" />
+    <!--[if lt IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Welcome_files/WelcomeIE.css'/><![endif]-->
+    <!--[if gte IE 8]><link rel='stylesheet' type='text/css' media='screen,print' href='Media/IE8.css'/><![endif]-->
+    <script type="text/javascript" src="Scripts/iWebSite.js"></script>
+    <script type="text/javascript" src="Scripts/Widgets/SharedResources/WidgetCommon.js"></script>
+    <script type="text/javascript" src="Scripts/Widgets/Navbar/navbar.js"></script>
+    <script type="text/javascript" src="Scripts/iWebImage.js"></script>
+    <script type="text/javascript" src="Welcome_files/Welcome.js"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script> 
+
+    <script language="Javascript"> 
+
+
+
+<!-- 
+function showPic(pic){
+if (pic.style.visibility=="hidden"){
+pic.style.visibility="visible";
+}
+else {
+pic.style.visibility="hidden";
+}
+}
+
+//--> 
+</script>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+
+//Page Flip on hover
+
+$("#pageflip").hover(function() {
+$("#pageflip img , .msg_block").stop()
+.animate({
+width: '310px', 
+height: '100px'
+}, 500); 
+} , function() {
+$("#pageflip img").stop() 
+.animate({
+width: '5px', 
+height: '5px'
+}, 220);
+$(".msg_block").stop() 
+.animate({
+width: '5px', 
+height: '5px'
+}, 200);
+});
+
+
+});
+</script> 
+<script type = "text/javascript">
+
+function fadeInAfterDelay() {
+setTimeout("fadetext()",4000);
+}
+
+var hex=255; // Initial color value.
+
+function fadetext(){ 
+document.getElementById("sample").style.visibility = "visible";
+if (hex > 0) { //if color is not black yet
+hex-=5; // increase color darkness
+document.getElementById("sample").style.color="rgb("+hex+","+hex+","+hex+")";
+setTimeout("fadetext()",75); 
+}
+else {
+hex = 255;  //reset hex value
+}
+} 
+
+</script>
+<style type="text/css">
 <!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+body {position: relative; background: black; margin: 0; padding: 0;}
+
 -->
-<html>
-	<head>
-		<title>LSST Cadence Hackathonat the Flatiron Institute</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+ 
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+#chart3 svg { 
+  border: solid 1px #ccc;
+} 
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1>LSST Cadence Hackathon at the<br>Flatiron Institute</h1>
-						<p>September 17, 18, 19, NYC</p>
-                    
-						<img src="images/download.png">
-                        
-					</header>
+.ytext{
+     fill:white;
+     font-weight:bold;
+     pointer-events:none;
+}
+.ytext:hover {  
+  cursor:default;
+}
+ #chart3 line {
+  fill: none;
+  stroke: #ddd;
+}
 
-				<!-- Nav -->
-					<nav id="nav"1>
-						<ul>
-							<li><a href="#intro" class="active">Workshop Scope</a></li>
-							<li><a href="#first">Details</a></li>
-							<li><a href="#second">Agenda</a></li>
-							<li><a href="#cta">Contact</a></li>
-							<li><a href="#loc">Local Information</a></li>
-                            <li><a href="#coc">Code of Conduct</a></li>
-                            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2b_8UjuiuepN_5rhBXtvwYO93GcPbVQmXURR4c2SUOyJuzw/viewform">Apply</a></li>
-						</ul>
-					</nav>
+#chart3 line {
+  shape-rendering: crispEdges;
+}
+ 
+.axis path, .axis line {
+  fill: none;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+.yrect{
+     stroke:#ccc;
+     stroke-opacity:0.3;
+     fill:#cac; 
+     fill-opacity:0.5;
+}
+.yrect:hover{
+     stroke:#000;
+     stroke-opacity:1;
+     stroke-width:2;
+}
+ 
+</style>
 
-				<!-- Main -->
-					<div id="main">
+</head>
 
-						<!-- Introduction -->
-							<section id="intro" class="main special">
-								<div >
-                                
-									   <table background="white" valign="center">
-									   <tr><td width=25%><img src="images/Screen%20Shot%202018-07-11%20at%204.39.54%20PM.png" alt="" width="100%"/>
-                                           </td>
-                                        <td width=25%>    <img src="images/LSSTClogo.png" alt="" width="100%"/> </td>
+<body style="background: rgb(255, 255, 255) url(../images/bg.png) repeat scroll top left; margin: 0pt; " onload="onPageLoad();" onunload="onPageUnload();">
 
-                                           
-                                           
-                                           
-                                           <td width=25%>  
-								    
-                                        <img src="images/Screen%20Shot%202018-07-11%20at%204.49.29%20PM.png" alt="" width="100%"/>
-                                             </td>
-                                           
-                                           <td width=25% va="top">    <img src="images/HSF_logo_horiz_RGB.png" alt="" width="100%"/> </td>
-                                           </tr>
-                                    
-                                    </table>
-                                </div>
-									<div class="content">
-										<header class="major">
-											<h2>Workshop Scope</h2>
-										</header>
-                                        <p>The LSST science community is invited to play a key role in the definition of LSST’s Observing Strategy by submitting white papers to help refine the ‘main survey’ strategy and fully define the use of 10-20% of time expected to be devoted to various mini surveys, Deep Drilling fields and Target of Opportunity programs. The LSST Project is soliciting white papers to help plan aspects of the LSST survey strategy including the sky coverage, per-bandpass imaging depth, temporal coverage, and various detailed observing constraints. Details are provided in the Call for White Papers on LSST Cadence Optimization with deadline for white paper submission is November 30, 2018.</p>
-                                            
-                                        <p><b>The LSST Corporation,  the Heising-Simons Foundation, and the Simons Center for Computational Astrophysics are organizing and hosting a 3-day workshop for representatives from the Science Collaborations (SCs) and cadence-simulation experts from the LSST project to help and guide workshop participants</b>. </p>
-                                        <p>Selected SC members that plan to respond to the WP call will have the opportunity to work in small groups, using cadence simulation software and existing cadence simulations (along with a framework for analyzing simulation results), to explore innovative cadence strategies to increase LSST's scientific output from solar system science, to the discovery of new transients, to cosmology.  Although some SCs are examining the influence of different cadence strategies on their particular scientific interests, the goal of this workshop is to foster collaboration and creative thinking across disciplines, establish dialog and collaboration among future LSST users with different scientific backgrounds, and generate high-quality white papers containing useful new ideas.
-                                            </p>
+
+
+    <div style="text-align: center; ">
+      <div style="margin-bottom: 0px; margin-left: auto; margin-right: auto; margin-top: 0px; overflow: hidden; position: relative; word-wrap: break-word;  text-align: left; width: 700px; " id="body_content">
+     
+
+   <div style="background: transparent url(Welcome_files/PhotoGray_bg_c-1.jpg) repeat scroll top left; width: 700px; ">
+          <div style="margin-left: 0px; position: relative; width: 700px; z-index: 0; " id="nav_layer">
+            <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+            <div style="height: 1px; line-height: 1px; " class="tinyText"> </div>
+            <div class="com-apple-iweb-widget-navbar flowDefining" id="widget0" style="margin-left: 0px; margin-top: 43px; opacity: 1.00; position: relative; width: 700px; z-index: 1; ">
+    
+              <div id="widget0-navbar" class="navbar">
+
+      
+                <div id="widget0-bg" class="navbar-bg">
+
+        
+                  <ul id="widget0-navbar-list" class="navbar-list">
+ <li></li> 
+</ul>
                   
-
-                                    </div>
-							<footer class="major">
-									<ul class="actions special">
-											<p><li><a href="https://docushare.lsst.org/docushare/dsweb/Get/Document-28382" class="button">Learn More About the Cadence White Papers  Proposal Call</a></li>
-                                                </p>
-                              </ul>
-								</footer>  
-							</section>
-
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Details </h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon major style5 fa-calendar"></span>
-										<h3>Dates</h3>
-										<p>September 17-19, 2018. 2+1 days (participation to the last day is optional)</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-home"></span>
-										<h3>Location
-</h3>
-										<p><a href="https://www.simonsfoundation.org/flatiron/center-for-computational-astrophysics/">Center for Computational Astrophysics at the Flat Iron Institute</a>, New York, NY</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-users"></span>
-										<h3>Participants</h3>
-										<p>About 40 participants (to form 10 groups consisting of 4 researchers plus 1 facilitator and/or cadence expert) will be selected based on their applications. We expect to
-   provide modest honoraria to approximately half of meeting
-   participants, those committed to writing up their ideas as white
-   papers and whose findings are deemed most promising by a panel of
-   pundits. 
-</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe2b_8UjuiuepN_5rhBXtvwYO93GcPbVQmXURR4c2SUOyJuzw/viewform" class="button">Apply</a></li>
-									</ul>
-								</footer>
-							</section>
-
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-                                    <h2>Agenda</h2>
-								</header>
-                                 <p class="content">Detailed agenda + invited speakers and experts coming soon. </p>
-								<ul>
-									
-										<li>LSST experts (Phil Marshall, Federica Bianco, Lynne Jones, or Zeljko Ivezic) will give opening talks about cadence constraints and strategies, the OpSim software, existing cadence simulations, and a summary of cadence structures that have already been explored (e.g., in <a href="https://arxiv.org/abs/1708.04058">Marshall et al. 2017</a>).
-                                        </li>
-									
-										<li>
-                                    Small groups of 3-4 people with different scientific interests will use computers with the OpSim software pre-installed to seek innovative cadence structures that satisfy all group members (by modifying existing simulations and/or running partial simulations)</li>
-									
-										<li>
-                                    Groups will present their findings.  
-                                    </li>  
-								</ul>
-								
-								
-							</section>
-							
-							<!-- Get Started -->
-							<section id="cta" class="main special">
-							  <header class="major">
-							    <h2>SOC</h2>
-							  </header>
-							  <p><a href="mailto:fbianco@nyu.edu">Federica Bianco</a> (NYU, LSSTC) </p>
-							  <p><a href="mailto:mcantiello@flatironinstitute.org">Matteo Cantiello</a> (CCA)</p>
-                                 <p>Zeljko Ivezic (LSST)</p>
-                                                          <p><a href="mailto:lynnej@uw.edu">Lynne Jones</a> (LSST)</p>
-							  <p><a href="mailto:dr.phil.marshall@gmail.com"> Phil Marshall</a> (SLAC, LSST)</p>
-							  <p><a href="mailto:jeno@lsst.org">Jeno Sokoloski</a> (LSSTC, Columbia)</p>
-							</section>
-							
-							<section id="loc" class="main special">
-							  <header class="major">
-							    <h2>Local Information</h2>
-							  </header>
-							  <p> Coming Soon...</p>
-							</section>
-
-					</div>
-
-     </div>           
-                <section id="coc" class="main special">
-							  <header class="major">
-							    <h2>Code of Conduct</h2>
-							  </header>
-							  <p>The SOC and all partners in the organization of this workshop are committed to providing a welcoming and productive environment at this meeting. All meeting participants will be expected to read and abide by the updated <a href="https://project.lsst.org/meetings/lsst2018/meeting-code-conduct">LSST Meeting Code of Conduct</a> and by the <a href="http://www.aura-astronomy.org/about/policies/Section%20B/B25)%20B-XXV-Standards%20of%20Workplace%20Conduct.pdf">AURA Workplace Conduct Standards</a>
-                                 </p>
-							</section>
+      
+</div>
                 
+    
+</div>
+            	    
 
-				
-					<!--
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+</div>
+
+            <script type="text/javascript"><!--//--><![CDATA[//><!--
+new NavBar('widget0', 'Scripts/Widgets/Navbar', 'Scripts/Widgets/SharedResources', '.', {"path-to-root": "", "navbar-css": ".navbar {\n\tfont-family: Futura, 'Trebuchet MS', sans-serif;\n\ttext-transform: uppercase;\n\tfont-size: .7em;\n\tcolor: #C1C1C1;\n\tline-height: 25px;\n\ttext-align: center;\n\tpadding: 0px;\n\tbackground-image: url(Welcome_files\/PhotoGray_nav_bg.png);\n\t_background-image: url(Welcome_files\/PhotoGray_nav_bg.jpg);\n\tbackground-repeat: repeat-y;\n\tborder-top: 1px solid #999;\n\tborder-bottom: 1px solid #999;\n}\n\n.navbar-bg {\n\tpadding: 6px 0px 4px 0px;\n}\n\n.navbar ul {\n\tlist-style: none;\n\tmargin: 0px;\n\tpadding: 0px 10px 0px 10px;\n}\n\n.navbar ul li {\n\tdisplay: inline; \n\tlist-style-type: none;\n\tmargin: 0px;\n\tpadding: 0px 10px 0px 10px;\n}\n\n\n.noncurrent-page  a:visited {\n\ttext-decoration: none;\n\tcolor: #C1C1C1;\n\ttext-shadow: 0px -1px 2px #333;\n}\n\n.noncurrent-page  a {\n\ttext-decoration: none;\n\tcolor: #C1C1C1;\n\ttext-shadow: 0px -1px 2px #333;\n}\n\n\n.noncurrent-page a:hover {\n\ttext-decoration: none;\n\tcolor: #EC001E;\n\ttext-shadow: 0px -1px 2px #333;\n}\n\n.current-page a\n{\n\ttext-decoration: none;\n\tcolor: #000;\n\ttext-shadow: 0px -1px 2px #7E7E7E;\n}\n\n.current-page a:visited\n{\n\ttext-decoration: none;\n\tcolor: #000;\n\ttext-shadow: 0px -1px 2px #7E7E7E;\n}\n\n", "current-page-GUID": "8A4534DF-1666-4904-94FA-CE9DC6FD43FF", "isCollectionPage": "NO"})//--><!]]></script>
+
+
+            <div style=" width: 700px;  height: 800px; left: 0px; position: absolute; top: -80px;  z-index: 1; " class="tinyText style_SkipStroke" float:right>
+              <img src="Welcome_files/Darkroom_spotlight.jpg" alt="" style="border: none; height: 800px; width: 700px; " />
+            </div>
+            <div style="clear: both; height: 0px; line-height: 0px; " class="spacer"> </div>
+          </div>
+          <div style="float: left; height: 0px; line-height: 0px; margin-left: 0px; position: relative; width: 700px; z-index: 10; " id="header_layer">
+            <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+          </div>
+          <div style="margin-left: 0px; position: relative; width: 100%px; z-index: 5; " id="body_layer">
+            <div style="height: 0px; line-height: 0px; " class="bumper"> </div>
+            <div id="id1" style="height: 106px; left: 207px; position: absolute; top: 35px; width: 568px; z-index: 1; " class="style_SkipStroke_1 shape-with-text stroke_0">
+              <div class="text-content graphic_shape_layout_style_default_External_164_102" style="padding: 2px; ">
+                <div class="graphic_shape_layout_style_default"></div>
+              </div>
+            </div>
+            <div style="height: 1px; line-height: 1px; " class="tinyText"> </div>
+            <div style="margin-left: 25px; margin-top: 271px; position: relative; width: 650px; z-index: 1; " class="style_SkipStroke_2 shape-with-text flowDefining">
+              <div class="text-content style_External_485_446" style="padding: 0px; ">
+
+
+              <div class="style">
+                  <p style="padding-top: 100pt;" class="Body">
+		  <p id="chart3">
+
+		    </div>
+
+
+
+                <div style="height: 108px; line-height: 208px; " class="tinyText"> </div>
+              </div>
+            </div>
+            
+
+
+            <div id="id2" style="height: 187px; left: 208px; position: absolute; top: 100px; width: 138px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
+              <div class="text-content graphic_textbox_layout_style_default_External_138_187" style="padding: 0px; ">
+                <div class="graphic_textbox_layout_style_default">
+                  <p style="padding-top: 0pt;" class="Caption2">contact:<br /></p>
+                  <p class="Caption2"><a title="mailto:fbianco@udel.edu" href="mailto:fbianco@udel.edu">fb55 at nyu.edu</a><br /></p>
+                  <p class="Caption2"><a title="GITHUB" href="http://github.com/fedhere">github</a><br /></p>
+                  <p class="Caption2"><a title="TWITTER" href="http://twitter.com/fedhere">twitter</a><br /></p>
+                  <p class="Caption2"><a title="ORCID" href="http://orcid.org/0000-0003-1953-8727">ORCID</a><br /></p>
+                  <p class="Caption"><br /></p>
+<!--                  <p style="padding-bottom: 0pt; " class="Caption"><a title="Welcome_files/cv.pdf" href="Welcome_files/cv.pdf">cv</a></p>
 -->
-			
+                </div>
+              </div>
+            </div>
+            
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	    <!--<img src="Media/li-1.gif" alt="" style="height: 111px; left: 210px; position: absolute; top: 37px; width: 161px; z-index: 1; " />
 
-	</body>
+
+            <div style="width: 122px;  height: 110px; left: 145px; position: absolute; top: 142px; z-index: 1; " class="tinyText stroke_1">
+              <div style="position: relative; width: 122px; background: rgb(88,88,88)">
+                <img src="Welcome_files/shapeimage_1.png" alt="" style="height: 110px; left: 0px; position: absolute; top: 0px; width: 122px; " />
+              </div>
+            </div>
+            
+
+
+            <div style="height: 110px; width: 122px; left: 252px; position: absolute; top: 146px; z-index: 1; " class="tinyText stroke_1">
+              <div style="position: relative; width: 122px; ">
+                <img src="Welcome_files/shapeimage_2.png" alt="" style="height: 110px; left: 0px; position: absolute; top: 0px; width: 122px; " />
+              </div>
+            </div>
+            
+
+	    -->
+            <div style="height: 221px; width: 203px;  left: 369px; position: absolute; top: 17px; width: 203px; z-index: 1; " class="tinyText stroke_2">
+              <div style="position: relative; width: 203px;">
+                  
+                <img src="Welcome_files/shapeimage_3.png" alt="" style="height: 221px; left: 0px; position: absolute; top: 0px; width: 203px;   
+  border-radius: 50%;" />
+            
+
+              </div>
+            </div>
+
+            <div id="id3" style="height: 100px; left: 10px; position: absolute; top: 279px; width: 681px; z-index: 1; " class="style_SkipStroke_3 shape-with-text">
+	      <div class="main_menu" id="menu"></div>
+  
+              <div class="text-content graphic_textbox_layout_style_default_External_651_100" style="padding: 0px; ">
+ 
+ 
+                </div>
+              </div>
+            </div>
+            
+      </div>
+    </div>
+<script>loadmenu()</script>
+
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+
+
+<!-- Start of StatCounter Code for Default Guide -->
+
+
+  <div class="graphic_textbox_layout_style_default">
+    <p style="padding-bottom: 20pt; " class="Caption">powered by <a href="http://d3js.org/">d3</a> -- maintained by <a title="mailto:fbianco@nyu.edu" href="mailto:fbianco@nyu.edu">fbb</a> -- all rights reserved<br /></p>
+    <p class="Caption"><br /></p>
+    </div>
+
+<script type="text/javascript">
+var sc_project=7460819; 
+var sc_invisible=0; 
+var sc_security="65cadbea"; 
+var sc_text=5; 
+</script>
+<a href="http://statcounter.com/p7460819/?guest=1">
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><div class="statcounter"><a title="web stats"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="http://c.statcounter.com/7460819/0/65cadbea/1000/"
+alt="web stats"></a></div></noscript>
+    <script type="text/javascript" language="javascript" src="Welcome_files/tooltips.js"></script> </a> </div></div></div></body>
 </html>
+
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="Welcome_files/fisheye.js"></script>
+<script>
+
+var rowLen = 16;
+
+
+var pics = [
+    "http://serv.cusp.nyu.edu/~fbianco/slidesforwebpage/slidesforwebpage.012.jpg",
+    "http://serv.cusp.nyu.edu/~fbianco/slidesforwebpage/slidesforwebpage.001.jpg",
+    "http://serv.cusp.nyu.edu/~fbianco/slidesforwebpage/slidesforwebpage.002.jpg",
+    "http://serv.cusp.nyu.edu/~fbianco/slidesforwebpage/slidesforwebpage.003.jpg",
+    "http://serv.cusp.nyu.edu/~fbianco/slidesforwebpage/slidesforwebpage.004.jpg",
+    "http://serv.cusp.nyu.edu/~fbianco/slidesforwebpage/slidesforwebpage.005.jpg",
+    "http://serv.cusp.nyu.edu/~fbianco/slidesforwebpage/slidesforwebpage.006.jpg",
+    "http://serv.cusp.nyu.edu/~fbianco/slidesforwebpage/slidesforwebpage.007.jpg",
+    "http://serv.cusp.nyu.edu/~fbianco/slidesforwebpage/slidesforwebpage.008.jpg",
+    "http://serv.cusp.nyu.edu/~fbianco/slidesforwebpage/slidesforwebpage.009.jpg",
+    "http://serv.cusp.nyu.edu/~fbianco/slidesforwebpage/slidesforwebpage.010.jpg",
+    "http://serv.cusp.nyu.edu/~fbianco/slidesforwebpage/slidesforwebpage.011.jpg",
+    "http://serv.cusp.nyu.edu/~fbianco/slidesforwebpage/slidesforwebpage.013.jpg",
+    "http://serv.cusp.nyu.edu/~fbianco/slidesforwebpage/slidesforwebpage.012.jpg",
+	"http://serv.cusp.nyu.edu/~fbianco/Welcome_files/gray.jpg"];
+
+var dataset = [];
+
+
+(function chart3() {
+  var width = 660,
+      height = 400,
+      boxes = rowLen,
+      xSteps =  d3.range(0, width, width/rowLen), 
+      ySteps =  d3.range(0, height, height/rowLen),
+      boxSteps = d3.range(boxes*boxes);
+     
+     //set scale and origin focus
+  var xFisheye = d3.fisheye.scale(d3.scale.identity).domain([0, width]).focus(width/2),
+      fontSizeFisheye = d3.fisheye.scale(d3.scale.log).domain([3,150]).range([8,15]).focus(12),
+      OpacityFisheye = d3.fisheye.scale(d3.scale.identity).domain([0,100]).range([0,2.38]).focus(12);
+
+
+
+  var svg = d3.select("#chart3").append("svg")
+      .attr("width", width)
+      .attr("height", height)
+    .append("g")
+      .attr("transform", "translate(-.5,-.5)");
+  
+  svg.append("rect")
+      .attr("class", "background")
+      .attr("width", width)
+      .attr("height", height)
+      .attr("opacity",0.1); 
+  
+ //added this
+  
+     var boxTest = svg.selectAll(".yrect")
+      .data(dataset)
+    .enter().append("rect") 
+       .attr("class", "yrect")
+       .style("fill",function(d,i){return d.col})       
+       
+     var yText = svg.selectAll("ytext")
+      .data(dataset)
+    .enter().append("text")
+      .text(function(d,i){return d.val})
+
+       .attr("class", "ytext") 
+       .attr("text-anchor", "middle");
+
+ 
+
+  
+var pictures = svg.selectAll("image")
+      .data(pics)
+      .enter().append("image")
+      .attr("xlink:href", function(d) {return d;})
+      .attr("preserveAspectRatio", "xMidYMid slice")
+      .attr("fill-opacity",0.1)
+   
+
+  redraw();
+
+  svg.on("mousemove", function() {
+    var mouse = d3.mouse(this);// this returns an array with the coordinates
+//  xFisheye.focus(mouse[0]); 
+    xFisheye.focus(mouse[0]-100);    // HACK 1
+    if(mouse[0] > 50)  // HACK 2
+        redraw();
+//    redraw();
+  });
+
+  function redraw() { 
+     pictures.attr("x", function(d,i){
+          return xFisheye(xSteps[i%(rowLen)]);
+     }) 
+     
+     .style("opacity",function(d,i){
+               var rowNum = Math.floor(i/rowLen);
+               var xx = (xFisheye(xSteps[(i+2)%rowLen] || width) - xFisheye(xSteps[(i)%rowLen]));
+               var minDim = d3.min([xx]);
+               return 1.2*OpacityFisheye(minDim);
+          }) 
+
+     .attr("width", function(d,i){
+          return 1.1*((xFisheye(xSteps[(i+1)%(rowLen)] || width) - xFisheye(xSteps[i%(rowLen)])))})
+          
+     .attr("height", height)
+     }
+ 
+})();
+
+ 
+</script>
+
+

@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<title>A Self-Clearing Form</title>
+<script>
+function clearForms()
+{
+  var i;
+  for (i = 0; (i < document.forms.length); i++) {
+    document.forms[i].reset();
+  }
+}
+</script>
+</head>
+<body onLoad="clearForms()" onUnload="clearForms()">
+<h1>A Self-Clearing Form</h1>
+This form data will self-destruct when you leave the current web page.
+<form method="post" action="page2.php" name="test">
+<input name="field1"/> Field One
+<p>
+<input name="field2" type="radio" value="One"/>One
+<input name="field2" type="radio" value="Two"/>Two
+
+<input name="field2" type="radio" value="Three"/>Three
+<input name="field2" type="radio" value="Four"/>Four
+<p>
+<input type="submit" value="Submit Form Data"/>
+</form>
+</body>
+</html>

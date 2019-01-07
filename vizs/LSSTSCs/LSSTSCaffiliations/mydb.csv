@@ -1,0 +1,1062 @@
+,First Name,Last Name,Email,Telephone,Company,Contact Category,Role,state,state1,state2,state3,state4,state5
+0,Alexandra,Abate,abate@email.arizona.edu,,University of Arizona,DESC ,Member,Arizona,Arizona,,Arizona,Arizona,Arizona
+1,Alexandra,Abate,abate@email.arizona.edu,,University of Arizona,Weak Lensing,Affiliate,Arizona,Arizona,,Arizona,Arizona,Arizona
+2,Ghaleb,Abdulla,abdulla1@llnl.gov,925-423-5947,Lawrence Livermore National Laboratory,Transients,Member,Lawrence Livermore National Laboratory,California,,California,California,California
+3,Paul Alexander,Abell,paul.a.abell@nasa.gov,281-483-0293,NASA Johnson Space Center,Solar System,Member,NASA Johnson Space Center,California,,California,,California
+4,Eric,Agol,agol@astro.washington.edu,,University of Washington,Strong Lensing,Affiliate,Washington,Washington,,Washington,Washington,Washington
+5,Eric,Agol,agol@astro.washington.edu,,University of Washington,Transients,Member,Washington,Washington,,Washington,Washington,Washington
+6,Marcel,Agueros,marcel@astro.columbia.edu,212-854-6814,Columbia University,Strong Lensing,Affiliate,Columbia University,New York,,New York,New York,New York
+7,Marcel,Agueros,marcel@astro.columbia.edu,212-854-6814,Columbia University,Transients,Member,Columbia University,New York,,New York,New York,New York
+8,Greg,Aldering,galdering@lbl.gov,510-495-2203,UC Berkeley/LBNL,DESC,Member,UC Berkeley/LBNL,California,,California,California,California
+9,Steve,Allen,swa@stanford.edu,,KIPAC Kavli Institute for Particle Astrophysics and Cosmology,Weak Lensing,Affiliate,KIPAC Kavli Institute for Particle Astrophysics and Cosmology,California,,California,California,California
+10,Mark,Allen,mallen@slac.stanford.edu,,KIPAC Kavli Institute for Particle Astrophysics and Cosmology,Weak Lensing,Member,KIPAC Kavli Institute for Particle Astrophysics and Cosmology,California,,California,California,California
+11,Mark,Allen,mallen@slac.stanford.edu,,KIPAC Kavli Institute for Particle Astrophysics and Cosmology,Strong Lensing,Affiliate,KIPAC Kavli Institute for Particle Astrophysics and Cosmology,California,,California,California,California
+12,Steve,Allen,swa@stanford.edu,,KIPAC Kavli Institute for Particle Astrophysics and Cosmology,DESC,Member,KIPAC Kavli Institute for Particle Astrophysics and Cosmology,California,,California,California,California
+13,David,Alonso,david.alonso@physics.oxford.ac.uk,,Oxford,DESC,Member,Oxford,UK,UK,UK,,UK
+14,Javier,Alonso-Garcia,javier.alonso@uantof.cl,(+56)-55-2637596,Universidad de Antofagasta,Stars,Member,Universidad de Antofagasta,Chile,Chile,Chile,,Chile
+15,Javier,Alonso-Garcia,javier.alonso@uantof.cl,(+56)-55-2637596,Universidad de Antofagasta, Milky Way and Local Volume,Member,Universidad de Antofagasta,Chile,Chile,Chile,,Chile
+16,Ethan,Anderes,anderes@ucdavis.edu,,University of California Davis,Transients,Member,California Davis,,,,California,California
+17,Scott,Anderson,anderson@astro.washington.edu,206-685-2392,University of Washington,Statistics and Informatics,Member,Washington,Washington,,Washington,Washington,Washington
+18,Scott,Anderson,anderson@astro.washington.edu,206-685-2392,University of Washington,AGN,Member,Washington,Washington,,Washington,Washington,Washington
+19,Timo,Anguita,tanguita@gmail.com,56227703337,Universidad Andres Bello,Transients,Member,Universidad Andres Bello,Chile,,Chile,,Chile
+20,Timo,Anguita,tanguita@gmail.com,56227703337,Universidad Andres Bello,Strong Lensing,Member,Universidad Andres Bello,Chile,,Chile,,Chile
+21,Reza,Ansari,ansari@lal.in2p3.fr,-230,Laboratoire de Le Accelerateur Lineaire (LAL),Galaxies,Member,Laboratoire de Le Accelerateur Lineaire (LAL),France,France,France,,France
+22,Pierre,Antilogus,Pierre.Antilogus@in2p3.fr,-134,LPNHE,DESC ,Member,LPNHE,France,France,France,,France
+23,Pierre,Antilogus,Pierre.Antilogus@in2p3.fr,-134,LPNHE,DESC ,Member,LPNHE,France,France,France,,France
+24,Simone,Antoniucci,simone.antoniucci@oa-roma.inaf.it,,INAF-Osservatorio Astronomico di Roma,Supernovae,Member,INAF-Osservatorio Astronomico di Roma,Italy,Italy,Italy,,Italy
+25,Manuel,Aravena,manuel.aravenaa@mail.udp.cl,56226768152,Universidad Diego Portales,Transients,Member,Universidad Diego Portales,Chile,Chile,Chile,,Chile
+26,Iair,Arcavi,arcavi@gmail.com,,LCOGT & UC Santa Barbara,Galaxies,Member,LCOGT & UC Santa Barbara,California,,California,,California
+27,David,Ardila,david.ardila@jpl.nasa.gov,,Jet Propulsion Lab,Transients,Member,Jet Propulsion Lab,California,,California,,California
+28,Maria del Carmen,Argudo Fernandez,maria.argudo@uantof.cl,,Universidad de Antofagasta,Stars,Member,Universidad de Antofagasta,Chile,Chile,Chile,,Chile
+29,Lee,Armus,lee@ipac.caltech.edu,626-395-8569,IPAC Caltech, Milky Way and Local Volume ,Member,IPAC Caltech,California,,California,California,California
+30,W. David,Arnett,darnett@as.arizona.edu,,University of Arizona,Galaxies,Member,Arizona,Arizona,,Arizona,Arizona,Arizona
+31,W. David,Arnett,darnett@as.arizona.edu,,University of Arizona,Galaxies,Member,Arizona,Arizona,,Arizona,Arizona,Arizona
+32,Roberto,Assef,roberto.assef@mail.udp.cl,-10777,Universidad Diego Portales,Transients,Member,Universidad Diego Portales,Chile,Chile,Chile,,Chile
+33,Pierre,Astier,pierre.astier@in2p3.fr,+33 1 44 27 76 47,LPNHE,Supernovae,Member,LPNHE,France,France,France,,France
+34,Pierre,Astier,pierre.astier@in2p3.fr,+33 1 44 27 76 47,LPNHE,AGN,Member,LPNHE,France,France,France,,France
+35,Steve,Asztalos,SJAsztalos1@lbl.gov,510-401-5760,Lawrence Berkeley National Laboratory,Supernovae,Member,Lawrence Berkeley National Laboratory,California,,California,California,California
+36,Eric,Aubourg,eric@aubourg.net,-148,APC,DESC ,Member,APC,France,,France,,France
+37,Eric,Aubourg,eric@aubourg.net,-148,APC,Supernovae,Member,APC,France,,France,,France
+38,Camille,Avestruz,avestruz@uchicago.edu,,University of Chicago,DESC ,Member,Chicago,,,,Illinois,Illinois
+39,Camille,Avestruz,avestruz@uchicago.edu,,University of Chicago,Weak Lensing,Member,Chicago,,,,Illinois,Illinois
+40,Michael,Aye,michael.aye@lasp.colorado.edu,,Laboratory for Atmosphere and Space Physics,Galaxies,Member,Laboratory for Atmosphere and Space Physics,Colorado,,Colorado,Colorado,Colorado
+41,Jogesh,Babu,babu@psu.edu,814-863-2837, University of Colorado at Boulder,Strong Lensing,Member, Colorado at Boulder,,,,Pennsylvania,Pennsylvania
+42,Jogesh,Babu,babu@psu.edu,814-863-2837,Pennsylvania State University,Solar System,Member,Pennsylvania State University,Pennsylvania,,Pennsylvania,Pennsylvania,Pennsylvania
+43,Stephen,Bailey,StephenBailey@lbl.gov,510-495-2604,Pennsylvania State University,Weak Lensing,Member,Pennsylvania State University,Pennsylvania,,Pennsylvania,California,Pennsylvania
+44,Stephen,Bailey,StephenBailey@lbl.gov,510-495-2604,Lawrence Berkeley National Laboratory,Statistics and Informatics,Affiliate,Lawrence Berkeley National Laboratory,California,,California,California,California
+45,Charles,Bailyn,charles.bailyn@yale.edu,,Lawrence Berkeley National Laboratory,Supernovae,Member,Lawrence Berkeley National Laboratory,California,,California,Connecticut,California
+46,Christophe,Balland,balland@lpnhe.in2p3.fr,,Yale University,Statistics and Informatics,Member,Yale University,Connecticut,France,Connecticut,,Connecticut
+47,David,Ballantyne,david.ballantyne@physics.gatech.edu,404-385-3909,LPNHE/IN2P3,Transients,Member,LPNHE/IN2P3,France,,France,Georgia,France
+48,Barbara,Balmaverde,balmaverde@oato.inaf.it,,Georgia Institute of Technology,DESC,Member,Georgia Institute of Technology,Georgia,Italy,Georgia,,Georgia
+49,Ted,Baltz,eabaltz@slac.stanford.edu,,INAF-Osservatorio Astrofisico di Torino & SNS-Scuola Normale,AGN,Member,INAF-Osservatorio Astrofisico di Torino & SNS-Scuola Normale,Italy,,Italy,California,Italy
+50,Martin,Banda,martin@on.br,,KIPAC Kavli Institute for Particle Astrophysics and Cosmology,Transients,Member,KIPAC Kavli Institute for Particle Astrophysics and Cosmology,California,Brasil,California,,California
+51,Manda,Banerji,mbanerji@ast.cam.ac.uk,,Observatório Nacional/BGP-LSST/LIneA,Strong Lensing,Member,Observatório Nacional/BGP-LSST/LIneA,,UK,UK,,UK
+52,Michele,Bannister, m.bannister@qub.ac.uk,,Institute of Astronomy,Solar System,Member,Institute of Astronomy,,UK,UK,,UK
+53,Rodolfo,Barba,rbarba@userena.cl,+56 51 2204128,Queens University Belfast,Galaxies,Member,Queens University Belfast,Iraland,Chile,Iraland,,Iraland
+54,Mauro,Barbieri,mauro.barbieri@uda.cl,,Universidad de La Serena,Solar System,Member,Universidad de La Serena,Chile,Chile,Chile,,Chile
+55,Deborah,Bard,djbard@slac.stanford.edu,650-926-2836,Universidad de Atacama,Stars,Member,Universidad de Atacama,Chile,,Chile,California,Chile
+56,Deborah,Bard,djbard@slac.stanford.edu,650-926-2836,SLAC National Acceleratory Laboratory, Milky Way and Local Volume ,Member,SLAC National Acceleratory Laboratory,,,,California,California
+57,Aurelien,Barrau,barrau@in2p3.fr,33476284179,SLAC National Acceleratory Laboratory,Stars,Member,SLAC National Acceleratory Laboratory,,France,France,,France
+58,Luis,Barrera,luis.barrera@umce.cl,56-2-2412497,LPSC, Milky Way and Local Volume,Member,LPSC,Colorado,Chile,Colorado,,Colorado
+59,Felipe,Barrientos,barrientos@astro.puc.cl,+56 2 2354 4940,Universidad Metropolitana de Ciencias de la Educacion  (UMCE),Weak Lensing ,Member,Universidad Metropolitana de Ciencias de la Educacion  (UMCE),Chile,Chile,Chile,,Chile
+60,Aaron,Barth,barth@uci.edu,949-824-3013,Pontificia Universidad Catolica de Chile,DESC,Member,Pontificia Universidad Catolica de Chile,,,,California,California
+61,James,Bartlett,bartlett@apc.univ-paris7.fr,33-0-157276095,University of California Irvine,DESC ,Affiliate,California Irvine,,France,France,,France
+62,James,Bartlett,bartlett@apc.univ-paris7.fr,33-0-157276095,APC,Solar System,Member,APC,France,France,France,,France
+63,James,Bartlett,bartlett@apc.univ-paris7.fr,33-0-157276095,APC,Galaxies,Member,APC,France,France,France,,France
+64,Gideon,Bass,gbass@gmu.edu,,APC,AGN,Member,APC,France,,France,,France
+65,Franz,Bauer,fbauer@astro.puc.cl,,Booz Allen Hamilton,Galaxies,Member,Booz Allen Hamilton,DC,Chile,DC,,DC
+66,Michael,Baumer,mbaumer@stanford.edu,6509264495,Pontifica Universidad Catolica de Chile,DESC ,Member,Pontifica Universidad Catolica de Chile,Chile,,Chile,California,Chile
+67,Benjamin,Beamer,benjamin.beamer@stonybrook.edu,,Stanford Univerisity,Weak Lensing,Member,Stanford Univerisity,California,,California,,California
+68,Rachel,Bean,rbean@astro.cornell.edu,,SUNY-SB,Transients,Member,SUNY-SB,New York,,New York,Illinois,New York
+69,Rachel,Bean,rbean@astro.cornell.edu,,Cornell University,AGN,Member,Cornell University,Illinois,,Illinois,Illinois,Illinois
+70,Andrew,Becker,becker@astro.washington.edu,206-685-0542,Cornell University,DESC,Member,Cornell University,Illinois,,Illinois,Washington,Illinois
+71,Matthew,Becker,beckermr@stanford.edu,,University of Washington,DESC,Member,Washington,Washington,,Washington,California,Washington
+72,Andrew,Becker,becker@astro.washington.edu,206-685-0542,Stanford University,Weak Lensing,Member,Stanford University,California,,California,Washington,California
+73,Andrew,Becker,becker@astro.washington.edu,206-685-0542,University of Washington,DESC,Member,Washington,Washington,,Washington,Washington,Washington
+74,Jacek,Becla,becla@slac.stanford.edu,650-926-8664,University of Washington,Solar System,Member,Washington,Washington,,Washington,California,Washington
+75,Timothy C.,Beers,beers@pa.msu.edu,517-884-5616,SLAC National Accelerator Laboratory,DESC,Member,SLAC National Accelerator Laboratory,California,,California,Massachusetts,California
+76,Keaton,Bell,keatonb@astro.as.utexas.edu,512 471 3462,Michigan State University,Transients,Member,Michigan State University,Michigan,,Michigan,Texas,Michigan
+77,Eric,Bell,ericbell@umich.edu,,University of Texas at Austin,DESC ,Member,Texas at Austin,,,,Michigan,Michigan
+78,Fabio,Bellagamba,fabio.bellagamba2@unibo.it,,University of Michigan,Statistics and Informatics ,Member,Michigan,,Italy,Italy,,Italy
+79,Eric,Bellm,ecbellm@uw.edu,,INAF,Stars,Member,INAF,Italy,,Italy,Washington,Italy
+80,Vasily,Belokurov,vasily@ast.cam.ac.uk,,University of Washington, Milky Way and Local Volume ,Member,Washington,Washington,UK,Washington,,Washington
+81,Edo,Berger,eberger@cfa.harvard.edu,,Institute of Astronomy,Transients,Member,Institute of Astronomy,,,,Massachusetts,Massachusetts
+82,Gary,Bernstein,garyb@physics.upenn.edu,215-573-6252, University of Cambridge,Stars,Member, Cambridge,,,,Pennsylvania,Pennsylvania
+83,Joseph P.,Bernstein,jpbernst@anl.gov,630-252-7268,Harvard Smithsonian Center for Astrophysics, Milky Way and Local Volume,Member,Harvard Smithsonian Center for Astrophysics,Massachusetts,,Massachusetts,Illinois,Massachusetts
+84,Gary,Bernstein,garyb@physics.upenn.edu,215-573-6252,University of Pennsylvania,Galaxies,Member,Pennsylvania,,,,Pennsylvania,Pennsylvania
+85,David,Bersier,D.F.Bersier@ljmu.ac.uk,,Argonne National Laboratory,Transients,Member,Argonne National Laboratory,Illinois,UK,Illinois,,Illinois
+86,Marc,Betoule,marc.betoule@lpnhe.in2p3.fr,+33 1 4427 7648,University of Pennsylvania,Stars,Member,Pennsylvania,,France,France,,France
+87,Federica,Bianco,fbianco@nyu.edu,,Liverpool John Moores University, Milky Way and Local Volume,Member,Liverpool John Moores University,UK,,UK,New York,UK
+88,Federica,Bianco,fbianco@nyu.edu,,LPNHE/IN2P3,Transients,Member,LPNHE/IN2P3,France,,France,New York,France
+89,Rahul,Biswas,rbiswas4@gmail.com,,New York University,Weak Lensing,Member,New York University,New York,,New York,,New York
+90,Rahul,Biswas,rbiswas4@gmail.com,,New York University,Supernovae,Affiliate,New York University,New York,,New York,,New York
+91,Andrea,Biviano,biviano@oats.inaf.it,,Department of Astronomy,Solar System,Member,Department of Astronomy,,Italy,Italy,,Italy
+92,Guillaume,Blanc,blanc@lal.in2p3.fr,+33 1 64 46 86 68,Department of Astronomy,Transients,Member,Department of Astronomy,,France,France,,France
+93,Guillaume,Blanc,blanc@lal.in2p3.fr,+33 1 64 46 86 68,INAF-Osservatorio Astronomico di Trieste,DESC,Member,INAF-Osservatorio Astronomico di Trieste,Italy,France,Italy,,Italy
+94,Roger,Blandford,rdb3@stanford.edu,650-723-4233,Laboratoire de l,Statistics and Informatics,Member,Laboratoire de l,France,,France,California,France
+95,Michael Rogers,Blanton,michael.blanton@gmail.com,212-998-7770,,Transients,Member,,,,,,
+96,Jonathan,Blazek,blazek.35@osu.edu,,,DESC,Member,,,,,Ohio,Ohio
+97,Josh,Bloom,jbloom@astro.berkeley.edu,510-643-3839,,Supernovae,Member,,,,,California,California
+98,Bob,Blum,rblum@noao.edu,5203188233,,Galaxies,Member,,,,,Arizona,Arizona
+99,John,Bochanski,bochanski@gmail.com,,,Weak Lensing ,Member,,,,,,
+100,Dennis ,Bodewits,dennis@astro.umd.edu,,,DESC,Member,,,,,Maryland,Maryland
+101,Patricia,Boeshaar,boeshaar@physics.ucdavis.edu,530-754-9246,,Strong Lensing,Member,,,,,California,California
+102,Bryce,Bolin,bolin.astro@gmail.com,,,Galaxies,Member,,,,,,
+103,Howard,Bond,heb11@psu.edu,814-865-6445,,DESC,Member,,,,,Pennsylvania,Pennsylvania
+104,Sebastien,Bongard,bongard@lpnhe.in2p3.fr,+33 1 44 27 72 53,,Transients,Member,,,France,France,,France
+105,Sebastien,Bongard,bongard@lpnhe.in2p3.fr,+33 1 44 27 72 53,,Stars,Member,,,France,France,,France
+106,Rosaria,Bonito,sbonito@astropa.unipa.it,,, Milky Way and Local Volume ,Member,,,Italy,Italy,,Italy
+107,Rosaria,Bonito,sbonito@astropa.unipa.it,,,Stars,Member,,,Italy,Italy,,Italy
+108,Giuseppe,Bono,bono@roma2.infn.it,,, Milky Way and Local Volume ,Member,,,Italy,Italy,,Italy
+109,Mederic,Boquien,mederic.boquien@uantof.cl,,,Solar System,Member,,,Chile,Chile,,Chile
+110,Kirk,Borne,kirk.borne@gmail.com,(703) 993-8402,,Stars,Member,,,,,,
+111,Kirk,Borne,kirk.borne@gmail.com,(703) 993-8402,, Milky Way and Local Volume ,Member,,,,,,
+112,Todd,Boroson,tboroson@lcogt.net,(805) 880-1618,,Solar System,Affiliate,,,,,California,California
+113,Jim,Bosch,jbosch@astro.princeton.edu,,,Transients,Member,,,,,New Jersey,New Jersey
+114,Jim,Bosch,jbosch@astro.princeton.edu,,,Supernovae,Affiliate,,,,,New Jersey,New Jersey
+115,Jim,Bosch,jbosch@astro.princeton.edu,,,DESC,Member,,,,,New Jersey,New Jersey
+116,Maitrayee ,Bose,mbose2@asu.edu,,,Transients,Member,,,,,Arizona,Arizona
+117,Maria Teresa,Botticella,botticella@na.astro.it,,,Stars,Member,,,Italy,Italy,,Italy
+118,Alexandre,Boucaud,aboucaud@apc.univ-paris7.fr,+33 157 276 921,, Milky Way and Local Volume,Member,,,France,France,,France
+119,Dominique,Boutigny,boutigny@in2p3.fr,33450091680,,Transients,Member,,,France,France,,France
+120,Rebecca,Bowler,rebecca.bowler@physics.ox.ac.uk,,,Galaxies,Member,,,UK,UK,,UK
+121,Marusa,Bradac,marusa@physics.ucdavis.edu,(530) 752-6762,,Galaxies,Member,,,,,California,California
+122,Andrew,Bradshaw,akbradshaw@ucdavis.edu,,,Statistics and Informatics,Member,,,,,California,California
+123,Niel,Brandt,niel@astro.psu.edu,814-865-3509,,Transients,Affiliate,,,,,Pennsylvania,Pennsylvania
+124,Niel,Brandt,niel@astro.psu.edu,814-865-3509,,DESC ,Affiliate,,,,,Pennsylvania,Pennsylvania
+125,Niel,Brandt,niel@astro.psu.edu,814-865-3509,,Strong Lensing,Member,,,,,Pennsylvania,Pennsylvania
+126,Niel,Brandt,niel@astro.psu.edu,814-865-3509,,Weak Lensing,Affiliate,,,,,Pennsylvania,Pennsylvania
+127,Malcolm,Bremer,M.Bremer@bristol.ac.uk,44-(0)114-928-8764,,Solar System,Member,,,UK,UK,,UK
+128,Carrie,Bridge,carrie.bridge@jpl.nasa.gov,818-354-1120,,Transients,Member,,,,,,
+129,Sarah,Bridle,sarah@sarahbridle.net,,,Weak Lensing,Member,,,,,,
+130,Christopher,Britt,christopher.britt@ttu.edu,,,DESC ,Member,,,,,Texas,Texas
+131,Enzo,Brocato,enzo.brocato@oa-roma.inaf.it,,,Galaxies,Member,,,Italy,Italy,,Italy
+132,Michael,Brotherton,MBrother@uwyo.edu,,,Strong Lensing,Member,,,,,Wyoming,Wyoming
+133,Sarah,Brough,sb@aao.gov.au,,,DESC,Member,,,Australia,Australia,,Australia
+134,Peter,Brown,pbrown@physics.tamu.edu,,,Transients,Member,,,,,Texas,Texas
+135,Tim,Brown,tbrown@lcogt.net,805-880-1618,,Statistics and Informatics,Member,,,,,California,California
+136,Michael,Brown,mbrown@caltech.edu,,,AGN,Member,,,,,California,California
+137,Marina,Brozovic,marina.brozovic@jpl.nasa.gov,,,Galaxies,Member,,,,,,
+138,Robert,Brunner,bigdog@illinois.edu,217-244-6099,,Galaxies,Member,,,,,Illinois,Illinois
+139,Robert,Brunner,bigdog@illinois.edu,217-244-6099,,Galaxies,Member,,,,,Illinois,Illinois
+140,Robert,Brunner,bigdog@illinois.edu,217-244-6099,,DESC,Member,,,,,Illinois,Illinois
+141,Tamas,Budavari,budavari@jhu.edu,410-516-0643,,Stars,Member,,,,,Maryland,Maryland
+142,Julio Ignacio ,Bueno de Camargo,camargo@linea.gov.br,,, Milky Way and Local Volume,Member,,,Brasil,Brasil,,Brasil
+143,James,Bullock,bullock@uci.edu,949-824-7727,,Transients,Member,,,,,California,California
+144,Patricia,Burchat,burchat@stanford.edu,650-725-5771,,AGN,Member,,,,,California,California
+145,Patricia,Burchat,burchat@stanford.edu,650-725-5771,,Galaxies,Member,,,,,California,California
+146,Patricia,Burchat,burchat@stanford.edu,650-725-5771,,Transients,Affiliate,,,,,California,California
+147,Adam,Burgasser,aburgasser@ucsd.edu,858-822-6958,,Transients,Member,,,,,California,California
+148,David,Burke,daveb@slac.stanford.edu,650-926-4304,,Solar System,Member,,,,,California,California
+149,David,Burke,daveb@slac.stanford.edu,650-926-4304,,Solar System,Member,,,,,California,California
+150,Douglas,Burke,dburke@cfa.harvard.edu,617-496-7853,,DESC ,Member,,,,,Massachusetts,Massachusetts
+151,Ben,Burningham,burninghamster@gmail.com,,,Statistics and Informatics,Member,,,,,,
+152,Nathaniel,Butler,nathaniel.butler@asu.edu,480-965-8207,,AGN,Member,,,,,Arizona,Arizona
+153,Guillermo,Cabrera,gcabrera@dim.uchile.cl,,,Statistics and Informatics,Member,,,Chile,Chile,,Chile
+154,Yongzhi,Cai,yongzhi.cai@oapd.inaf.it,,,Solar System,Member,,,Italy,Italy,,Italy
+155,Annalisa,Calamida,calamida@noao.edu,,,Stars,Member,,,,,Arizona,Arizona
+156,Tristan,Cantat-Gaudin,tristan.cantat@oapd.inaf.it,,, Milky Way and Local Volume ,Member,,,Italy,Italy,,Italy
+157,Phillip,Cargile,pcargile@cfa.harvard.edu,615-584-8191,,Weak Lensing,Member,,,,,Massachusetts,Massachusetts
+158,Roberta,Carini,roberta.carini@oa-roma.inaf.it,,,DESC,Member,,,Italy,Italy,,Italy
+159,Jeffrey (Jeff),Carlin,JCarlin@lsst.org,520-318-8533,,Strong Lensing,Member,,,,,Washington,Washington
+160,Maria Isabel ,Carnerero Martin,maribel@oato.inaf.it,,,Stars,Member,,,Italy,Italy,,Italy
+161,Matias,Carrasco-Kind,mcarras2@illinois.edu,2172659453,, Milky Way and Local Volume ,Member,,,,,Illinois,Illinois
+162,Dana Ioana,Casetti,dana.casetti@aya.yale.edu,203-432-3018,,DESC ,Member,,,,,Connecticut,Connecticut
+163,Paolo,Cassata,paolo.cassata@gmail.com,,,Weak Lensing,Member,,,,,,
+164,Marcio,Catelan,mcatelan@astro.puc.cl,56-2-2354-4933,,Statistics and Informatics,Affiliate,,,Chile,Chile,,Chile
+165,Marcio,Catelan,mcatelan@astro.puc.cl,56-2-2354-4933,,Stars,Member,,,Chile,Chile,,Chile
+166,Stefano,Cavuoti,stefano.cavuoti@gmail.com,,, Milky Way and Local Volume,Member,,,,,,
+167,Stephen,Cenko,brad.cenko@nasa.gov,,,Statistics and Informatics,Member,,,,,,
+168,Julio,Chaname,jchaname@astro.puc.cl,56223544990,,Statistics and Informatics,Member,,,Chile,Chile,,Chile
+169,Chihway,Chang,chihway@slac.stanford.edu,,,Transients,Member,,,,,California,California
+170,George,Chartas,chartasg@cofc.edu,814-953-3609,,Stars,Affiliate,,,,,South Carolina,South Carolina
+171,George,Chartas,chartasg@cofc.edu,814-953-3609,, Milky Way and Local Volume,Member,,,,,South Carolina,South Carolina
+172,Yen-Chi,Chen,yenchic@uw.edu,,,Stars,Member,,,,,Washington,Washington
+173,Xuelei,Chen,xuelei@nao.cas.cn,,, Milky Way and Local Volume,Member,,,,,,
+174,Jun,Cheng,cheng109@purdue.edu,,,Stars,Member,,,,,Indiana,Indiana
+175,David,Chernoff,chernoff@astro.cornell.edu,607 255 4755,, Milky Way and Local Volume ,Member,,,,,Illinois,Illinois
+176,David,Chernoff,chernoff@astro.cornell.edu,607 255 4755,,Galaxies,Member,,,,,Illinois,Illinois
+177,Steve,Chesley,steve.chesley@jpl.nasa.gov,818-354-9615,,Stars,Member,,,,,,
+178,Elliott,Cheu,echeu@email.arizona.edu,5206214090,, Milky Way and Local Volume,Member,,,,,Arizona,Arizona
+179,Elliott,Cheu,echeu@email.arizona.edu,5206214090,,Transients,Member,,,,,Arizona,Arizona
+180,James,Chiang,jchiang@slac.stanford.edu,6509262930,,DESC,Member,,,,,California,California
+181,Rolf,Chini,rchini@ucn.cl,,,Stars,Member,,,Chile,Chile,,Chile
+182,Mickey,Chiu,chiu@bnl.gov,,, Milky Way and Local Volume ,Member,,,,,California,California
+183,Laura,Chomiuk,lchomiuk@aoc.nrao.edu,,,Galaxies,Member,,,,,,
+184,Ryan,Chornock,chornock@ohio.edu,,,Transients,Member,,,,,Ohio,Ohio
+185,Adeline,Choyer,adeline.choyer@lpsc.in2p3.fr,+ 33 4 76 28 41 99,,Stars,Member,,,France,France,,France
+186,Eric,Christensen,eric@lpl.arizona.edu,,, Milky Way and Local Volume ,Member,,,,,Arizona,Arizona
+187,You-Hua,Chu,yhchu@illinois.edu,217-333-5535,,Transients,Member,,,,,Illinois,Illinois
+188,David,Ciardi,ciardi@ipac.caltech.edu,626-395-1834,,Transients,Member,,,,,California,California
+189,David,Ciardi,ciardi@ipac.caltech.edu,626-395-1834,,Stars,Member,,,,,California,California
+190,Claudia,Cicone,claudiacicone@gmail.com,,, Milky Way and Local Volume,Member,,,,,,
+191,Lucas,Cieza,lucas.cieza@mail.udp.cl,56-22-676-8154,,Weak Lensing ,Member,,,Chile,Chile,,Chile
+192,Michele,Cignoni,michele.cignoni@unipi.it,,,Strong Lensing,Member,,,Italy,Italy,,Italy
+193,David,Cinabro,cinabro@physics.wayne.edu,313-577-2918,,AGN,Member,,,,,Michigan,Michigan
+194,David,Cinabro,cinabro@physics.wayne.edu,313-577-2918,,Statistics and Informatics,Member,,,,,Michigan,Michigan
+195,Jessi     ,Cisewski,jessica.cisewski@yale.edu,,,DESC,Member,,,,,Connecticut,Connecticut
+196,William,Clarkson,wiclarks@umich.edu,,,DESC,Member,,,,,Michigan,Michigan
+197,Chuck,Claver,cclaver@lsst.org,520-318-8319,,Transients,Member,,,,,Washington,Washington
+198,Chuck,Claver,cclaver@lsst.org,520-318-8319,,Statistics and Informatics,Member,,,,,Washington,Washington
+199,Geoffrey,Clayton,gclayton@fenway.phys.lsu.edu,,,Solar System,Member,,,,,Louisiana,Louisiana
+200,Gisella,Clementini,gisella.clementini@oabo.inaf.it,,,DESC ,Member,,,Italy,Italy,,Italy
+201,Douglas,Clowe,clowe@ohio.edu,740-593-0063,,Weak Lensing,Member,,,,,Ohio,Ohio
+202,Douglas,Clowe,clowe@ohio.edu,740-593-0063,,DESC ,Member,,,,,Ohio,Ohio
+203,Johann,Cohen-Tanugi,cohen@slac.stanford.edu,33467144191,,Transients,Member,,,,,California,California
+204,Johann,Cohen-Tanugi,cohen@slac.stanford.edu,33467144191,,Weak Lensing,Member,,,,,California,California
+205,Joanne,Cohn,jcohn@berkeley.edu,,,Transients,Member,,,,,California,California
+206,Andrew,Connolly,ajc@astro.washington.edu,206 543 9541,,Transients,Member,,,,,Washington,Washington
+207,Andrew,Connolly,ajc@astro.washington.edu,206 543 9541,,DESC,Affiliate,,,,,Washington,Washington
+208,Andrew,Connolly,ajc@astro.washington.edu,206 543 9541,,Solar System,Affiliate,,,,,Washington,Washington
+209,Andrew,Connolly,ajc@astro.washington.edu,206 543 9541,,Stars,Affiliate,,,,,Washington,Washington
+210,Chris,Conselice,conselice@gmail.com,,, Milky Way and Local Volume ,Member,,,,,,
+211,Sergio,Contreras Hantke,stcontre@uc.cl,,,Stars,Member,,,Chile,Chile,,Chile
+212,Kem,Cook,kcook@noao.edu,925-875-1276,, Milky Way and Local Volume ,Member,,,,,Arizona,Arizona
+213,Kem,Cook,kcook@noao.edu,925-875-1276,,Transients,Member,,,,,Arizona,Arizona
+214,Michael ,Cooper,m.cooper@uci.edu,,,AGN,Member,,,,,California,California
+215,Asantha,Cooray,acooray@uci.edu,,,Transients,Affiliate,,,,,California,California
+216,Asantha,Cooray,acooray@uci.edu,,,Transients,Member,,,,,California,California
+217,Deanne ,Coppejans,deanne.coppejans@gmail.com,,,Supernovae,Member,,,,,,
+218,Paolo Severo,Coppi,paolo.coppi@yale.edu,,,DESC ,Member,,,,,Connecticut,Connecticut
+219,Jim,Cordes,cordes@astro.cornell.edu,607-255-0608,,Statistics and Informatics,Member,,,,,Illinois,Illinois
+220,Michael,Coughlin,michael.w.coughlin@gmail.com,,,Stars,Member,,,,,,
+221,Kevin,Covey,kevin.covey@wwu.edu,,, Milky Way and Local Volume ,Member,,,,,Washington,Washington
+222,Kevin,Covey,kevin.covey@wwu.edu,,,Stars,Affiliate,,,,,Washington,Washington
+223,Nick,Cowan,ncowan@amherst.edu,,, Milky Way and Local Volume ,Member,,,,,Massachusetts,Massachusetts
+224,Arlin,Crotts,arlin@astro.columbia.edu,212-854-7899,,DESC,Member,,,,,New York,New York
+225,Jorge,Cuadra,jcuadra@astro.puc.cl,,,Transients,Member,,,Chile,Chile,,Chile
+226,Antonino,Cucchiara,antonino.cucchiara@uvi.edu,,,Transients,Member,,,,,Virginia,Virginia
+227,Hector,Cuevas,hcuevas@dfuls.cl,+56 51 2334753,,Weak Lensing,Member,,,Chile,Chile,,Chile
+228,Wei,Cui,cui@purdue.edu,765-494-5395,,DESC ,Member,,,,,Indiana,Indiana
+229,Wei,Cui,cui@purdue.edu,765-494-5395,,Transients,Member,,,,,Indiana,Indiana
+230,Felice,Cusano,felice.cusano@oabo.inaf.it,,,DESC,Member,,,Italy,Italy,,Italy
+231,Filippo,D'Ammando,dammando@ira.inaf.it,,,DESC,Member,,,Italy,Italy,,Italy
+232,Chris,D'Andrea,cdandrea@sas.upenn.edu,,,DESC,Member,,,,,Pennsylvania,Pennsylvania
+233,Paolo,D'Avanzo,paolo.davanzo@brera.inaf.it,,,Supernovae,Member,,,Italy,Italy,,Italy
+234,Luiz,da Costa,ldacosta@linea.gov.br,55 21 3504-9172,,Galaxies,Member,,,Brasil,Brasil,,Brasil
+235,Marina,Dal Ponte,marina.ponte@ufrgs.br,,,Weak Lensing,Member,,,Brasil,Brasil,,Brasil
+236,Massimo,Dall'Ora,dallora@na.astro.it,,,Galaxies,Member,,,Italy,Italy,,Italy
+237,Massimo,Dall'Ora,dallora@na.astro.it,,,Galaxies,Member,,,Italy,Italy,,Italy
+238,Scott,Daniel,scottvalscott@gmail.com,,,Transients,Member,,,,,,
+239,Scott,Daniel,scottvalscott@gmail.com,,,Stars,Member,,,,,,
+240,James,Davenport,James.Davenport@wwu.edu,,, Milky Way and Local Volume ,Member,,,,,Washington,Washington
+241,Roger,Davies,roger.davies@physics.ox.ac.uk,44-1865-273305,,Galaxies ,Member,,,UK,UK,,UK
+242,Luke,Davies,luke.j.davies@uwa.edu.au,,,Solar System,Member,,,Australia,Australia,,Australia
+243,Jon,Davies,jid@astro.cf.ac.uk,,,Solar System,Member,,,UK,UK,,UK
+244,Christopher,Davis,cpd@stanford.edu,,,Transients,Member,,,,,California,California
+245,William,Dawson,will@dawsonresearch.com,(925) 424-3732,,AGN,Member,,,,,California,California
+246,Anna Barbara,de Andrade Queiroz,anna.queiroz@ufrgs.br,,,Statistics and Informatics,Member,,,Brasil,Brasil,,Brasil
+247,Demetra ,De Cicco,demetradecicco@gmail.com,,,DESC,Member,,,,,,
+248,Roelof,de Jong,rdejong@aip.de,+49 331 7499-648,,Stars,Member,,,Germany,Germany,Germany,Germany
+249,Nathan,De Lee,deleenm@nku.edu,859-572-5492,, Milky Way and Local Volume ,Member,,,,,Kentucky,Kentucky
+250,Orsola,De Marco,orsola.demarco@mq.edu.au,+61 2 98504241,,Transients,Member,,,Australia,Australia,,Australia
+251,Miguel,de Val-Borro,miguel.devalborro@nasa.gov,,,Transients,Member,,,,,,
+252,Wim,de Vries,devries1@llnl.gov,925 425 9775,,Supernovae,Member,,,,,California,California
+253,Alis,Deason,alis.j.deason@durham.ac.uk,,,AGN,Member,,,UK,UK,,UK
+254,Victor,Debattista,vpdebattista@gmail.com,,,Transients,Member,,,,,,
+255,Victor,Debattista,vpdebattista@gmail.com,,,Weak Lensing,Member,,,,,,
+256,Ian,DellAntonio,ian@het.brown.edu,401-863-1154,,Weak Lensing,Member,,,,,Rhode Island,Rhode Island
+257,Ian,DellAntonio,ian@het.brown.edu,401-863-1154,,DESC ,Member,,,,,Rhode Island,Rhode Island
+258,Ricardo,Demarco,rdemarco@astro-udec.cl,,,Transients,Member,,,Chile,Chile,,Chile
+259,Larry,Denneau,denneau@hawaii.edu,,,Transients,Member,,,,,Hawaii,Hawaii
+260,Julien,Devriendt,julien.devriendt@physics.ox.ac.uk,,,Transients,Member,,,UK,UK,,UK
+261,Jason,Dexter,jadexter@gmail.com,,,Transients,Affiliate,,,,,,
+262,Saurav,Dhital,dhitals@me.com,,,Solar System,Member,,,,,,
+263,Tanio,Diaz,tanio.diaz@mail.udp.cl,+56 2 2213 0480,,Stars,Member,,,Chile,Chile,,Chile
+264,Mark,Dickinson,med@noao.edu,520-318-8531,, Milky Way and Local Volume,Member,,,,,Arizona,Arizona
+265,Seth,Digel,digel@slac.stanford.edu,650-926-3614,,Transients,Member,,,,,California,California
+266,Seth,Digel,digel@slac.stanford.edu,650-926-3614,,Stars,Member,,,,,California,California
+267,Ben,Dilday,bdilday@lcogt.net,805-880-1627,, Milky Way and Local Volume,Member,,,,,California,California
+268,Rosanne,DiStefano,rd@cfa.harvard.edu,617 495 7091,,DESC,Member,,,,,Massachusetts,Massachusetts
+269,George,Djorgovski,george@astro.caltech.edu,626-395-4415,,Weak Lensing,Member,,,,,California,California
+270,Greg,Dobler,dobler@kitp.ucsb.edu,,,Stars,Member,,,,,California,California
+271,Zoheyr,Doctor,zdoctor@uchicago.edu,,, Milky Way and Local Volume ,Member,,,,,Illinois,Illinois
+272,Scott,Dodelson,Dodelson@fnal.gov,630-840-2426,,Galaxies,Member,,,,,Illinois,Illinois
+273,Peter,Doherty,pdoherty@physics.harvard.edu,617-495-5862,,Galaxies,Member,,,,,Massachusetts,Massachusetts
+274,Martin,Donachie,mdon849@aucklanduni.ac.nz,,,Galaxies,Member,,,New Zealand,New Zealand,,New Zealand
+275,Olivier,Dore,olivier.dore@caltech.edu,,,DESC,Member,,,,,California,California
+276,Aaron,Dotter,aaron.dotter@gmail.com,410-338-4310,,DESC,Member,,,,,,
+277,Jeremy,Drake,drake@cfa.harvard.edu,,,Stars,Member,,,,,Massachusetts,Massachusetts
+278,Simon,Driver,Simon.Driver@uwa.edu.au,,, Milky Way and Local Volume,Member,,,Australia,Australia,,Australia
+279,Alex,Drlica-Wagner,kadrlica@fnal.gov,,,Galaxies,Member,,,,,Illinois,Illinois
+280,Maria,Drout,mdrout@carnegiescience.edu,,,Stars,Member,,,,,California,California
+281,Richard,Dubois,dubois@stanford.edu,650-926-3824,, Milky Way and Local Volume ,Member,,,,,California,California
+282,Josef,Durech,durech@sirrah.troja.mff.cuni.cz,+420 95155 2575,,Stars,Member,,,Czech Republic,Czech Republic,,Czech Republic
+283,Tim,Eifler,timeifler@gmail.com,,, Milky Way and Local Volume ,Member,,,,,,
+284,Jonathan,Elias,jelias@noao.edu,,,Transients,Member,,,,,Arizona,Arizona
+285,Ardis,Eliasdottir,ardis@astro.princeton.edu,609-258-3809,,Solar System,Member,,,,,New Jersey,New Jersey
+286,Mike,Eracleous,mxe17@psu.edu,814-863-6041,,AGN,Member,,,,,Pennsylvania,Pennsylvania
+287,Andres,Escala,aescala@das.uchile.cl,56229771134,,Stars,Member,,,Chile,Chile,,Chile
+288,Pedro Antonio,Escarate Monetta,pedro.escarate@usm.cl,,, Milky Way and Local Volume,Member,,,Chile,Chile,,Chile
+289,Susana,Eyheramendy,susana@mat.puc.cl,,,Stars,Member,,,Chile,Chile,,Chile
+290,Michele,Fabrizio,michele.fabrizio@ssdc.asi.it,,, Milky Way and Local Volume ,Member,,,Italy,Italy,,Italy
+291,Ross,Fadely,rossfadely@gmail.com,,,Transients,Member,,,,,,
+292,Emilio,Falco,falco@cfa.harvard.edu,520-879-4415,,DESC,Member,,,,,Massachusetts,Massachusetts
+293,Xiaohui,Fan,fan@as.arizona.edu,520-626-7558,,Weak Lensing,Member,,,,,Arizona,Arizona
+294,Jay,Farihi,j.farihi@ucl.ac.uk,,,Galaxies,Member,,,UK,UK,,UK
+295,Davide,Farnocchia,Davide.Farnocchia@jpl.nasa.gov,,,Solar System,Member,,,,,,
+296,Chris,Fassnacht,cdfassnacht@ucdavis.edu,530-554-2600,,Galaxies,Member,,,,,California,California
+297,Chris,Fassnacht,cdfassnacht@ucdavis.edu,530-554-2600,,Strong Lensing,Member,,,,,California,California
+298,Claude-Andre,Faucher-Giguere,cgiguere@northwestern.edu,,,Stars,Member,,,,,Illinois,Illinois
+299,Eric,Feigelson,edf@astro.psu.edu,,, Milky Way and Local Volume ,Member,,,,,Pennsylvania,Pennsylvania
+300,Eric,Feigelson,edf@astro.psu.edu,,,Galaxies,Member,,,,,Pennsylvania,Pennsylvania
+301,Fabrice,Feinstein,feinstein@cppm.in2p3.fr,33 4 91 82 72 16,,Galaxies,Member,,,France,France,,France
+302,Annette,Ferguson,ferguson@roe.ac.uk,,,DESC ,Member,,,UK,UK,,UK
+303,Annette,Ferguson,ferguson@roe.ac.uk,,,Stars,Member,,,UK,UK,,UK
+304,Henry,Ferguson,ferguson@stsci.edu,(410) 338-5098,, Milky Way and Local Volume ,Member,,,,,DC,DC
+305,Charlie,Finch,finch@usno.navy.mil,,,Supernovae,Member,,,,,DC,DC
+306,Steven,Finkelstein,stevenf@astro.as.utexas.edu,(512) 471-1483,,Transients,Member,,,,,Texas,Texas
+307,David,Finley,finley@fnal.gov,630 840 4620,,Statistics and Informatics,Member,,,,,Illinois,Illinois
+308,Giuliana,Fiorentino,giuliana.fiorentino@oabo.inaf.it,,,Strong Lensing,Member,,,Italy,Italy,,Italy
+309,Giuliana,Fiorentino,giuliana.fiorentino@oabo.inaf.it,,,Transients,Member,,,Italy,Italy,,Italy
+310,Merlin,Fisher-Levine,merlin.fisherlevine@gmail.com,,,DESC,Member,,,,,,
+311,Alan,Fitzsimmons,A.Fitzsimmons@qub.ac.uk ,,,DESC,Member,,,UK,UK,,UK
+312,Raffaele,Flaminio,flaminio@lma.in2p3.fr,+33 4 72 43 26 78,,Transients,Member,,,France,France,,France
+313,Gael,Foex,foex.gael@gmail.com,,,DESC,Member,,,,,,
+314,Wen-fai,Fong,wfong@email.arizona.edu,,,Stars,Member,,,,,Arizona,Arizona
+315,Dominique,Fouchez,fouchez@cppm.in2p3.fr,33 491827649,, Milky Way and Local Volume ,Member,,,France,France,,France
+316,Ori,Fox,ofox@berkeley.edu,,,Transients,Member,,,,,California,California
+317,Derek,Fox,dfox@psu.edu,814-863-4989,,Galaxies,Member,,,,,Pennsylvania,Pennsylvania
+318,Juhan,Frank,frank@rouge.phys.lsu.edu,,,Stars,Member,,,,,Louisiana,Louisiana
+319,James,Frank,frank@bnl.gov,631.344-7895,, Milky Way and Local Volume,Affiliate,,,,,California,California
+320,Wesley,Fraser,wes.fraser@qub.ac.uk,,,Transients,Member,,,UK,UK,,UK
+321,Peter,Freeman ,pfreeman@cmu.edu,412 268-1052,,DESC,Member,,,,,Pennsylvania,Pennsylvania
+322,Lucille,Frey,lfrey@lanl.gov,,,Solar System,Affiliate,,,,,California,California
+323,Josh,Frieman,frieman@fnal.gov,630-840-2226,,DESC,Member,,,,,Illinois,Illinois
+324,Josh,Frieman,frieman@fnal.gov,630-840-2226,,Transients,Member,,,,,Illinois,Illinois
+325,Brenda,Frye,brendafrye@gmail.com,(520) 626-1857,,Strong Lensing,Affiliate,,,,,,
+326,Brenda,Frye,brendafrye@gmail.com,(520) 626-1857,,AGN,Affiliate,,,,,,
+327,Brenda,Frye,brendafrye@gmail.com,(520) 626-1857,,AGN,Member,,,,,,
+328,Brenda,Frye,brendafrye@gmail.com,(520) 626-1857,,Statistics and Informatics,Member,,,,,,
+329,Chris,Fryer,fryer@lanl.gov,,,Statistics and Informatics,Member,,,,,California,California
+330,Cesar,Fuentes,cfuentes@das.uchile.cl,,,Transients,Member,,,Chile,Chile,,Chile
+331,Gaspar,Galaz,ggalaz@astro.puc.cl,,,Strong Lensing,Member,,,Chile,Chile,,Chile
+332,Lluis,Galbany,lluisgalbany@gmail.com,,,Strong Lensing,Member,,,,,,
+333,Poshak,Gandhi,p.gandhi@soton.ac.uk,,,AGN,Member,,,UK,UK,,UK
+334,Emmanuel,Gangler,gangler@ipnl.in2p3.fr,,,Stars,Member,,,France,France,,France
+335,Peter,Garnavich,pgarnavi@nd.edu,574-631-7262,, Milky Way and Local Volume,Member,,,,,Delaware,Delaware
+336,Alessia,Garofalo,alessia.garofalo@unibo.it,,,Solar System,Member,,,Italy,Italy,,Italy
+337,Eric,Gawiser,gawiser@physics.rutgers.edu,848-445-8874,,Strong Lensing,Member,,,,,New Jersey,New Jersey
+338,Eric,Gawiser,gawiser@physics.rutgers.edu,848-445-8874,,DESC ,Member,,,,,New Jersey,New Jersey
+339,Marla,Geha,marla.geha@yale.edu,,,Galaxies,Member,,,,,Connecticut,Connecticut
+340,Doug,Geisler,dgeisler@astroudec.cl,56-41-2203092,,Weak Lensing,Member,,,Chile,Chile,,Chile
+341,Doug,Geisler,dgeisler@astroudec.cl,56-41-2203092,,Statistics and Informatics,Affiliate,,,Chile,Chile,,Chile
+342,Aaron,Geller,a-geller@northwestern.edu,,,DESC,Member,,,,,Illinois,Illinois
+343,Christopher,Genovese,genovese.cr@gmail.com,,,Galaxies,Member,,,,,,
+344,Yannick,Geraud-Heraud,yannick.giraud-heraud@apc.univ-paris7.fr,,,Stars,Member,,,France,France,,France
+345,David,Gerdes,gerdes@umich.edu,,, Milky Way and Local Volume,Member,,,,,Michigan,Michigan
+346,Suvi,Gezari,suvi@astro.umd.edu,301-405-6651,,Galaxies,Member,,,,,Maryland,Maryland
+347,Giancarlo,Ghirlanda,giancarlo.ghirlanda@brera.inaf.it,,,Stars,Member,,,Italy,Italy,,Italy
+348,Alexandros,Gianninas,alexg@nhn.ou.edu,,, Milky Way and Local Volume,Member,,,,,Oklahoma,Oklahoma
+349,Teresa,Giannini,teresa.giannini@oa-roma.inaf.it,,,Galaxies,Member,,,Italy,Italy,,Italy
+350,Rob,Gibson,rrg11@u.washington.edu,,,DESC,Member,,,,,Washington,Washington
+351,Fred,Gilman,gilman@andrew.cmu.edu,412-268-5124,,Stars,Member,,,,,Pennsylvania,Pennsylvania
+352,Kirk,Gilmore,dkg@slac.stanford.edu,650-926-3303,, Milky Way and Local Volume,Member,,,,,California,California
+353,Kirk,Gilmore,dkg@slac.stanford.edu,650-926-3303,,Transients,Member,,,,,California,California
+354,Kirk,Gilmore,dkg@slac.stanford.edu,650-926-3303,,DESC,Member,,,,,California,California
+355,Terrence,Girard,terry.girard@yale.edu,203-432-3021,,Solar System,Member,,,,,Connecticut,Connecticut
+356,Leo,Girardi,leo.girardi@oapd.inaf.it,,,Supernovae,Member,,,Italy,Italy,,Italy
+357,John,Gizis,gizis@udel.edu,302-831-2668,,Weak Lensing,Member,,,,,Delaware,Delaware
+358,Thomas,Glanzman,dragon@slac.stanford.edu,650-926-3160,,Transients,Member,,,,,California,California
+359,Daniel,Goldstein,dgold@berkeley.edu,,,DESC ,Member,,,,,California,California
+360,Daniel,Goldstein,dgold@berkeley.edu,,,Transients,Affiliate,,,,,California,California
+361,Andreja,Gomboc,andreja.gomboc@ung.si,,,Transients,Member,,,,,Slovenia,Slovenia
+362,Matias,Gomez,matiasgomez@unab.cl,56-2-27703233,,Transients,Member,,,Chile,Chile,,Chile
+363,Melissa,Graham,melissalynngraham@gmail.com,,,Weak Lensing,Member,,,,,,
+364,Matthew,Graham,mjg@caltech.edu,626 395 8030,,Solar System,Member,,,,,California,California
+365,Mikael,Granvik,mgranvik@iki.fi,+358 (0)9 191 50715,,Statistics and Informatics,Member,,,Finland,Finland,,Finland
+366,Or,Graur,or.graur@cfa.harvard.edu,,,Transients,Member,,,,,Massachusetts,Massachusetts
+367,Alexander,Gray,agray@cc.gatech.edu,,,Supernovae,Member,,,,,Georgia,Georgia
+368,Alexander,Gray,agray@cc.gatech.edu,,,DESC,Member,,,,,Georgia,Georgia
+369,Andrea,Grazian,andrea.grazian@oa-roma.inaf.it,,,Strong Lensing,Member,,,Italy,Italy,,Italy
+370,Carlo,Graziani,carlo@oddjob.uchicago.edu,773-702-7973,,Stars,Member,,,,,Illinois,Illinois
+371,Richard,Green,rgreen@email.arizona.edu,520-626-7088,, Milky Way and Local Volume,Member,,,,,Arizona,Arizona
+372,Laura,Greggio,laura.greggio@oapd.inaf.it,,,Supernovae,Member,,,Italy,Italy,,Italy
+373,Carl,Grillmair,carl@ipac.caltech.edu,626 395 8073,,Transients,Member,,,,,California,California
+374,Josh,Grindlay,josh@cfa.harvard.edu,617-495-7204,,Transients,Member,,,,,Massachusetts,Massachusetts
+375,Philippe,Gris,gris@clermont.in2p3.fr,+33 (0) 4 73 40 77 93,,Solar System,Member,,,France,France,,France
+376,Julia,Gschwend,julia@linea.gov.br,,,Galaxies,Member,,,Brasil,Brasil,,Brasil
+377,Puragra,Guhathakurta,raja@ucolick.org,831-459-5169,,Transients,Member,,,,,California,California
+378,James,Guillochon,guillochon@gmail.com,,,Transients,Member,,,,,,
+379,Julien,Guy,guy@lpnhe.in2p3.fr,,,DESC ,Member,,,France,France,,France
+380,Augustin,Guyonnet,aguyonnet@fas.harvard.edu,,,Supernovae,Member,,,,,Massachusetts,Massachusetts
+381,Salman,Habib,habib@anl.gov,630-252-1110,,Transients,Affiliate,,,,,Illinois,Illinois
+382,Salman,Habib,habib@anl.gov,630-252-1110,,DESC,Member,,,,,Illinois,Illinois
+383,Salman,Habib,habib@anl.gov,630-252-1110,,Galaxies,Member,,,,,Illinois,Illinois
+384,John,Haggerty,haggerty@bnl.gov,631-344-2286,,Stars,Member,,,,,California,California
+385,Zoltan,Haiman,zoltan@astro.columbia.edu,212 854 6822,, Milky Way and Local Volume ,Member,,,,,New York,New York
+386,Zoltan,Haiman,zoltan@astro.columbia.edu,212 854 6822,,Stars,Member,,,,,New York,New York
+387,Jon,Hakkila,HakkilaJ@cofc.edu,843-953-5626,, Milky Way and Local Volume ,Member,,,,,South Carolina,South Carolina
+388,Kelly,Hambleton,kelly.hambleton@villanova.edu,,,Stars,Member,,,,,Pennsylvania,Pennsylvania
+389,Andrew,Hamilton,Andrew.Hamilton@colorado.edu,3034927833,, Milky Way and Local Volume,Affiliate,,,,,Colorado,Colorado
+390,Jean-Christophe,Hamilton,hamilton@apc.univ-paris7.fr,+33 1 57 27 69 26,,Transients,Member,,,France,France,,France
+391,Mark,Hammergren,mhammergren@adlerplanetarium.org,,,Statistics and Informatics,Member,,,,,Illinois,Illinois
+392,Mario,Hamuy,mhamuy@u.uchile.cl,(56) 2 977 1091,,Weak Lensing,Member,,,Chile,Chile,,Chile
+393,Jonathan,Hargis,jhargis@haverford.edu,,,Solar System,Member,,,,,Pennsylvania,Pennsylvania
+394,Al,Harris,harris@att.net,818-790-8291,,Transients,Member,,,,,,
+395,Patrick,Hartigan,hartigan@sparky.rice.edu,713-348-2245,,Transients,Member,,,,,Texas,Texas
+396,Suzanne,Hawley,slhawley@uw.edu,206-685 2236,,Stars,Member,,,,,Washington,Washington
+397,Suzanne,Hawley,slhawley@uw.edu,206-685 2236,, Milky Way and Local Volume,Member,,,,,Washington,Washington
+398,Andrew,Hearin,aphearin@fnal.gov,,,Transients,Member,,,,,Illinois,Illinois
+399,Leslie,Hebb,hebb@hws.edu,315-781-3636,,AGN,Member,,,,,Hawaii,Hawaii
+400,Leslie,Hebb,hebb@hws.edu,315-781-3636,,DESC,Affiliate,,,,,Hawaii,Hawaii
+401,Katrin,Heitmann,heitmann@anl.gov,630-252-1114,,Galaxies,Member,,,,,Illinois,Illinois
+402,George,Helou,gxh@ipac.caltech.edu,626-395-1900,,DESC ,Member,,,,,California,California
+403,Arne,Henden,arne@aavso.org,617-354-0484,,Weak Lensing,Member,,,,,,
+404,Nathanial,Hendler,equant@lpl.arizona.edu,,,Stars,Member,,,,,Arizona,Arizona
+405,Todd,Henry,thenry@astro.gsu.edu,404-413-6054,, Milky Way and Local Volume ,Member,,,,,Georgia,Georgia
+406,Xiachang,Her,xhfqb@mail.umkc.edu,,,Stars,Member,,,,,Missouri,Missouri
+407,Daniel,Herstroffer,hestro@imcce.fr,,, Milky Way and Local Volume,Member,,,France,France,,France
+408,Eric,Hilton,hilton@ifa.hawaii.edu,,,Stars,Member,,,,,Hawaii,Hawaii
+409,Shirley,Ho,shirleyho@berkeley.edu,,, Milky Way and Local Volume ,Member,,,,,California,California
+410,Tin,Ho,tkh@research.bell-labs.com,908-582-5989,,DESC ,Member,,,,,California,California
+411,Sebastian,Hoenig,S.Hoenig@soton.ac.uk,,,Strong Lensing,Member,,,UK,UK,,UK
+412,Craig,Hogan,craighogan@uchicago.edu,630-840-5523,,Strong Lensing,Member,,,,,Illinois,Illinois
+413,Jay B.,Holberg,holberg@argus.lpl.arizona.edu,520 621 4571,,Transients,Member,,,,,Arizona,Arizona
+414,Bryan,Holler,bholler@stsci.edu,,,Stars,Member,,,,,DC,DC
+415,Matthew,Holman,mholman@cfa.harvard.edu,,, Milky Way and Local Volume,Member,,,,,Massachusetts,Massachusetts
+416,Benne,Holwerda,benne.holwerda@gmail.com,,,Transients,Member,,,,,,
+417,Daniel,Holz,qrs@uchicago.edu,,,Statistics and Informatics,Member,,,,,Illinois,Illinois
+418,Steve,Howell,howell@noao.edu,,,Solar System,Member,,,,,Arizona,Arizona
+419,Henry,Hsieh,hhsieh@psi.edu,,,Transients,Member,,,,,Pennsylvania,Pennsylvania
+420,Mark,Huber,mhuber@ifa.hawaii.edu,,,AGN,Member,,,,,Hawaii,Hawaii
+421,Markus,Hundertmark,markus.hundertmark@uni-heidelberg.de,,,Statistics and Informatics,Member,,,Germany,Germany,Germany,Germany
+422,Leopoldo,Infante,linfante@astro.puc.cl,56 2 2354 4939,,Galaxies,Member,,,Chile,Chile,,Chile
+423,Cosimo,Inserra,c.inserra@qub.ac.uk,,,Statistics and Informatics,Member,,,UK,UK,,UK
+424,John,Irwin,irwin@slac.stanford.edu,,,AGN,Affiliate,,,,,California,California
+425,John,Irwin,irwin@slac.stanford.edu,,,Transients,Member,,,,,California,California
+426,Mustapha,Ishak,mishak@utdallas.edu,972-883-2815,,Stars,Member,,,,,Texas,Texas
+427,Mustapha,Ishak,mishak@utdallas.edu,972-883-2815,, Milky Way and Local Volume ,Member,,,,,Texas,Texas
+428,Inese,Ivans,iii@physics.utah.edu,,,Transients,Member,,,,,Utah,Utah
+429,Zeljko,Ivezic,ivezic@astro.washington.edu,206-543-9375   home: 206-361-6381   ,,DESC ,Affiliate,,,,,Washington,Washington
+430,Zeljko,Ivezic,ivezic@astro.washington.edu,206-543-9375   home: 206-361-6381   ,,Galaxies,Member,,,,,Washington,Washington
+431,Zeljko,Ivezic,ivezic@astro.washington.edu,206-543-9375   home: 206-361-6381   ,,Stars,Member,,,,,Washington,Washington
+432,Zeljko,Ivezic,ivezic@astro.washington.edu,206-543-9375   home: 206-361-6381   ,, Milky Way and Local Volume ,Affiliate,,,,,Washington,Washington
+433,Zeljko,Ivezic,ivezic@astro.washington.edu,206-543-9375   home: 206-361-6381   ,,Transients,Member,,,,,Washington,Washington
+434,Zeljko,Ivezic,ivezic@astro.washington.edu,206-543-9375   home: 206-361-6381   ,,Supernovae,Affiliate,,,,,Washington,Washington
+435,Zeljko,Ivezic,ivezic@astro.washington.edu,206-543-9375   home: 206-361-6381   ,,DESC,Affiliate,,,,,Washington,Washington
+436,Zeljko,Ivezic,ivezic@astro.washington.edu,206-543-9375   home: 206-361-6381   ,,Statistics and Informatics,Member,,,,,Washington,Washington
+437,Zeljko,Ivezic,ivezic@astro.washington.edu,206-543-9375   home: 206-361-6381   ,,DESC ,Member,,,,,Washington,Washington
+438,Zeljko,Ivezic,ivezic@astro.washington.edu,206-543-9375   home: 206-361-6381   ,,Transients,Member,,,,,Washington,Washington
+439,Zeljko,Ivezic,ivezic@astro.washington.edu,206-543-9375   home: 206-361-6381   ,,Weak Lensing,Affiliate,,,,,Washington,Washington
+440,Savannah,Jacklin,savannah.jacklin@gmail.com,,,Transients,Member,,,,,,
+441,Andrew,Jaffe,a.jaffe@imperial.ac.uk,,,Weak Lensing,Member,,,UK,UK,,UK
+442,Bhuvnesh,Jain,bjain@physics.upenn.edu,215-573-5330,,Statistics and Informatics,Member,,,,,Pennsylvania,Pennsylvania
+443,Bhuvnesh,Jain,bjain@physics.upenn.edu,215-573-5330,,Transients,Member,,,,,Pennsylvania,Pennsylvania
+444,Wei-Chun,Jao,jao@astro.gsu.edu,404-413-6027,,Weak Lensing,Member,,,,,Georgia,Georgia
+445,Matt,Jarvis,matt.jarvis@astro.ox.ac.uk,,,Weak Lensing,Member,,,UK,UK,,UK
+446,Mike,Jarvis,michael@jarvis.net,484-574-4058,,Solar System,Member,,,,,,
+447,Mike,Jarvis,michael@jarvis.net,484-574-4058,,Supernovae,Member,,,,,,
+448,Matt,Jarvis,matt.jarvis@astro.ox.ac.uk,,,Stars,Member,,,UK,UK,,UK
+449,Robert,Jedicke,jedicke@hawaii.edu,808-956-8080,, Milky Way and Local Volume,Member,,,,,Hawaii,Hawaii
+450,James,Jee,jee.james@gmail.com,530-754-7428,,Solar System,Member,,,,,,
+451,James,Jee,jee.james@gmail.com,530-754-7428,,Transients,Affiliate,,,,,,
+452,James,Jee,jee.james@gmail.com,530-754-7428,,Stars,Member,,,,,,
+453,Elise,Jennings,elise@fnal.gov,,, Milky Way and Local Volume ,Member,,,,,Illinois,Illinois
+454,Garrett,Jernigan,jgj@h-bar.com,707-782-9380,,Transients,Affiliate,,,,,,
+455,Garrett,Jernigan,jgj@h-bar.com,707-782-9380,,DESC,Member,,,,,,
+456,Darko,Jevremovic,darko@aob.rs,3.81112E+11,,Stars,Member,,,,,,
+457,Saurabh,Jha,saurabh@physics.rutgers.edu,848-445-8962,, Milky Way and Local Volume ,Member,,,,,New Jersey,New Jersey
+458,Saurabh,Jha,saurabh@physics.rutgers.edu,848-445-8962,,Transients,Member,,,,,New Jersey,New Jersey
+459,Inchan,Ji,iji@ucdavis.edu,,,DESC,Member,,,,,California,California
+460,Yan-Fei,Jiang,yanfei@kitp.ucsb.edu,,,Solar System,Member,,,,,California,California
+461,Benjamin,Joachimi,b.joachimi@ucl.ac.uk,,,Transients,Member,,,UK,UK,,UK
+462,Kenneth,Johns,johns@physics.arizona.edu,520-621-6791,,Solar System,Member,,,,,Arizona,Arizona
+463,Christopher,Johns-Krull,cmj@rice.edu,713-348-3531,,Stars,Member,,,,,Texas,Texas
+464,Tony,Johnson,tonyj@stanford.edu,650 926 2278,, Milky Way and Local Volume ,Member,,,,,California,California
+465,Michael,Johnson,michael.johnson@soton.ac.uk,,,Galaxies,Member,,,UK,UK,,UK
+466,Kathryn,Johnston,kvj@astro.columbia.edu,2128543884,,Solar System,Member,,,,,New York,New York
+467,Lynne,Jones,ljones.uw@gmail.com,206-543-9487,,Transients,Member,,,,,,
+468,Lynne,Jones,ljones.uw@gmail.com,206-543-9487,,DESC,Affiliate,,,,,,
+469,Lynne,Jones,ljones.uw@gmail.com,206-543-9487,,Weak Lensing,Affiliate,,,,,,
+470,Lynne,Jones,ljones.uw@gmail.com,206-543-9487,,AGN,Member,,,,,,
+471,Lynne,Jones,ljones.uw@gmail.com,206-543-9487,,Supernovae,Affiliate,,,,,,
+472,Lynne,Jones,ljones.uw@gmail.com,206-543-9487,,Stars,Member,,,,,,
+473,Lynne,Jones,ljones.uw@gmail.com,206-543-9487,, Milky Way and Local Volume ,Affiliate,,,,,,
+474,Lynne,Jones,ljones.uw@gmail.com,206-543-9487,,Solar System,Affiliate,,,,,,
+475,Lynne,Jones,ljones.uw@gmail.com,206-543-9487,,Solar System,Member,,,,,,
+476,Lynne,Jones,ljones.uw@gmail.com,206-543-9487,,Galaxies,Affiliate,,,,,,
+477,Andres,Jordan,ajordan@astro.puc.cl,,,Transients,Member,,,Chile,Chile,,Chile
+478,Mario,Juric,mjuric@lsst.org,,,Transients,Member,,,,,Washington,Washington
+479,Mario,Juric,mjuric@lsst.org,,,Solar System,Member,,,,,Washington,Washington
+480,Mario,Juric,mjuric@lsst.org,,,Transients,Member,,,,,Washington,Washington
+481,Mario,Juric,mjuric@lsst.org,,,Transients,Member,,,,,Washington,Washington
+482,Mario,Juric,mjuric@lsst.org,,,Galaxies,Member,,,,,Washington,Washington
+483,Mario,Juric,mjuric@lsst.org,,,Transients,Member,,,,,Washington,Washington
+484,Mario,Juric,mjuric@lsst.org,,,Strong Lensing,Member,,,,,Washington,Washington
+485,Mario,Juric,mjuric@lsst.org,,,Weak Lensing,Member,,,,,Washington,Washington
+486,Mario,Juric,mjuric@lsst.org,,,Weak Lensing,Member,,,,,Washington,Washington
+487,Mikko,KaasalAinen,mikko.kaasalainen@tut.fi,,,DESC ,Member,,,Finland,Finland,,Finland
+488,Stella,Kafka,stella@caltech.edu,,,Stars,Member,,,,,California,California
+489,Steven,Kahn,skahn@lsst.org,520-318-8483,, Milky Way and Local Volume ,Member,,,,,Washington,Washington
+490,Steven,Kahn,skahn@lsst.org,520-318-8483,,Statistics and Informatics,Member,,,,,Washington,Washington
+491,Steven,Kahn,skahn@lsst.org,520-318-8483,,Solar System,Member,,,,,Washington,Washington
+492,Nathan,Kaib,nathan.kaib@ou.edu,,,Transients,Affiliate,,,,,Oklahoma,Oklahoma
+493,Jason,Kalirai,jkalirai@stsci.edu,410-338-4747,,Supernovae,Member,,,,,DC,DC
+494,Nitya Jacob,Kallivayalil,njk3r@virginia.edu,,,Galaxies,Member,,,,,Virginia,Virginia
+495,Vicky,Kalogera,vicky@northwestern.edu,-7006,,AGN,Member,,,,,Illinois,Illinois
+496,Shashi,Kanbur,shashi.kanbur@oswego.edu,315 312 2388,,Weak Lensing,Member,,,,,New York,New York
+497,David,Kaplan,kaplan@uwm.edu,414-229-4971,,Stars,Member,,,,,Masachussets,Masachussets
+498,Vinay L.,Kashyap,vkashyap@cfa.harvard.edu,617-495-7173,, Milky Way and Local Volume ,Member,,,,,Massachusetts,Massachusetts
+499,Mansi,Kasliwal,mansi@astro.caltech.edu,6263951575,,DESC,Member,,,,,California,California
+500,Vishal,Kasliwal,vishal.kasliwal@gmail.com,2158988141,,Statistics and Informatics ,Member,,,,,,
+501,Sugata,Kaviraj,s.kaviraj@herts.ac.uk,,,Strong Lensing,Member,,,UK,UK,,UK
+502,Charles,Keeton,keeton@physics.rutgers.edu,848-445-8876,,Transients,Member,,,,,New Jersey,New Jersey
+503,Michael ,Kelley,msk@astro.umd.edu,,,Statistics and Informatics,Member,,,,,Maryland,Maryland
+504,Steve,Kent ,skent@fnal.gov,630-840-8264,,Weak Lensing,Member,,,,,Illinois,Illinois
+505,Eamonn,Kerins,Eamonn.Kerins@manchester.ac.uk,,,DESC,Member,,,UK,UK,,UK
+506,Richard,Kessler,kessler@kicp.uchicago.edu,,,Stars,Member,,,,,Illinois,Illinois
+507,Somayeh,Khakpash,somayeh.khakpash@gmail.com,,, Milky Way and Local Volume,Member,,,,,,
+508,Alina,Kiessling,alina.a.kiessling@jpl.nasa.gov,(818) 354-7391,,Galaxies,Member,,,,,,
+509,Mukremin,Kilic,kilic@ou.edu,(405)325-3961,,Solar System,Member,,,,,Oklahoma,Oklahoma
+510,Peter,Kim,pck@slac.stanford.edu,650-926-4765,,Weak Lensing,Affiliate,,,,,California,California
+511,Alex,Kim,agkim@lbl.gov,,,AGN,Member,,,,,California,California
+512,Peter,Kim,pck@slac.stanford.edu,650-926-4765,,Solar System,Affiliate,,,,,California,California
+513,Amy,Kimball,akimball@nrao.edu,575-835-7156,,Weak Lensing,Member,,,,,,
+514,Lindsay,King,lindsay.king@utdallas.edu,,,Strong Lensing,Member,,,,,Texas,Texas
+515,Evan,Kirby,enk@astro.caltech.edu,626-395-4200,,DESC ,Member,,,,,California,California
+516,David,Kirkby,dkirkby@uci.edu,949-824-9479,,Statistics and Informatics,Member,,,,,California,California
+517,David,Kirkby,dkirkby@uci.edu,949-824-9479,,Strong Lensing,Member,,,,,California,California
+518,Davy,Kirkpatrick,davy@ipac.caltech.edu,626-395-1850,,Weak Lensing,Member,,,,,California,California
+519,Robert P.,Kirshner,rkirshner@cfa.harvard.edu,617-495-7519,,Transients,Member,,,,,Massachusetts,Massachusetts
+520,Johan,Knapen, jhk@iac.es,34922605200,,Transients,Member,,,,,Spain,Spain
+521,Zoran,Knezevic,zoran@aob.bg.ac.rs,-2026959,,DESC ,Member,,,,,Serbia,Serbia
+522,Matthew,Knight,mmk8a@astro.umd.edu,,,Galaxies,Member,,,,,Maryland,Maryland
+523,Kevin,Knuth,kknuth@albany.edu,518-442-4501,,AGN,Member,,,,,New York,New York
+524,Sergey,Koposov,skoposov@cmu.edu,,,DESC,Member,,,,,Pennsylvania,Pennsylvania
+525,Eve,Kovacs,kovacs@anl.gov,630-252-6208,,Weak Lensing,Member,,,,,Illinois,Illinois
+526,Adam,Kowalski,adam.f.kowalski@nasa.gov,,,Transients,Member,,,,,,
+527,Elisabeth,Krause,lise@slac.stanford.edu,,,DESC ,Member,,,,,California,California
+528,Simon,Krughoff,krughoff@lsst.org,520-318-8515,,Transients,Member,,,,,Washington,Washington
+529,Simon,Krughoff,krughoff@lsst.org,520-318-8515,,Stars,Affiliate,,,,,Washington,Washington
+530,Simon,Krughoff,krughoff@lsst.org,520-318-8515,, Milky Way and Local Volume ,Member,,,,,Washington,Washington
+531,Stephen E.,Kuhlmann,kuhlmann@anl.gov,630-252-6284,,DESC ,Member,,,,,Illinois,Illinois
+532,Stephen E.,Kuhlmann,kuhlmann@anl.gov,630-252-6284,,Strong Lensing,Member,,,,,Illinois,Illinois
+533,Andrea,Kulier,akulier@astro.puc.cl,,,Statistics and Informatics,Member,,,Chile,Chile,,Chile
+534,Shri,Kulkarni,srk@astro.caltech.edu,,,Stars,Member,,,,,California,California
+535,Hanindyo,Kuncarayakti,hanin@das.uchile.cl,,, Milky Way and Local Volume ,Member,,,Chile,Chile,,Chile
+536,Andrea,Kunder,akunder@aip.de,-8427,,Supernovae,Member,,,Germany,Germany,Germany,Germany
+537,Peter,Kurczynski,pkurczynski@mac.com,,,Transients,Member,,,,,,
+538,Radostin,Kurtev,radostin.kurtev@uv.cl,+56 32 2995521,,Stars,Member,,,Chile,Chile,,Chile
+539,Ivan,Lacerna,ialacern@astro.puc.cl,,, Milky Way and Local Volume,Member,,,Chile,Chile,,Chile
+540,Mark,Lacy,mlacy@nrao.edu,434 244 6803,,Weak Lensing,Member,,,,,,
+541,Ofer,Lahav,lahav@star.ucl.ac.uk,,,Solar System,Member,,,UK,UK,,UK
+542,Marco,Landoni,marco.landoni@brera.inaf.it,,,Galaxies,Member,,,Italy,Italy,,Italy
+543,Dustin,Lang,dstndstn@gmail.com,,,Statistics and Informatics,Affiliate,,,,,,
+544,Jeffrey Arthur,Larsen,larsen@usna.edu,410-293-6662,,Transients,Member,,,,,Maryland,Maryland
+545,Tod,Lauer,lauer@noao.edu,(520) 318-8290,,Stars,Member,,,,,Arizona,Arizona
+546,James,Lauroesch,jtlauroesch@gmail.com,,, Milky Way and Local Volume ,Member,,,,,,
+547,Andy,Lawrence,al@roe.ac.uk,,,DESC,Member,,,UK,UK,,UK
+548,Laurent,Le Guillou,llg@lpnhe.in2p3.fr,,,Solar System,Member,,,France,France,,France
+549,Ann,Lee,annlee@cmu.edu,,,Strong Lensing,Member,,,,,Pennsylvania,Pennsylvania
+550,Sebastien,Lepine,slepine@chara.gsu.edu,404-413-6020,,Weak Lensing,Member,,,,,Georgia,Georgia
+551,Andrew,Levan,a.j.levan@warwick.ac.uk,44-0-247-654-4740,,AGN,Member,,,UK,UK,,UK
+552,Kian-Tat,Lim,ktl@slac.stanford.edu,650-926-2902,,Supernovae,Affiliate,,,,,California,California
+553,Hsing-Wen (Edward),Lin,hsingwel@umich.edu,,,Galaxies,Member,,,,,Michigan,Michigan
+554,Huan,Lin,hlin@fnal.gov,,,Solar System,Member,,,,,Illinois,Illinois
+555,Eric,Linder,evlinder@lbl.gov,,,Stars,Member,,,,,California,California
+556,Chris,Lintott,chris.lintott@physics.ox.ac.uk,4.41865E+11,, Milky Way and Local Volume ,Member,,,UK,UK,,UK
+557,Paulina,Lira,plira@das.uchile.cl,,,Weak Lensing,Member,,,Chile,Chile,,Chile
+558,Michael,Liu,mliu@ifa.hawaii.edu,808 956 6666,,DESC,Member,,,,,Hawaii,Hawaii
+559,Zongge,Liu,zonggel@andrew.cmu.edu,2134463887,,Transients,Member,,,,,Pennsylvania,Pennsylvania
+560,Sarah,Loebman,sloebman@yahoo.com,,,Solar System,Member,,,,,,
+561,Knox  S.,Long,long@stsci.edu,410-338-4862,,Stars,Member,,,,,DC,DC
+562,James,Long,jlong@stat.tamu.edu,4015807668,, Milky Way and Local Volume ,Member,,,,,Texas,Texas
+563,Sebastian,Lopez,slopez@das.uchile.cl,56-2-29771135,,Stars,Member,,,Chile,Chile,,Chile
+564,Tom,Loredo,loredo@astro.cornell.edu,607-255-6564,, Milky Way and Local Volume ,Member,,,,,Illinois,Illinois
+565,Jennifer,Lotz,lotz@stsci.edu,410-338 4467,,Transients,Member,,,,,DC,DC
+566,Jennifer,Lotz,lotz@stsci.edu,410-338 4467,,Transients,Member,,,,,DC,DC
+567,Mike,Loucks,loucks@see.com,,,Transients,Member,,,,,,
+568,Jon,Loveday,j.loveday@sussex.ac.uk,44-1273-877719,,Statistics and Informatics,Member,,,UK,UK,,UK
+569,Lori,Lubin,lmlubin@ucdavis.edu,530-754-4418,,Transients,Member,,,,,California,California
+570,Philip,Lucas,p.w.lucas@herts.ac.uk,,,Galaxies,Member,,,UK,UK,,UK
+571,Kevin,Luhman,kluhman@astro.psu.edu,,,Galaxies,Member,,,,,Pennsylvania,Pennsylvania
+572,Michael,Lund,mike.lund@gmail.com,,,Strong Lensing,Member,,,,,,
+573,Ragnhild,Lunnan,rlunnan@astro.caltech.edu,626-395-2952,,Solar System,Member,,,,,California,California
+574,Robert,Lupton,rhl@astro.princeton.edu,609-258-3811,,DESC ,Member,,,,,New Jersey,New Jersey
+575,Robert,Lupton,rhl@astro.princeton.edu,609-258-3811,,Transients,Affiliate,,,,,New Jersey,New Jersey
+576,Robert,Lupton,rhl@astro.princeton.edu,609-258-3811,,Supernovae,Affiliate,,,,,New Jersey,New Jersey
+577,Elmer,Luque,fidelluque@gmail.com,,,Transients,Member,,,,,,
+578,John,Lurie,lurie@uw.edu,,,DESC,Member,,,,,Washington,Washington
+579,Julie,Lutz,jlutz@astro.washington.edu,(206) 685-7852,,Stars,Member,,,,,Washington,Washington
+580,Zhaoming,Ma,mzm@bnl.gov,631-344-2519,, Milky Way and Local Volume,Member,,,,,California,California
+581,Thomas,Maccarone,thomas.maccarone@ttu.edu,806 834 3760,,Weak Lensing,Member,,,,,Texas,Texas
+582,Chelsea,MacLeod,chelsea.macleod@cfa.harvard.edu,,,DESC,Member,,,,,Massachusetts,Massachusetts
+583,Lucas,Macri,lmacri@tamu.edu,979-314-1592,,Strong Lensing,Member,,,,,Texas,Texas
+584,Lucas,Macri,lmacri@tamu.edu,979-314-1592,,AGN,Member,,,,,Texas,Texas
+585,Greg (Grzegorz) ,Madejski,madejski@slac.stanford.edu,650-926-5184,,Weak Lensing,Member,,,,,California,California
+586,Laura,Magrini, laura@arcetri.astro.it,,,Stars,Member,,,Italy,Italy,,Italy
+587,Kate,Maguire,kate.maguire@qub.ac.uk,,, Milky Way and Local Volume ,Member,,,UK,UK,,UK
+588,Davide,Magurno,davide.magurno@roma2.infn.it,,,DESC ,Member,,,Italy,Italy,,Italy
+589,Davide,Magurno,davide.magurno@roma2.infn.it,,,Weak Lensing,Member,,,Italy,Italy,,Italy
+590,Ashish,Mahabal,aam@astro.caltech.edu,6263954201,,Stars,Member,,,,,California,California
+591,Ashish,Mahabal,aam@astro.caltech.edu,6263954201,, Milky Way and Local Volume ,Member,,,,,California,California
+592,Deborah,Mainetti,d.mainetti1@campus.unimib.it,,,Supernovae,Member,,,Italy,Italy,,Italy
+593,Renu,Malhotra,renu@lpl.arizona.edu,520-626-5899,,Galaxies,Member,,,,,Arizona,Arizona
+594,Conor L.,Mancone,cmancone@astro.ufl.edu,,,Solar System,Member,,,,,Florida,Florida
+595,Kaisey,Mandel,kmandel@cfa.harvard.edu,,,Solar System,Member,,,,,Massachusetts,Massachusetts
+596,Rachel,Mandelbaum,rmandelb@andrew.cmu.edu,412-268-1714,,Statistics and Informatics,Member,,,,,Pennsylvania,Pennsylvania
+597,Rachel,Mandelbaum,rmandelb@andrew.cmu.edu,412-268-1714,,Transients,Member,,,,,Pennsylvania,Pennsylvania
+598,Adam,Mantz,amantz@slac.stanford.edu,(650) 498-7747,,DESC,Member,,,,,California,California
+599,Marcella,Marconi,marcella.marconi@oacn.inaf.it,,,Transients,Member,,,Italy,Italy,,Italy
+600,Marcella,Marconi,marcella.marconi@oacn.inaf.it,,,DESC,Member,,,Italy,Italy,,Italy
+601,Vera,Margoniner,vera.margoniner@gmail.com,,,Statistics and Informatics ,Member,,,,,,
+602,Vera,Margoniner,vera.margoniner@gmail.com,,,Transients,Member,,,,,,
+603,Raffaella,Margutti,rafmargutti@gmail.com,,,DESC ,Member,,,,,,
+604,Alessio,Marino,alessio.marino@uniroma1.it,,,Supernovae,Member,,,Italy,Italy,,Italy
+605,Silvia,Marinoni,silvia.marinoni@ssdc.asi.it,,,DESC ,Member,,,Italy,Italy,,Italy
+606,Phil,Marshall,dr.phil.marshall@gmail.com,650-926-4682,,Galaxies,Affiliate,,,,,,
+607,Phil,Marshall,dr.phil.marshall@gmail.com,650-926-4682,,Transients,Affiliate,,,,,,
+608,Jennifer,Marshall,marshall@physics.tamu.edu,9798622782,,Transients,Member,,,,,Texas,Texas
+609,Phil,Marshall,dr.phil.marshall@gmail.com,650-926-4682,,Stars,Affiliate,,,,,,
+610,Phil,Marshall,dr.phil.marshall@gmail.com,650-926-4682,, Milky Way and Local Volume ,Member,,,,,,
+611,Phil,Marshall,dr.phil.marshall@gmail.com,650-926-4682,,Transients,Affiliate,,,,,,
+612,Phil,Marshall,dr.phil.marshall@gmail.com,650-926-4682,,Stars,Member,,,,,,
+613,Phil,Marshall,dr.phil.marshall@gmail.com,650-926-4682,, Milky Way and Local Volume ,Affiliate,,,,,,
+614,Rafael,Martinez-Galarza,jmartine@cfa.harvard.edu,,,Galaxies,Member,,,,,Massachusetts,Massachusetts
+615,Elena,Mason,emason@oats.inaf.it,,,AGN,Member,,,Italy,Italy,,Italy
+616,Tom,Matheson,matheson@noao.edu,520-318-8517,,DESC,Affiliate,,,,,Arizona,Arizona
+617,Tom,Matheson,matheson@noao.edu,520-318-8517,,AGN,Member,,,,,Arizona,Arizona
+618,Tom,Matheson,matheson@noao.edu,520-318-8517,,Galaxies,Member,,,,,Arizona,Arizona
+619,Justyn,Maund,j.maund@sheffield.ac.uk,,,Solar System,Member,,,UK,UK,,UK
+620,Juan Carlos,Maureira,jcm@dim.uchile.cl,,,Supernovae,Member,,,Chile,Chile,,Chile
+621,Francesco,Mauro,fmauro@astro-udec.cl,,,Stars,Member,,,Chile,Chile,,Chile
+622,Nicolas,Mauron,nicolas.mauron@umontpellier.fr,,, Milky Way and Local Volume,Member,,,France,France,,France
+623,Morgan,May,mm21@columbia.edu,631-344-3934,,AGN,Member,,,,,New York,New York
+624,Morgan,May,mm21@columbia.edu,631-344-3934,,DESC,Member,,,,,New York,New York
+625,Bruce,McCollum,mccollum@ipac.caltech.edu,,,Statistics and Informatics,Member,,,,,California,California
+626,Jason,McEwen,jason.mcewen@ucl.ac.uk,+44 (0)1483 204 264,,Stars,Member,,,UK,UK,,UK
+627,Jason,McEwen,jason.mcewen@ucl.ac.uk,+44 (0)1483 204 264,, Milky Way and Local Volume ,Member,,,UK,UK,,UK
+628,Peregrine,McGehee,peregrine.mcgehee@gmail.com,,,Transients,Member,,,,,,
+629,Ian,McGreer,imcgreer@as.arizona.edu,,,Statistics and Informatics,Member,,,,,Arizona,Arizona
+630,Richard,McMahon,rgm@ast.cam.ac.uk,44-0-1223-337519/337548,,Solar System,Member,,,UK,UK,,UK
+631,Brian,Meadows,meadowbt@gmail.com,513-556-0531,,DESC,Member,,,,,,
+632,Andrea,Melandri,andrea.melandri@brera.inaf.it,,,DESC,Member,,,Italy,Italy,,Italy
+633,Brice,Menard,menard@jhu.edu,,,Galaxies,Member,,,,,Maryland,Maryland
+634,Ronald,Mennickent,rmennick@udec.cl,56-41-220-3106,,AGN,Member,,,Chile,Chile,,Chile
+635,Ronald,Mennickent,rmennick@udec.cl,56-41-220-3106,,Stars,Member,,,Chile,Chile,,Chile
+636,Amata,Mercurio,mercurio@na.astro.it,,, Milky Way and Local Volume ,Member,,,Italy,Italy,,Italy
+637,Emiliano,Merlin,emiliano.merlin@oa-roma.inaf.it,,,DESC,Member,,,Italy,Italy,,Italy
+638,Gerhardt,Meurer,gerhardt.meurer@icrar.org,,,Stars,Member,,,,,Austrtalia,Austrtalia
+639,David,Meyer,davemeyer@northwestern.edu,847-491-4516,, Milky Way and Local Volume,Member,,,,,Illinois,Illinois
+640,Joshua,Meyers,jmeyers314@gmail.com,,,Transients,Member,,,,,,
+641,Andres,Meza,andresmezac@gmail.com,,,Statistics and Informatics,Member,,,,,,
+642,Andrea,Milani,milani@dm.unipi.it,-2213265,,Strong Lensing,Member,,,Italy,Italy,,Italy
+643,Danny,Milisavljevic,dmilisav@cfa.harvard.edu,6174957616,,Statistics and Informatics,Member,,,,,Massachusetts,Massachusetts
+644,Bryan,Miller,bmiller@gemini.edu,,,Galaxies,Member,,,,,Chile,Chile
+645,Bryan,Miller,bmiller@gemini.edu,,,Weak Lensing,Member,,,,,Chile,Chile
+646,Chris,Miller,christoq@umich.edu,734-764-3433,,Solar System,Member,,,,,Michigan,Michigan
+647,Adam,Miller,amiller@astro.caltech.edu,,,Galaxies,Member,,,,,California,California
+648,Dante,Minniti,dante@astrofisica.cl,+56 2661 8716,,Galaxies ,Member,,,Chile,Chile,,Chile
+649,Maryam,Modjaz,mmodjaz@gmail.com,,,Stars,Member,,,,,,
+650,Joachim,Moeyens,moeyensj@uw.edu,,, Milky Way and Local Volume,Member,,,,,Washington,Washington
+651,Michael,Mommert,michael.mommert@nau.edu,9285235595,,Stars,Member,,,,,Arizona,Arizona
+652,Lorenzo,Monaco,lmonaco1976@gmail.com,,, Milky Way and Local Volume ,Member,,,,,,
+653,David,Monet,dgm@nofs.navy.mil,928-779-5132,,Transients,Member,,,,,DC,DC
+654,Marc,Moniez,moniez@lal.in2p3.fr,+33 (0)1 64 46 83 44,,Transients,Member,,,France,France,,France
+655,Marc,Moniez,moniez@lal.in2p3.fr,+33 (0)1 64 46 83 44,,DESC,Member,,,France,France,,France
+656,Maria Ida,Moretti,imoretti@oacn.inaf.it,,,Weak Lensing,Member,,,Italy,Italy,,Italy
+657,Glenn,Morris,gmorris@slac.stanford.edu,6507368018,,Galaxies,Member,,,,,California,California
+658,Dave,Morris,dmr@roe.ac.uk,,,Stars,Member,,,UK,UK,,UK
+659,Daniel,Mortlock,mortlock@ic.ac.uk,,, Milky Way and Local Volume,Member,,,UK,UK,,UK
+660,Nicholas,Moskovitz,nmosko@lowell.edu,,,Stars,Member,,,,,Masachussets,Masachussets
+661,Veronica,Motta,veronica.motta@uv.cl,-2508437,, Milky Way and Local Volume,Member,,,Chile,Chile,,Chile
+662,Beatrice,Mueller,mueller@psi.edu,,,Transients,Member,,,,,Pennsylvania,Pennsylvania
+663,Anjum,Mukadam,anjum@astro.washington.edu,(503) 648-6337,,Weak Lensing,Member,,,,,Washington,Washington
+664,Anjum,Mukadam,anjum@astro.washington.edu,(503) 648-6337,,Stars,Affiliate,,,,,Washington,Washington
+665,Carole,Mundell,c.g.mundell@bath.ac.uk,,, Milky Way and Local Volume,Member,,,UK,UK,,UK
+666,Ricardo,Munoz,rmunoz@das.uchile.cl,56-2-977-1122,,AGN,Member,,,Chile,Chile,,Chile
+667,Roberto Pablo,Munoz,rmunoz@astro.puc.cl,,,Stars,Member,,,Chile,Chile,,Chile
+668,Alejandra,Munozar Arancibia,alejandra.munozar@uv.cl,,, Milky Way and Local Volume ,Member,,,Chile,Chile,,Chile
+669,Tatiana,Muraveva,tatiana.muraveva@oabo.inaf.it,,,Transients,Member,,,Italy,Italy,,Italy
+670,Ilaria,Musella,ilaria.musella@oacn.inaf.it,,,AGN,Member,,,Italy,Italy,,Italy
+671,Shantanu,Naidu,snaidu@jpl.nasa.gov,,,Stars,Member,,,,,,
+672,Julie Beth,Nantais,julie.nantais@unab.cl,,, Milky Way and Local Volume,Member,,,Chile,Chile,,Chile
+673,Nicola,Napolitano,napolita@na.astro.it,,,Transients,Member,,,Italy,Italy,,Italy
+674,Nicola,Napolitano,napolita@na.astro.it,,,Stars,Member,,,Italy,Italy,,Italy
+675,Gautham,Narayan,gnarayan@noao.edu,,, Milky Way and Local Volume,Member,,,,,Arizona,Arizona
+676,Tim,Naylor,timn@astro.ex.ac.uk,,,Transients,Member,,,UK,UK,,UK
+677,Jeffrey,Newman,janewman@pitt.edu,412-592-3853,,Transients,Member,,,,,Pennsylvania,Pennsylvania
+678,Jeffrey,Newman,janewman@pitt.edu,412-592-3853,,Statistics and Informatics,Member,,,,,Pennsylvania,Pennsylvania
+679,Jeffrey,Newman,janewman@pitt.edu,412-592-3853,,Transients,Member,,,,,Pennsylvania,Pennsylvania
+680,Jeffrey,Newman,janewman@pitt.edu,412-592-3853,,Solar System,Affiliate,,,,,Pennsylvania,Pennsylvania
+681,Jeffrey,Newman,janewman@pitt.edu,412-592-3853,,Stars,Affiliate,,,,,Pennsylvania,Pennsylvania
+682,Mark,Neyrinck,neyrinck@pha.jhu.edu,,, Milky Way and Local Volume ,Member,,,,,Maryland,Maryland
+683,Johnny,Ng,jng@slac.stanford.edu,,,Statistics and Informatics,Member,,,,,California,California
+684,Bob,Nichol,bob.nichol@port.ac.uk,,,Weak Lensing,Member,,,UK,UK,,UK
+685,Bob,Nichol,bob.nichol@port.ac.uk,,,DESC,Member,,,UK,UK,,UK
+686,Sergei,Nikolaev,nikolaev2@llnl.gov,925-422-4293,,DESC,Member,,,,,California,California
+687,Samaya,Nissanke,samaya@tapir.caltech.edu,,,Stars,Affiliate,,,,,California,California
+688,Andrei,Nomerotski,anomerotski@bnl.gov,6313448338,, Milky Way and Local Volume,Member,,,,,California,California
+689,Dara,Norman,dnorman@noao.edu,520-318-8361,,Transients,Member,,,,,Arizona,Arizona
+690,Peter,Nugent,penugent@lbl.gov,,,Weak Lensing,Member,,,,,California,California
+691,Peter,Nugent,penugent@lbl.gov,,,Galaxies,Member,,,,,California,California
+692,Eric,Nuss,eric.nuss@univ-montp2.fr,,,Transients,Member,,,France,France,,France
+693,Paul,O'Connor,poc@bnl.gov,631-344-7577,,Transients,Member,,,,,California,California
+694,Paul,O'Connor,poc@bnl.gov,631-344-7577,,Transients,Member,,,,,California,California
+695,Mirela,Obric,mirela.obric@gmail.com,,,Supernovae,Member,,,,,,
+696,Eran O.,Ofek,eran@astro.caltech.edu,626-395-5928,,Galaxies,Affiliate,,,,,California,California
+697,Ricardo,Ogando,ogando@linea.gov.br,,,Stars,Member,,,Brasil,Brasil,,Brasil
+698,Masamune,Oguri,oguri@slac.stanford.edu,650-926-5545,, Milky Way and Local Volume,Member,,,,,California,California
+699,Elle,Ojala,elle.ojala@gmail.com ,,,AGN,Member,,,,,,
+700,Felipe,Olivares,f.olivares.e@gmail.com,,,DESC,Member,,,,,,
+701,Scot,Olivier,olivier1@llnl.gov,925-423-6483,,Statistics and Informatics,Member,,,,,California,California
+702,Scot,Olivier,olivier1@llnl.gov,925-423-6483,,Strong Lensing,Member,,,,,California,California
+703,Knut,Olsen,kolsen@noao.edu,520-318-8555,,Weak Lensing,Member,,,,,Arizona,Arizona
+704,Edward,Olszewski,edo@as.arizona.edu,,,Transients,Member,,,,,Arizona,Arizona
+705,Hakeem,Oluseyi,holuseyi@fit.edu,321-674-7247,,Transients,Member,,,,,Florida,Florida
+706,Nelson,Padilla,npadilla@astro.puc.cl,,,Supernovae,Member,,,Chile,Chile,,Chile
+707,Gary,Page,pagegl@longwood.edu,434-395-2587,,Supernovae,Member,,,,,Virginia,Virginia
+708,Enrique,Paillas,epaillas@astro.puc.cl,,,Transients,Member,,,Chile,Chile,,Chile
+709,Reynald,Pain,reynald.pain@lpnhe.in2p3.fr,33144274180,,Statistics and Informatics,Member,,,France,France,,France
+710,Gonzalo,Palma,gpalmaquilod@ing.uchile.cl,,,Statistics and Informatics,Member,,,Chile,Chile,,Chile
+711,Chris,Pankow,christopher.pankow@northwestern.edu,,,Statistics and Informatics,Member,,,,,Illinois,Illinois
+712,Casey,Papovich,papovich@physics.tamu.edu,979-862-2704,,Transients,Member,,,,,Texas,Texas
+713,Alex,Parker,alexharrisonparker@gmail.com,,,DESC ,Member,,,,,,
+714,Jerod,Parrent,jparrent@cfa.harvard.edu,,,Weak Lensing,Member,,,,,Massachusetts,Massachusetts
+715,Steven,Parsons,steven.parsons@uv.cl,+56 32 299 5557,,Statistics and Informatics,Member,,,Chile,Chile,,Chile
+716,Andrea,Pastorello,andrea.pastorello@oapd.inaf.it,,,DESC,Member,,,Italy,Italy,,Italy
+717,Matthew,Payne,matthewjohnpayne@gmail.com,,,Statistics and Informatics,Member,,,,,,
+718,Hiranya,Peiris,h.peiris@ucl.ac.uk,,,Stars,Member,,,UK,UK,,UK
+719,En-Hsin,Peng,epeng@purdue.edu,,, Milky Way and Local Volume ,Member,,,,,Indiana,Indiana
+720,Joshua,Pepper,joshua.pepper@lehigh.edu,610-758-3649,,AGN,Member,,,,,Pennsylvania,Pennsylvania
+721,Joshua,Pepper,joshua.pepper@lehigh.edu,610-758-3649,,AGN,Affiliate,,,,,Pennsylvania,Pennsylvania
+722,Joshua,Pepper,joshua.pepper@lehigh.edu,610-758-3649,,Weak Lensing,Affiliate,,,,,Pennsylvania,Pennsylvania
+723,Martin,Perl,martin@slac.stanford.edu,650-926-2652,,Transients,Member,,,,,California,California
+724,Saul,Perlmutter,saul@lbl.gov,,,DESC,Member,,,,,California,California
+725,Misha,Pesenson ,mzp@cs.caltech.edu,,,Stars,Member,,,,,California,California
+726,Christina,Peters,tina.peters@dunlap.utoronto.ca,,, Milky Way and Local Volume ,Member,,,Canada,Canada,,Canada
+727,John,Peterson,peters11@purdue.edu,765-494-5193,,Transients,Member,,,,,Indiana,Indiana
+728,John,Peterson,peters11@purdue.edu,765-494-5193,,Galaxies,Member,,,,,Indiana,Indiana
+729,Jean-Marc,Petit,jean-marc.petit@normalesup.org,,,Galaxies,Member,,,,,France,France
+730,Cathy,Petry,cpetry@lsst.org,520-318-8472,,Galaxies,Affiliate,,,,,Washington,Washington
+731,Adriano,Pieres,adriano.pieres@ufrgs.br,,,Stars,Member,,,Brasil,Brasil,,Brasil
+732,Giuliano,Pignata,pignago@gmail.com,,, Milky Way and Local Volume,Member,,,,,,
+733,Giuliano,Pignata,pignago@gmail.com,,,DESC ,Member,,,,,,
+734,Philip,Pinto,ppinto@as.arizona.edu,520-621-8678,,Stars,Member,,,,,Arizona,Arizona
+735,Silvia ,Piranomonte,silvia.piranomonte@gmail.com,,, Milky Way and Local Volume,Member,,,,,,
+736,Frederic,Piron,piron@in2p3.fr,,,Solar System,Member,,,France,France,,France
+737,Peter,Plavchan,peterplavchan@missouristate.edu,417-836-6226,,Transients,Affiliate,,,,,Missouri,Missouri
+738,Peter,Plavchan,peterplavchan@missouristate.edu,417-836-6226,,Galaxies,Member,,,,,Missouri,Missouri
+739,Andres,Plazas,plazasmalagon@gmail.com,,,Transients,Member,,,,,,
+740,Kara,Ponder,kap146@pitt.edu,,,Statistics and Informatics,Member,,,,,Pennsylvania,Pennsylvania
+741,Adiran,Pope,apope@anl.gov,+1 (630) 252-1160,,Transients,Member,,,,,Illinois,Illinois
+742,Luka,Popovic,lpopovic@aob.bg.ac.rs,3.81113E+11,,Stars,Member,,,,,Serbia,Serbia
+743,Chris,Power,chris.power@uwa.edu.au,,, Milky Way and Local Volume ,Member,,,Australia,Australia,,Australia
+744,Dovi,Poznanski,dovi@berkeley.edu,,,Transients,Member,,,,,California,California
+745,Pavlos,Protopapas,pavlos@seas.harvard.edu,,,Solar System,Member,,,,,Massachusetts,Massachusetts
+746,Michael,Prouza,prouza@fzu.cz,4.20266E+11,,Solar System,Member,,,Czech Republic,Czech Republic,,Czech Republic
+747,Andrej,Prsa,aprsa@villanova.edu,610-519-4822,,Stars,Member,,,,,Pennsylvania,Pennsylvania
+748,Andrej,Prsa,aprsa@villanova.edu,610-519-4822,, Milky Way and Local Volume,Affiliate,,,,,Pennsylvania,Pennsylvania
+749,Andrew,Ptak,andrew.f.ptak@nasa.gov,301-286-1154,,Stars,Member,,,,,,
+750,Andrew,Ptak,andrew.f.ptak@nasa.gov,301-286-1154,, Milky Way and Local Volume ,Member,,,,,,
+751,Andy,Puckett,puckett_andrew@columbusstate.edu,,,DESC ,Member,,,,,Ohio,Ohio
+752,Thomas,Puzia,tpuzia@gmail.com,,,Transients,Member,,,,,,
+753,Eliot,Quataert,eliot@astro.berkeley.edu,510-642-3792,,Transients,Member,,,,,California,California
+754,Tom,Quinn,trq@astro.washington.edu,206 685 9009,,DESC,Member,,,,,Washington,Washington
+755,Markus,Rabus,mrabus@astro.puc.cl,,,Transients,Member,,,Chile,Chile,,Chile
+756,Darin,Ragozzine,darin_ragozzine@byu.edu,,,Statistics and Informatics,Member,,,,,Utah,Utah
+757,Mubdi,Rahman,mubdi@pha.jhu.edu,,,Solar System,Member,,,,,Maryland,Maryland
+758,Claudia M.,Raiteri,raiteri@oato.inaf.it,,,Strong Lensing,Member,,,Italy,Italy,,Italy
+759,Jayadev,Rajagopal,jrajagopal@email.noao.edu,520 318 8292,,Solar System,Member,,,,,Arizona,Arizona
+760,Amelia,Ramirez,aramirez@dfuls.cl,,,Stars,Member,,,Chile,Chile,,Chile
+761,Andy,Rasmussen,arasmus@slac.stanford.edu,650-926-2794,, Milky Way and Local Volume ,Member,,,,,California,California
+762,Andy,Rasmussen,arasmus@slac.stanford.edu,650-926-2794,,Transients,Member,,,,,California,California
+763,Nicholas,Rattenbury,n.rattenbury@auckland.ac.nz,,,AGN,Member,,,New Zealand,New Zealand,,New Zealand
+764,Arne,Rau,arau@mpe.mpg.de,+49 89 30000 3851,,Stars,Member,,,Germany,Germany,Germany,Germany
+765,William,Reach,wreach@sofia.usra.edu,,, Milky Way and Local Volume ,Member,,,,,Maryland,Maryland
+766,Umaa,Rebbapragada,umaa.d.rebbapragada@jpl.nasa.gov,8183540038,,Statistics and Informatics,Affiliate,,,,,,
+767,Umaa,Rebbapragada,umaa.d.rebbapragada@jpl.nasa.gov,8183540038,,Statistics and Informatics,Member,,,,,,
+768,Naveen,Reddy,naveenr@ucr.edu,952-827-3492,,Transients,Member,,,,,California,California
+769,Nicolas,Regnault,nicolas.regnault@lpnhe.in2p3.fr,+33 1 44 27 73 29,,Transients,Member,,,France,France,,France
+770,Nicolas,Regnault,nicolas.regnault@lpnhe.in2p3.fr,+33 1 44 27 73 29,,Solar System,Member,,,France,France,,France
+771,Kevin,Reil,reil@slac.stanford.edu,,,Galaxies,Member,,,,,California,California
+772,David,Reiss,reiss@uw.edu,206-685-9242,,Galaxies,Member,,,,,Washington,Washington
+773,Armin,Rest,arest@stsci.edu,,,Strong Lensing,Member,,,,,DC,DC
+774,Jeonghee,Rho,jrho@sofia.usra.edu,650-604-4134,,Transients,Affiliate,,,,,Maryland,Maryland
+775,James E.,Rhoads,james.rhoads@asu.edu,,,Stars,Member,,,,,Arizona,Arizona
+776,Jason,Rhodes,jason.d.rhodes@jpl.nasa.gov,,, Milky Way and Local Volume,Member,,,,,,
+777,R. Michael,Rich,rmr@astro.ucla.edu,310-794-5337,,DESC,Member,,,,,California,California
+778,Gordon,Richards,gtr@physics.drexel.edu,215-895-2713,,Galaxies,Member,,,,,Pennsylvania,Pennsylvania
+779,Mercedes,Richards,mtr@astro.psu.edu,,,AGN,Member,,,,,Pennsylvania,Pennsylvania
+780,Joseph,Richards,joeyrichar@gmail.com,,,Statistics and Informatics,Member,,,,,,
+781,Matt,Richter,richter@physics.ucdavis.edu,,,Weak Lensing,Member,,,,,California,California
+782,Paul,Ricker,pmricker@illinois.edu,,,DESC,Member,,,,,Illinois,Illinois
+783,Jean-Stephane,Ricol,ricol@lpsc.in2p3.fr,,,Supernovae,Member,,,France,France,,France
+784,Stephen,Ridgway,ridgway@noao.edu,520-318-8297,,Statistics and Informatics,Member,,,,,Arizona,Arizona
+785,Stephen,Ridgway,ridgway@noao.edu,520-318-8297,,Transients,Affiliate,,,,,Arizona,Arizona
+786,Adric,Riedel,adric.riedel@gmail.com,,,Stars,Member,,,,,,
+787,Chiara,Righi,chiara.righi@brera.inaf.it,,, Milky Way and Local Volume ,Member,,,Italy,Italy,,Italy
+788,Steve,Ritz,sritz@ucsc.edu,831-459-3018,,Transients,Member,,,,,California,California
+789,Andy,Rivkin,andy.rivkin@jhuapl.edu,,,DESC ,Member,,,,,Maryland,Maryland
+790,Brant,Robertson,brant@ucsc.edu,,,Galaxies,Member,,,,,California,California
+791,Aaron,Robotham,aaron.robotham@uwa.edu.au,,,DESC,Member,,,Australia,Australia,,Australia
+792,Constance,Rockosi,crockosi@ucolick.org,831-459-5246,,Transients,Member,,,,,California,California
+793,Joseph ,Rodriguez,rodriguez.jr.joey@gmail.com,,,DESC,Member,,,,,,
+794,Patricio,Rojo,pato@oan.cl,,,Weak Lensing,Member,,,Chile,Chile,,Chile
+795,Alexandre,Roman,roman@dfuls.cl,,,DESC ,Member,,,Chile,Chile,,Chile
+796,Alexandre,Roman,roman@dfuls.cl,,,Galaxies,Member,,,Chile,Chile,,Chile
+797,Roger,Romani,rwr@astro.stanford.edu,650-725-7595,,Transients,Member,,,,,California,California
+798,Mauro,Roncarelli,mauro.roncarelli@unibo.it,,,Galaxies,Member,,,Italy,Italy,,Italy
+799,Aaron,Roodman,roodman@slac.stanford.edu,650 926-2705,,Strong Lensing,Member,,,,,California,California
+800,Aaron,Roodman,roodman@slac.stanford.edu,650 926-2705,,Transients,Member,,,,,California,California
+801,Leslie,Rosenberg,ljrosenberg@phys.washington.edu,206 221-5856,,Supernovae,Member,,,,,Washington,Washington
+802,Wayne,Rosing,wrosing@lcogt.net,(805) 880-1601,,Supernovae,Member,,,,,California,California
+803,Gustavo Benedetti ,Rossi ,gugabrossi@gmail.com,,,DESC ,Member,,,,,,
+804,Daniel,Rothchild,dr477@cam.ac.uk,,,Stars,Member,,,UK,UK,,UK
+805,Cecile,Roucelle,cecile.portello-roucelle@apc.univ-paris7.fr,0033 1 57 27 60 86,, Milky Way and Local Volume ,Affiliate,,,France,France,,France
+806,Eduardo,Rozo,erozo@kicp.uchicago.edu,773-702-7851,,Stars,Member,,,,,Illinois,Illinois
+807,Jessie,Runnoe,runnoejc@umich.edu,,, Milky Way and Local Volume ,Member,,,,,Michigan,Michigan
+808,David,Ruppert,dr24@cornell.edu,,,Transients,Member,,,,,Illinois,Illinois
+809,Michael,Rutkowski,rutkowsk@astro.umn.edu,,,Galaxies,Member,,,,,Minnesota,Minnesota
+810,Eli,Rykoff,erykoff@slac.stanford.edu,,,Solar System,Member,,,,,California,California
+811,Giuseppe,Sacco,gsacco@arcetri.inaf.it,,,DESC,Member,,,Italy,Italy,,Italy
+812,Abi,Saha,asaha@noao.edu,520-318-8288,,Supernovae,Member,,,,,Arizona,Arizona
+813,Abi,Saha,asaha@noao.edu,520-318-8288,,DESC,Member,,,,,Arizona,Arizona
+814,Amelie,Saintonge,a.saintonge@ucl.ac.uk,,,Transients,Member,,,UK,UK,,UK
+815,Roberto,Saito,rsaito@astro.puc.cl,,,Galaxies,Member,,,Chile,Chile,,Chile
+816,Masao,Sako,masao@sas.upenn.edu,215-898-8151,,Solar System,Member,,,,,Pennsylvania,Pennsylvania
+817,Masao,Sako,masao@sas.upenn.edu,215-898-8151,,Transients,Member,,,,,Pennsylvania,Pennsylvania
+818,Masao,Sako,masao@sas.upenn.edu,215-898-8151,,Stars,Member,,,,,Pennsylvania,Pennsylvania
+819,Masao,Sako,masao@sas.upenn.edu,215-898-8151,, Milky Way and Local Volume ,Member,,,,,Pennsylvania,Pennsylvania
+820,Om Sharan,Salafia,omsharan.salafia@brera.inaf.it,,,Transients,Member,,,Italy,Italy,,Italy
+821,Samir,Salim,salims@indiana.edu,,,Solar System,Member,,,,,Indiana,Indiana
+822,Basilio,Santiago,basilio.santiago@ufrgs.br,,,DESC,Member,,,Brasil,Brasil,,Brasil
+823,Domenico,Sapone,sapone.domenico@gmail.com,,,DESC ,Member,,,,,,
+824,Ata,Sarajedini,ata@astro.ufl.edu,(352) 392-2052 ,,Stars,Member,,,,,Florida,Florida
+825,Gal,Sarid,gal.sarid@ucf.edu,,, Milky Way and Local Volume ,Member,,,,,Florida,Florida
+826,Dimitar,Sasselov,sasselov@cfa.harvard.edu,6174957451,,Transients,Member,,,,,Massachusetts,Massachusetts
+827,Evan,Scannpieco,evan.scannapieco@asu.edu,480-727-6788,,Statistics and Informatics,Member,,,,,Arizona,Arizona
+828,Jeffrey,Scargle,jeffrey.d.scargle@nasa.gov,650 604 6330,,Weak Lensing,Member,,,,,,
+829,Chad,Schafer,cschafer@stat.cmu.edu,412-268-3967,,DESC,Member,,,,,Pennsylvania,Pennsylvania
+830,Terry,Schalk,tas@slac.stanford.edu,650-926-2633,,Statistics and Informatics,Member,,,,,California,California
+831,Rafe,Schindler,rafe@slac.stanford.edu,650-926-3450,,AGN,Member,,,,,California,California
+832,Sam,Schmidt,sschmidt@physics.ucdavis.edu,,,Weak Lensing,Member,,,,,California,California
+833,Sam,Schmidt,sschmidt@physics.ucdavis.edu,,,DESC,Member,,,,,California,California
+834,Edward,Schmidt,eschmidt1@unl.edu,402-472-2788,,Solar System,Member,,,,,Nebraska,Nebraska
+835,Sam,Schmidt,sschmidt@physics.ucdavis.edu,,,Statistics and Informatics,Member,,,,,California,California
+836,Don,Schneider,dps@astro.psu.edu,814-863-9554,,Stars,Member,,,,,Pennsylvania,Pennsylvania
+837,Michael,Schneider,schneider42@llnl.gov,925-422-4287,, Milky Way and Local Volume,Member,,,,,California,California
+838,Michael,Schneider,schneider42@llnl.gov,925-422-4287,,Supernovae,Member,,,,,California,California
+839,Meg,Schwamb,mschwamb.astro@gmail.com,,,Statistics and Informatics,Member,,,,,,
+840,Paul,Scowen,paul.scowen@asu.edu,,,Supernovae,Member,,,,,Arizona,Arizona
+841,Ryan,Scranton,ryan.scranton@gmail.com,,,Transients,Member,,,,,,
+842,Ryan,Scranton,ryan.scranton@gmail.com,,,Transients,Affiliate,,,,,,
+843,Rob,Seaman,seaman@lpl.arizona.edu,,,Transients,Affiliate,,,,,Arizona,Arizona
+844,Rob,Seaman,seaman@lpl.arizona.edu,,,Stars,Member,,,,,Arizona,Arizona
+845,Rob,Seaman,seaman@lpl.arizona.edu,,, Milky Way and Local Volume ,Member,,,,,Arizona,Arizona
+846,Neelima,Sehgal,sehgal@slac.stanford.edu,650-736-1774,,DESC,Member,,,,,California,California
+847,Uros,Seljak,useljak@berkeley.edu,,,DESC,Member,,,,,California,California
+848,Glenn,Sembroski,sembrosk@purdue.edu,,,DESC,Member,,,,,Indiana,Indiana
+849,Mauro,Sereno,mauro.sereno@oabo.inaf.it,,,AGN,Member,,,Italy,Italy,,Italy
+850,Branimir,Sesar,bsesar@astro.caltech.edu,626-395-2121,,Galaxies,Member,,,,,California,California
+851,Anil,Seth,aseth@astro.utah.edu,801-585-7793,,Supernovae,Member,,,,,Utah,Utah
+852,Allen W.,Shafter,aws@nova.sdsu.edu,(619) 594-6170,,Transients,Member,,,,,California,California
+853,Lior,Shamir,lshamir@mtu.edu,248-305-3512,,DESC ,Member,,,,,Michigan,Michigan
+854,Erin,Sheldon,erin.sheldon@gmail.com,,,Stars,Member,,,,,,
+855,Ohad,Shemmer,ohad@unt.edu,940-369-8110,, Milky Way and Local Volume ,Member,,,,,Texas,Texas
+856,Ken,Shen,kenshen@post.harvard.edu,,,Transients,Member,,,,,Massachusetts,Massachusetts
+857,Scott,Sheppard,sheppard@dtm.ciw.edu,202-478-8854,,Statistics and Informatics,Member,,,,,California,California
+858,Ian,Shipsey,ian.shipsey@physics.ox.ac.uk,01865 2 73635,,Galaxies,Member,,,UK,UK,,UK
+859,Ian,Shipsey,ian.shipsey@physics.ox.ac.uk,01865 2 73635,,Solar System,Member,,,UK,UK,,UK
+860,Marina,Shmakova,shmakova@slac.stanford.edu,,,Galaxies,Member,,,,,California,California
+861,Avi,Shporer,shporer@gps.caltech.edu,,,Transients,Member,,,,,California,California
+862,Jonathan,Sick,jsick@lsst.org,+1 (520) 318-8359,,Solar System,Affiliate,,,,,Washington,Washington
+863,Jonathan,Sick,jsick@lsst.org,+1 (520) 318-8359,,Transients,Affiliate,,,,,Washington,Washington
+864,Jonathan,Sick,jsick@lsst.org,+1 (520) 318-8359,,Solar System,Affiliate,,,,,Washington,Washington
+865,Jonathan,Sick,jsick@lsst.org,+1 (520) 318-8359,,DESC,Affiliate,,,,,Washington,Washington
+866,Jonathan,Sick,jsick@lsst.org,+1 (520) 318-8359,,Transients,Affiliate,,,,,Washington,Washington
+867,Jonathan,Sick,jsick@lsst.org,+1 (520) 318-8359,,Solar System,Affiliate,,,,,Washington,Washington
+868,Jonathan,Sick,jsick@lsst.org,+1 (520) 318-8359,,Galaxies,Affiliate,,,,,Washington,Washington
+869,Jonathan,Sick,jsick@lsst.org,+1 (520) 318-8359,,Galaxies,Affiliate,,,,,Washington,Washington
+870,Jonathan,Sick,jsick@lsst.org,+1 (520) 318-8359,,DESC,Affiliate,,,,,Washington,Washington
+871,Jonathan,Sick,jsick@lsst.org,+1 (520) 318-8359,,Transients,Affiliate,,,,,Washington,Washington
+872,Aneta,Siemiginowska,asiemiginowska@cfa.harvard.edu,617-495-7243,,Transients,Member,,,,,Massachusetts,Massachusetts
+873,David,Silva,dsilva@noao.edu,520-318-8281,,Solar System,Member,,,,,Arizona,Arizona
+874,Nicole,Silvestri,nms@astro.washington.edu,206-543-9487,,Transients,Affiliate,,,,,Washington,Washington
+875,Nicole,Silvestri,nms@astro.washington.edu,206-543-9487,,Statistics and Informatics,Member,,,,,Washington,Washington
+876,Joshua D.,Simon,jsimon@obs.carnegiescience.edu,,,Galaxies,Member,,,,,California,California
+877,Leo,Singer,leo.p.singer@nasa.gov,,,Supernovae,Member,,,,,,
+878,Michael,Sivertz,sivertz@bnl.gov,631-344-6102,,DESC ,Member,,,,,California,California
+879,Colin,Slater,ctslater@uw.edu,,,DESC,Affiliate,,,,,Washington,Washington
+880,Colin,Slater,ctslater@uw.edu,,,Transients,Affiliate,,,,,Washington,Washington
+881,Colin,Slater,ctslater@uw.edu,,,Transients,Affiliate,,,,,Washington,Washington
+882,Colin,Slater,ctslater@uw.edu,,,Supernovae,Affiliate,,,,,Washington,Washington
+883,Colin,Slater,ctslater@uw.edu,,,Transients,Affiliate,,,,,Washington,Washington
+884,Colin,Slater,ctslater@uw.edu,,,DESC,Affiliate,,,,,Washington,Washington
+885,Colin,Slater,ctslater@uw.edu,,,Stars,Affiliate,,,,,Washington,Washington
+886,Colin,Slater,ctslater@uw.edu,,, Milky Way and Local Volume ,Affiliate,,,,,Washington,Washington
+887,Colin,Slater,ctslater@uw.edu,,,AGN,Affiliate,,,,,Washington,Washington
+888,Colin,Slater,ctslater@uw.edu,,,Transients,Affiliate,,,,,Washington,Washington
+889,Anze,Slosar,anze@bnl.gov,631-344-8012,,Statistics and Informatics,Member,,,,,California,California
+890,Stephen,Smartt,S.Smartt@qub.ac.uk,,,Solar System,Member,,,UK,UK,,UK
+891,Chris,Smith,csmith@ctio.noao.edu,011-56-51-205-214,,DESC,Member,,,,,Arizona,Arizona
+892,J. Allyn,Smith,smithj@apsu.edu,,,DESC,Member,,,,,Tennessee,Tennessee
+893,Howard,Smith,hsmith@cfa.harvard.edu,617-496-2198,,Transients,Member,,,,,Massachusetts,Massachusetts
+894,Chris,Smith,csmith@ctio.noao.edu,011-56-51-205-214,,Solar System,Member,,,,,Arizona,Arizona
+895,Nathan,Smith,nathans@as.arizona.edu,,,Stars,Member,,,,,Arizona,Arizona
+896,Ken,Smith,k.w.smith@qub.ac.uk,,, Milky Way and Local Volume,Member,,,UK,UK,,UK
+897,Graham,Smith,gps@star.sr.bham.ac.uk,,,Transients,Member,,,UK,UK,,UK
+898,Hayden,Smotherman,smotherh@uw.edu,,,DESC,Member,,,,,Washington,Washington
+899,Greg,Snyder,gsnyder@stsci.edu,,,Solar System,Member,,,,,DC,DC
+900,Jennifer,Sobeck,jsobeck@uw.edu,,,Galaxies,Member,,,,,Washington,Washington
+901,Mike,Sokoloff,sokoloff@email.uc.edu,513-556-0533,,Galaxies,Member,,,,,California,California
+902,Aleksandra,Solarz,aleksandra.solarz@ncbj.gov.pl,,,Stars,Member,,,,,Poland,Poland
+903,Mike,Solontoi,solontoi.m@lynchburg.edu,,, Milky Way and Local Volume ,Member,,,,,Virginia,Virginia
+904,Alessandro,Sonnefeld,sonnen@physics.ucsb.edu,,,Transients,Affiliate,,,,,California,California
+905,Monika ,Soraisam,soraisam@noao.edu,,,Solar System,Member,,,,,Arizona,Arizona
+906,David,Spergel,dns@astro.princeton.edu,609-258-3589,,Stars,Member,,,,,New Jersey,New Jersey
+907,David,Spergel,dns@astro.princeton.edu,609-258-3589,, Milky Way and Local Volume,Member,,,,,New Jersey,New Jersey
+908,Anna,Spitz,aspitz@lsst.org,(520)235-4000,,Transients,Member,,,,,Washington,Washington
+909,Adam,Stanford,sastanford@mac.com,,,Transients,Member,,,,,,
+910,Paul,Stankus,stankuspw@ornl.gov,631-344-4280,,Galaxies,Member,,,,,Tennessee,Tennessee
+911,Keivan,Stassun,keivan.stassun@vanderbilt.edu,615-322-2828,,Strong Lensing,Affiliate,,,,,Tennessee,Tennessee
+912,Keivan,Stassun,keivan.stassun@vanderbilt.edu,615-322-2828,,DESC ,Member,,,,,Tennessee,Tennessee
+913,Keivan,Stassun,keivan.stassun@vanderbilt.edu,615-322-2828,,Weak Lensing,Member,,,,,Tennessee,Tennessee
+914,Jordan,Steckloff,jordan@psi.edu,,,Transients,Member,,,,,Pennsylvania,Pennsylvania
+915,Danny,Steeghs,d.t.h.steeghs@warwick.ac.uk,,,Solar System,Member,,,UK,UK,,UK
+916,Katrien,Steenbrugge,katrien.steenbrugge@gmail.com,,,Supernovae,Member,,,,,,
+917,Alan,Stern,astern@swri.edu,,,Weak Lensing,Member,,,,,Coloradu,Coloradu
+918,John,Stott,j.p.stott@lancaster.ac.uk,,,DESC ,Member,,,UK,UK,,UK
+919,Jay,Strader,strader@pa.msu.edu,5178845605,,AGN,Member,,,,,Massachusetts,Massachusetts
+920,Jay,Strader,strader@pa.msu.edu,5178845605,,Statistics and Informatics,Affiliate,,,,,Massachusetts,Massachusetts
+921,Jay,Strader,strader@pa.msu.edu,5178845605,,Galaxies,Affiliate,,,,,Massachusetts,Massachusetts
+922,Giulia,Stratta,giulia.stratta@uniurb.it,,,DESC,Member,,,Italy,Italy,,Italy
+923,Michael,Strauss,strauss@astro.princeton.edu,609-258-3808,,Stars,Affiliate,,,,,New Jersey,New Jersey
+924,Michael,Strauss,strauss@astro.princeton.edu,609-258-3808,, Milky Way and Local Volume,Affiliate,,,,,New Jersey,New Jersey
+925,Michael,Strauss,strauss@astro.princeton.edu,609-258-3808,,Transients ,Affiliate,,,,,New Jersey,New Jersey
+926,Michael,Strauss,strauss@astro.princeton.edu,609-258-3808,,Stars,Affiliate,,,,,New Jersey,New Jersey
+927,Michael,Strauss,strauss@astro.princeton.edu,609-258-3808,, Milky Way and Local Volume ,Affiliate,,,,,New Jersey,New Jersey
+928,Michael,Strauss,strauss@astro.princeton.edu,609-258-3808,,Galaxies,Member,,,,,New Jersey,New Jersey
+929,Michael,Strauss,strauss@astro.princeton.edu,609-258-3808,,Transients,Member,,,,,New Jersey,New Jersey
+930,Michael,Strauss,strauss@astro.princeton.edu,609-258-3808,,DESC ,Affiliate,,,,,New Jersey,New Jersey
+931,Michael,Strauss,strauss@astro.princeton.edu,609-258-3808,,Transients,Affiliate,,,,,New Jersey,New Jersey
+932,Michael,Strauss,strauss@astro.princeton.edu,609-258-3808,,Solar System,Affiliate,,,,,New Jersey,New Jersey
+933,Rachel,Street,rstreet@lco.global,,,Supernovae,Member,,,,,California,California
+934,Scott,Stuart,jsstuart@gmail.com,781-981-5259,,Transients,Member,,,,,,
+935,Christopher,Stubbs,stubbs@g.harvard.edu,617-495-1454,,Galaxies,Member,,,,,Massachusetts,Massachusetts
+936,Christopher,Stubbs,stubbs@g.harvard.edu,617-495-1454,,Stars,Member,,,,,Massachusetts,Massachusetts
+937,Christopher,Stubbs,stubbs@g.harvard.edu,617-495-1454,, Milky Way and Local Volume,Member,,,,,Massachusetts,Massachusetts
+938,John,Subasavage,subasavage@nofs.navy.mil,,,DESC,Member,,,,,DC,DC
+939,Mark,Sullivan,m.sullivan@soton.ac.uk,44 0 23 8059 7573 ext 27573,,Stars,Member,,,UK,UK,,UK
+940,Donald,Sweeney,donsweeney4@gmail.com,9253715661,, Milky Way and Local Volume ,Affiliate,,,,,,
+941,Paula,Szkody,szkody@astro.washington.edu,206-543-1988,,Solar System,Member,,,,,Washington,Washington
+942,Hyungsuk,Tak,hyungusk.tak@gmail.com,,,Transients,Member,,,,,,
+943,Masahiro,Takada,masahiro.takada@ipmu.jp,-13569,,Supernovae,Member,,,Japan,Japan,Japan,Japan
+944,Nicolas,Tejos,ntejos@ucolick.org,,,Statistics and Informatics,Member,,,,,California,California
+945,James  P.,Theiler,jtheiler@lanl.gov,,,Statistics and Informatics,Member,,,,,California,California
+946,Cristina,Thomas,cthomas@psi.edu,,,Weak Lensing,Member,,,,,Pennsylvania,Pennsylvania
+947,Rollin,Thomas,rcthomas@lbl.gov,,,Weak Lensing,Member,,,,,California,California
+948,Paul,Thorman,thorman@physics.ucdavis.edu,,,Statistics and Informatics ,Member,,,,,California,California
+949,John Robert,Thorstensen,john.thorstensen@dartmouth.edu,603-646-2869,,DESC ,Member,,,,,Hampshire,Hampshire
+950,Patricia,Tissera,tissera.patriciab@gmail.com,,,Transients,Member,,,,,,
+951,Ezequiel,Treister,etreiste@astro.puc.cl, ,,Galaxies,Member,,,Chile,Chile,,Chile
+952,Tommaso,Treu,tt@astro.ucla.edu,310-206-5617,,AGN,Member,,,,,California,California
+953,Tommaso,Treu,tt@astro.ucla.edu,310-206-5617,,DESC ,Member,,,,,California,California
+954,David,Trilling,david.trilling@nau.edu,928-523-5505,,Weak Lensing,Member,,,,,Arizona,Arizona
+955,Virginia,Trimble,vtrimble@astro.umd.edu,949-824-6948,,Solar System,Member,,,,,Maryland,Maryland
+956,Laura,Trouille,l-trouille@northwestern.edu,,,Transients,Member,,,,,Illinois,Illinois
+957,Michael,Troxel,troxel@utdallas.edu,,,Weak Lensing,Member,,,,,Texas,Texas
+958,Michael,Troxel,troxel@utdallas.edu,,,Galaxies,Member,,,,,Texas,Texas
+959,Chad,Trujillo,chad.trujillo@nau.edu ,,,Transients,Member,,,,,Arizona,Arizona
+960,Yiannis,Tsapras,ytsapras@ari.uni-heidelberg.de,,,Transients,Member,,,Germany,Germany,Germany,Germany
+961,Dmitri,Tsybychev,tsybych@sbhep.physics.sunysb.edu,,,Solar System,Member,,,,,New York,New York
+962,Tony,Tyson,tyson@physics.ucdavis.edu,530-752-3830,,Weak Lensing,Member,,,,,California,California
+963,Tony,Tyson,tyson@physics.ucdavis.edu,530-752-3830,,DESC,Affiliate,,,,,California,California
+964,Tony,Tyson,tyson@physics.ucdavis.edu,530-752-3830,,DESC,Member,,,,,California,California
+965,Tony,Tyson,tyson@physics.ucdavis.edu,530-752-3830,,Galaxies,Member,,,,,California,California
+966,Meg,Urry,meg.urry@yale.edu,203-432-3651,,Stars,Member,,,,,Connecticut,Connecticut
+967,Stefano,Valenti,stfn.valenti@gmail.com,,, Milky Way and Local Volume ,Member,,,,,,
+968,Ludovic,Van Waerbeke,waerbeke@phas.ubc.ca,604-822-5515,,AGN,Member,,,Canada,Canada,California,Canada
+969,Dan,Vanden Berk,daniel.vandenberk@email.stvincent.edu,,,Transients,Member,,,,,Pennsylvania,Pennsylvania
+970,Laura,Venuti,lvenuti@astropa.unipa.it,,,Statistics and Informatics,Member,,,Italy,Italy,,Italy
+971,Peter,Veres,veres@jpl.nasa.gov,,,Weak Lensing,Member,,,,,,
+972,Aprajita,Verma,aprajita.verma@physics.ox.ac.uk,,,AGN,Member,,,UK,UK,,UK
+973,Aprajita,Verma,aprajita.verma@physics.ox.ac.uk,,,Transients,Member,,,UK,UK,,UK
+974,Tom,Vestrand,vestrand@lanl.gov,505-665-9542,,Solar System,Member,,,,,California,California
+975,Giacomo,Vianello,giacomov@stanford.edu,,,DESC,Member,,,,,California,California
+976,Joaquin,Vieira,jvieira@illinois.edu,1 217 244 6795,,Weak Lensing,Member,,,,,Illinois,Illinois
+977,Vinu,Vikraman,vvikraman@anl.gov,,,Weak Lensing,Member,,,,,Illinois,Illinois
+978,Ricardo ,Vilalta,vilalta@cs.uh.edu,,,Transients,Member,,,,,Texas,Texas
+979,Victoria Ashley,Villar,vvillar@cfa.harvard.edu,,,Supernovae,Member,,,,,Massachusetts,Massachusetts
+980,Jorick,Vink,jsv@arm.ac.uk,,,Solar System,Member,,,UK,UK,,UK
+981,Kathy,Vivas,kvivas@ctio.noao.edu,,,Statistics and Informatics,Member,,,,,Arizona,Arizona
+982,Michael,Vogeley,vogeley@drexel.edu,215-895-2710,,Transients,Member,,,,,Pennsylvania,Pennsylvania
+983,Kat,Volk,kvolk@lpl.arizona.edu,,,AGN,Member,,,,,Arizona,Arizona
+984,Anja,Von Der Linden,avdl@dark-cosmology.dk,,,DESC,Member,,,Damnark,Damnark,,Damnark
+985,Anja,Von Der Linden,avdl@dark-cosmology.dk,,,Strong Lensing,Member,,,Damnark,Damnark,,Damnark
+986,Alistair,Walker,awalker@ctio.noao.edu,011-56-51-205-305,,Weak Lensing,Member,,,,,Arizona,Arizona
+987,Lucianne,Walkowicz,l.m.walkowicz@gmail.com,(312) 542-2412,,Galaxies,Affiliate,,,,,,
+988,Lucianne,Walkowicz,l.m.walkowicz@gmail.com,(312) 542-2412,,Stars,Affiliate,,,,,,
+989,Lucianne,Walkowicz,l.m.walkowicz@gmail.com,(312) 542-2412,, Milky Way and Local Volume,Affiliate,,,,,,
+990,Lucianne,Walkowicz,l.m.walkowicz@gmail.com,(312) 542-2412,,Statistics and Informatics,Member,,,,,,
+991,Lucianne,Walkowicz,l.m.walkowicz@gmail.com,(312) 542-2412,,Stars,Affiliate,,,,,,
+992,Lucianne,Walkowicz,l.m.walkowicz@gmail.com,(312) 542-2412,, Milky Way and Local Volume ,Affiliate,,,,,,
+993,Lucianne,Walkowicz,l.m.walkowicz@gmail.com,(312) 542-2412,,Transients,Affiliate,,,,,,
+994,Lucianne,Walkowicz,l.m.walkowicz@gmail.com,(312) 542-2412,,Stars,Affiliate,,,,,,
+995,Lucianne,Walkowicz,l.m.walkowicz@gmail.com,(312) 542-2412,, Milky Way and Local Volume ,Affiliate,,,,,,
+996,Lucianne,Walkowicz,l.m.walkowicz@gmail.com,(312) 542-2412,,Stars,Affiliate,,,,,,
+997,George,Wallerstein,wall@astro.washington.edu,,, Milky Way and Local Volume ,Member,,,,,Washington,Washington
+998,John,Wallin,jfwallin@gmail.com,,,Transients,Member,,,,,,
+999,Chris,Walter,chris.walter@duke.edu,,,Supernovae,Member,,,,,North Carolina,North Carolina
+1000,Nicholas,Walton,naw@ast.cam.ac.uk,,,DESC,Member,,,UK,UK,,UK
+1001,Ben,Wandelt,bwandelt@uiuc.edu,,,Supernovae,Member,,,,,Illinois,Illinois
+1002,Sheng,Wang,wiley@phys.columbia.edu,,,Strong Lensing,Member,,,,,New York,New York
+1003,Yun,Wang,wang@nhn.ou.edu,405-325-3961,,Galaxies,Member,,,,,Oklahoma,Oklahoma
+1004,Yun,Wang,wang@nhn.ou.edu, ext 36327,,Stars,Member,,,,,Oklahoma,Oklahoma
+1005,Lifan,Wang,wang@physics.tamu.edu,405-325-3961,, Milky Way and Local Volume,Member,,,,,Texas,Texas
+1006,Larry ,Wasserman,larry@stat.cmu.edu, ext 36327,,Transients,Member,,,,,Pennsylvania,Pennsylvania
+1007,Risa,Wechsler,rwechsler@stanford.edu,,,Solar System,Member,,,,,California,California
+1008,Risa,Wechsler,rwechsler@stanford.edu,,,Statistics and Informatics,Member,,,,,California,California
+1009,Martin,Weinberg,weinberg@astro.umass.edu,650-736-8017,,Weak Lensing,Member,,,,,Massachusetts,Massachusetts
+1010,Ben,Weiner, bjw@as.arizona.edu,650-736-8017,,AGN,Member,,,,,Arizona,Arizona
+1011,Matt,Weisner,mwiesner@purdue.edu,413-545-3821,,DESC,Member,,,,,Indiana,Indiana
+1012,Mark,Wells,mwellsa@gmail.com,,,Transients,Member,,,,,,
+1013,Torre,Wenaus,wenaus@gmail.com,,,Transients,Member,,,,,,
+1014,Norbert,Werner,norbertw@stanford.edu,,,Stars,Member,,,,,California,California
+1015,Andrew,West,aawest@bu.edu,,, Milky Way and Local Volume ,Member,,,,,Massachusetts,Massachusetts
+1016,Matthew,Wiesner,matthewwiesner@aol.com,,,AGN,Member,,,,,,
+1017,Matthew,Wiesner,matthewwiesner@aol.com,617-358-5879,,Supernovae,Member,,,,,,
+1018,Ben,Williams,ben@astro.washington.edu,,,Transients,Member,,,,,Washington,Washington
+1019,Robert,Williams,wms@stsci.edu,,,Transients,Member,,,,,DC,DC
+1020,Gerard,Williger,gmwilliger@gmail.com,,,Galaxies,Member,,,,,,
+1021,Beth,Willman,bwillman@lsst.org,410-338-4963,,Solar System,Member,,,,,Washington,Washington
+1022,David,Wittman,dwittman@physics.ucdavis.edu,502-852-0821,,Galaxies,Affiliate,,,,,California,California
+1023,David,Wittman,dwittman@physics.ucdavis.edu,(520) 318-8473,,Stars,Affiliate,,,,,California,California
+1024,David,Wittman,dwittman@physics.ucdavis.edu,530-754-5354,, Milky Way and Local Volume,Member,,,,,California,California
+1025,David,Wittman,dwittman@physics.ucdavis.edu,530-754-5354,,Weak Lensing,Affiliate,,,,,California,California
+1026,David,Wittman,dwittman@physics.ucdavis.edu,530-754-5354,,Statistics and Informatics,Affiliate,,,,,California,California
+1027,Robert,Wolpert ,wolpert@STAT.Duke.edu,530-754-5354,,Solar System,Member,,,,,North Carolina,North Carolina
+1028,Michael,Wood-Vasey,wmwv@pitt.edu,530-754-5354,,Strong Lensing,Affiliate,,,,,Pennsylvania,Pennsylvania
+1029,Michael,Wood-Vasey,wmwv@pitt.edu,919-684-3275,,Transients,Affiliate,,,,,Pennsylvania,Pennsylvania
+1030,Michael,Wood-Vasey,wmwv@pitt.edu,412-624-2751,,Stars,Member,,,,,Pennsylvania,Pennsylvania
+1031,Michael,Wood-Vasey,wmwv@pitt.edu,412-624-2751,, Milky Way and Local Volume ,Member,,,,,Pennsylvania,Pennsylvania
+1032,Michael,Woodroofe,michaelw@umich.edu,412-624-2751,,DESC,Member,,,,,Michigan,Michigan
+1033,Przemek,Wozniak,wozniak@lanl.gov,412-624-2751,,Solar System,Member,,,,,California,California
+1034,Adam,Wright,awright3@stanford.edu,735-763-3495,,Galaxies,Member,,,,,California,California
+1035,Bo,Xin,bxin@lsst.org,505-667-1381,,Weak Lensing,Member,,,,,Washington,Washington
+1036,Padma,Yanamandra-Fisher,padmayf@gmail.com,,,Transients,Member,,,,,,
+1037,Sheng,Yang,sheng.yang@oapd.inaf.it,520-318-8352,,Stars,Member,,,Italy,Italy,,Italy
+1038,Quan-Zhi,Ye,qye@caltech.edu,,, Milky Way and Local Volume ,Member,,,,,California,California
+1039,Peter,Yoachim,yoachim@uw.edu,,,Statistics and Informatics,Member,,,,,Washington,Washington
+1040,Peter,Yoachim,yoachim@uw.edu,,,Solar System,Member,,,,,Washington,Washington
+1041,Patrick,Young,payoung@as.arizona.edu,206-616-4549,,Transients,Member,,,,,Arizona,Arizona
+1042,David,Young,d.r.young@qub.ac.uk,206-616-4549,,AGN,Member,,,UK,UK,,UK
+1043,Leslie,Young,layoung@boulder.swri.edu,,,Solar System,Member,,,,,Coloradu,Coloradu
+1044,Ashley,Zauderer,zauderer@nyu.edu,,,Galaxies,Member,,,,,New York,New York
+1045,Idit,Zehavi,idit.zehavi@case.edu,,,Stars,Member,,,,,,
+1046,Andrew,Zentner,zentner@pitt.edu,,, Milky Way and Local Volume ,Member,,,,,Pennsylvania,Pennsylvania
+1047,Andrew,Zentner,zentner@pitt.edu,216-368-6832,,Stars,Member,,,,,Pennsylvania,Pennsylvania
+1048,Andrew,Zentner,zentner@pitt.edu,,, Milky Way and Local Volume,Affiliate,,,,,Pennsylvania,Pennsylvania
+1049,Andrew,Zentner,zentner@pitt.edu,,,Galaxies,Affiliate,,,,,Pennsylvania,Pennsylvania
+1050,Andrew,Zentner,zentner@pitt.edu,,,Transients,Affiliate,,,,,Pennsylvania,Pennsylvania
+1051,Andrew,Zentner,zentner@pitt.edu,,,Galaxies,Member,,,,,Pennsylvania,Pennsylvania
+1052,Hu,Zhan,zhanhu@nao.cas.cn,,,Strong Lensing,Member,,,,,,
+1053,Hu,Zhan,zhanhu@nao.cas.cn,,,Weak Lensing,Member,,,,,,
+1054,Hu,Zhan,zhanhu@nao.cas.cn,-64871374,,Solar System,Affiliate,,,,,,
+1055,Hu,Zhan,zhanhu@nao.cas.cn,-64871374,,Supernovae,Member,,,,,,
+1056,Gongbo,Zhao,gbzhao@nao.cas.cn,-64871374,,Stars,Member,,,,,,
+1057,Zhenia,Zheng,zzheng@astro.puc.cl,-64871374,, Milky Way and Local Volume ,Member,,,Chile,Chile,,Chile
+1058,Manuela,Zoccali,mzoccali@astro.puc.cl,,,AGN,Member,,,Chile,Chile,,Chile
+1059,Adi,Zolotov,adizolotov@gmail.com,,,Stars,Member,,,,,,
+1060,  ,,,,,,,,,,,,

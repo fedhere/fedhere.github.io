@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MediaWiki API Result</title>
+</head>
+<body>
+<br />
+<small>
+You are looking at the HTML representation of the XML format.<br />
+HTML is good for debugging, but is unsuitable for application use.<br />
+Specify the format parameter to change the output format.<br />
+To see the non HTML representation of the XML format, set format=xml.<br />
+See the <a href='https://www.mediawiki.org/wiki/API'>complete documentation</a>, or
+<a href='/w/api.php'>API help</a> for more information.
+</small>
+<pre style='white-space: pre-wrap;'>
+<span style="color:blue;">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span style="color:blue;">&lt;api&gt;</span>
+  <span style="color:blue;">&lt;query&gt;</span>
+    <span style="color:blue;">&lt;normalized&gt;</span>
+      <span style="color:blue;">&lt;n from=&quot;Saul_Alvarez&quot; to=&quot;Saul Alvarez&quot; /&gt;</span>
+    <span style="color:blue;">&lt;/normalized&gt;</span>
+    <span style="color:blue;">&lt;redirects&gt;</span>
+      <span style="color:blue;">&lt;r from=&quot;Saul Alvarez&quot; to=&quot;Saúl Álvarez&quot; /&gt;</span>
+    <span style="color:blue;">&lt;/redirects&gt;</span>
+    <span style="color:blue;">&lt;pages&gt;</span>
+      <span style="color:blue;">&lt;page pageid=&quot;23198975&quot; ns=&quot;0&quot; title=&quot;Saúl Álvarez&quot;&gt;</span>
+        <span style="color:blue;">&lt;revisions&gt;</span>
+          <span style="color:blue;">&lt;rev contentformat=&quot;text/x-wiki&quot; contentmodel=&quot;wikitext&quot; xml:space=&quot;preserve&quot;&gt;</span>{{spanish name 2|Álvarez|Barragán}}
+{{Infobox boxer|name= Canelo Alvarez
+|realname          = Santos Saúl Álvarez Barragán
+|image             = [[File:Free Main Header photo of Saul Canelo Alvarez.jpg|200px|Free Main Header photo of Saul Canelo Alvarez]]
+|nickname          = El Canelo (The Male-Cinnamon)
+|weight            = [[Light Welterweight|Light Welterweight (140 lb)]]&amp;lt;br&amp;gt;[[Welterweight|Welterweight (147 lb)]]&amp;lt;br&amp;gt;[[Light Middleweight|Light Middleweight(154 lb)]]
+|height            = {{height|ft=5|in=9}}
+|reach             = {{convert|71|in|cm|0|abbr=on}}
+|nationality       = {{flagicon|Mexico}} [[Mexican people|Mexican]]
+|birth_date        = {{birth date and age|1990|7|18}}
+|death_date        
+|birth_place       = [[Guadalajara]], [[Jalisco]], [[Mexico]]
+|home_town         = [[Juanacatlán]], Jalisco, Mexico
+|style             = [[Orthodox stance|Orthodox]]
+|total             = 43
+|wins              = 42
+|KO                = 31
+|losses            = 0
+|draws             = 1
+|no contests       = 0
+}}
+
+'''Santos Saúl Álvarez Barragán''' (born July 18, 1990, [[Guadalajara]], [[Jalisco]], [[Mexico]]), also known as '''El Canelo''', is an undefeated [[Mexican people|Mexican]] professional [[Boxing|boxer]] in the [[Light Middleweight]] division.&amp;lt;ref&amp;gt;{{cite journal | title = Saúl Álvarez Biography | journal = Boxrec | date = 2009-01-22 | first = Fernando | last = Luevanos| id = | url = <a href="http://boxrec.com/media/index.php/Saul_Alvarez">http://boxrec.com/media/index.php/Saul_Alvarez</a> | accessdate = 2010-07-11}}&amp;lt;/ref&amp;gt; He is the current [[World Boxing Council|WBC]], [[World Boxing Association|WBA]], and [[Ring Magazine]] Light Middleweight Champion.&amp;lt;ref&amp;gt;{{cite journal | title = Mexico’s Next Champion | journal = Yahoo Sports | date = 2010-04-18 | first = Kevin | last = Iole| id = | url = <a href="http://sports.yahoo.com/box/news?slug=ki-alvarezcolumn042810">http://sports.yahoo.com/box/news?slug=ki-alvarezcolumn042810</a> | accessdate = 2010-07-11}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite journal | title = Alvarez wins the WBC Silver | journal = Boxing Scene | date = 2010-07-10 | first = James | last = Blears| id = | url = <a href="http://www.boxingscene.com/?m=show&amp;amp;id=29144">http://www.boxingscene.com/?m=show&amp;amp;id=29144</a> | accessdate = 2010-07-27}}&amp;lt;/ref&amp;gt;&amp;lt;ref&amp;gt;{{cite journal | title = Golden Boy signs Álvarez | journal = ESPN | date = 2010-01-23 | first = Dan | last = Rafael| id = | url = <a href="http://sports.espn.go.com/sports/boxing/news/story?id=4851090">http://sports.espn.go.com/sports/boxing/news/story?id=4851090</a> | accessdate = 2010-07-11}}&amp;lt;/ref&amp;gt; He is promoted by [[Oscar De La Hoya]]'s [[Golden Boy Promotions]].&amp;lt;ref&amp;gt;{{cite journal | title = Biography of El Canelo Álvarez | journal = Golden Boy Promotions | date = 2009-01-22 | first = Salvatore | last = Mier| id = | url = <a href="http://www.goldenboypromotions.com/fighters/c_alvarez.php">http://www.goldenboypromotions.com/fighters/c_alvarez.php</a> | accessdate = 2010-07-11}}&amp;lt;/ref&amp;gt;<span style="color:blue;">&lt;/rev&gt;</span>
+        <span style="color:blue;">&lt;/revisions&gt;</span>
+      <span style="color:blue;">&lt;/page&gt;</span>
+    <span style="color:blue;">&lt;/pages&gt;</span>
+  <span style="color:blue;">&lt;/query&gt;</span>
+<span style="color:blue;">&lt;/api&gt;</span>
+</pre>
+</body>
+</html>
+<!-- Served by mw1205 in 0.058 secs. -->

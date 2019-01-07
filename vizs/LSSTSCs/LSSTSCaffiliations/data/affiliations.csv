@@ -1,0 +1,65 @@
+word1,word2,count
+"AGN","AGN",0
+"AGN","Galaxies",4
+"AGN","Solar System",2
+"AGN","Statistics and Informatics",5
+"AGN","Stars, Milky Way, and Local Volume",5
+"AGN","Strong Lensing",3
+"AGN","Transients",6
+"AGN","DESC",6
+"Galaxies","AGN",4
+"Galaxies","Galaxies",0
+"Galaxies","Solar System",7
+"Galaxies","Statistics and Informatics",4
+"Galaxies","Stars, Milky Way, and Local Volume",28
+"Galaxies","Strong Lensing",2
+"Galaxies","Transients",15
+"Galaxies","DESC",13
+"Solar System","AGN",2
+"Solar System","Galaxies",7
+"Solar System","Solar System",0
+"Solar System","Statistics and Informatics",4
+"Solar System","Stars, Milky Way, and Local Volume",13
+"Solar System","Strong Lensing",3
+"Solar System","Transients",12
+"Solar System","DESC",7
+"Statistics and Informatics","AGN",5
+"Statistics and Informatics","Galaxies",4
+"Statistics and Informatics","Solar System",4
+"Statistics and Informatics","Statistics and Informatics",0
+"Statistics and Informatics","Stars, Milky Way, and Local Volume",10
+"Statistics and Informatics","Strong Lensing",3
+"Statistics and Informatics","Transients",9
+"Statistics and Informatics","DESC",4
+"Stars, Milky Way, and Local Volume","AGN",5
+"Stars, Milky Way, and Local Volume","Galaxies",28
+"Stars, Milky Way, and Local Volume","Solar System",13
+"Stars, Milky Way, and Local Volume","Statistics and Informatics",10
+"Stars, Milky Way, and Local Volume","Stars, Milky Way, and Local Volume",0
+"Stars, Milky Way, and Local Volume","Strong Lensing",2
+"Stars, Milky Way, and Local Volume","Transients",47
+"Stars, Milky Way, and Local Volume","DESC",17
+"Strong Lensing","AGN",3
+"Strong Lensing","Galaxies",2
+"Strong Lensing","Solar System",3
+"Strong Lensing","Statistics and Informatics",3
+"Strong Lensing","Stars, Milky Way, and Local Volume",2
+"Strong Lensing","Strong Lensing",0
+"Strong Lensing","Transients",8
+"Strong Lensing","DESC",5
+"Transients","AGN",6
+"Transients","Galaxies",15
+"Transients","Solar System",12
+"Transients","Statistics and Informatics",9
+"Transients","Stars, Milky Way, and Local Volume",47
+"Transients","Strong Lensing",8
+"Transients","Transients",0
+"Transients","DESC",22
+"DESC","AGN",6
+"DESC","Galaxies",13
+"DESC","Solar System",7
+"DESC","Statistics and Informatics",4
+"DESC","Stars, Milky Way, and Local Volume",17
+"DESC","Strong Lensing",5
+"DESC","Transients",22
+"DESC","DESC",0

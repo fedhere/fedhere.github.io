@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.bar rect {
+  shape-rendering: crispEdges;
+}
+
+.bar text {
+  fill: #fff;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+</style>
+<body>
+<p>hallo world</p>
+<script src="http://d3js.org/d3.v2.min.js?2.9.6"></script>
+<script>
+
+var margin = {top: 10, right: 20, bottom: 20, left: 60},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var x = d3.scale.linear()
+    .range([0, width]);
+
+var y = d3.scale.linear()
+    .range([height, 0]);
+
+var color = d3.scale.ordinal()
+    .range(["#e377c2","#1f77b4","#1f77b4","#e377c2","#1f77b4","#1f77b4"]);
+
+// A sliding container to hold the bars by birthyear.
+//var ages = svg.append("g")
+ //   .attr("class", "ages");
+
+d3.csv("income.csv", function(bins) {
+ //  color.domain(d3.keys(data[2]).filter(function(key) { return key !== "stance"; }));
+  // Coerce types.
+  bins.forEach(function(bin) {
+    var y0 = 0;
+    bin.age = +bin.age;
+    bin.fighters = +bin.fighters;
+
+  });
+
+  // Normalize each bin to so that height = quantity/width;
+  // see http://en.wikipedia.org/wiki/Histogram#Examples
+
+ for (var i = 1, n = bins.length, bin; i < n; i++) {
+    bin = bins[i];
+    bin.offset = bins[i - 1].age;
+    bin.width = 16;
+    bin.height = bin.fighters ;
+  }
+
+
+  // Set the scale domain.
+  x.domain([0, d3.max(bins.map(function(d) { return d.offset + d.width; }))]);
+  y.domain([0, d3.max(bins.map(function(d) { return d.height; }))]);
+
+
+var bin= svg.selectAll(".bin")
+    .data(data)
+  .enter().append("g")
+    .attr("class", "bar")
+    .attr("transform", function(d) { return "translate(" + x(d.x) + "," + y(d.y) + ")"; });
+
+
+bin.append("rect")
+      .attr("x", function(d) { return x(d.offset); })
+      .attr("width", function(d) { return x(d.width) - 1; })
+      .attr("y", function(d) { return y(d.height); })
+      .attr("height", function(d) { return (height - y(d.height))/d.stanceR; })
+//bin.append("rect")
+ //   .attr("x", 1)
+  //  .attr("width", x(data[0].width) - 1)
+   // .attr("height", function(d) { return height - y(d.height)-10; })
+    //.attr("fill","#1f77b4");
+
+});
+</script>

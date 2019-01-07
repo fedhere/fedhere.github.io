@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <script src="http://d3js.org/d3.v2.min.js?2.9.6"></script>
+  </head>
+  <body>
+    <script>
+
+      var margin0 = {top: 10, right: 20, bottom: 25, left: 60}, 
+          margin = {top: 10, right: 20, bottom: 25, left: 60}, 
+          width = 500 - margin.left - margin.right,
+          height = 200 - margin.bottom - margin.top ;
+
+
+
+     var xAxis = d3.svg.axis()
+         .tickSize(1).tickSubdivide(true)
+         .ticks(20)
+         .orient("bottom");
+
+     var yAxis = d3.svg.axis()
+         .ticks(5)
+         .tickSize(1).tickSubdivide(true)
+         .orient("left");
+
+
+      d3.csv("titleholders.csv",function(data){
+
+      var bouts=data.map(function (i){if (i.bouts > 0) return parseFloat(i.bouts)});
+      var histbouts  = d3.layout.histogram()
+          .bins(15)
+          (bouts)
+
+      var age=data.map(function (i){return parseInt(i.age)});
+      var histage  = d3.layout.histogram()
+          .bins(20)
+          (age)
+
+      var ageL=data.map(function (i){if (i.stance==1) return parseInt(i.age)});
+      var histageL  = d3.layout.histogram()
+          .range([d3.min(age),d3.max(age)])
+          .bins(20)
+          (ageL)
+
+      var wins=data.map(function (i){if (i.bouts>0) return parseFloat(i.wins)/parseFloat(i.bouts)});
+      var histwins  = d3.layout.histogram()
+          .bins(10)
+          (wins)
+
+      var winsL=data.map(function (i){if (i.stance==1) return parseFloat(i.wins)/parseFloat(i.bouts)});
+      var histwinsL  = d3.layout.histogram()
+          .range([d3.min(wins),d3.max(wins)])
+          .bins(10)
+          (winsL)
+
+
+      var kos=data.map(function (i){ return parseInt(i.KOs)});
+      var histkos  = d3.layout.histogram()
+          .bins(10)
+          (kos)
+
+
+      var kosL=data.map(function (i){if (i.stance==1) return parseInt(i.KOs)});
+      var histkosL  = d3.layout.histogram()
+          .range([d3.min(kos),d3.max(kos)])
+          .bins(10)
+          (kosL)
+
+
+
+      xrngage = [d3.min(histage.map(function(d) { if (d.x > 0) return d.x - d.dx; })),d3.max(histage.map(function(d) { return d.x + d.dx; }))]
+
+
+      var xage=d3.scale.linear()
+         .domain(xrngage)
+         .range([0,width]);                
+
+      var yage=d3.scale.linear()
+         .domain([0,d3.max(histage.map(function(i) { return i.length; }))])
+         .range([0,height]);
+      var yinvage=d3.scale.linear()
+         .domain([d3.max(histage.map(function(i) { return i.length; })),0])
+         .range([0,height]);
+
+
+      xrngbouts = [d3.min(histbouts.map(function(d) { if (d.x >= 0) return d.x - d.dx; })),d3.max(histbouts.map(function(d) { return d.x + d.dx; }))]
+
+
+      var xbouts=d3.scale.linear()
+         .domain(xrngbouts)
+         .range([0,width]);                
+
+      var ybouts=d3.scale.linear()
+         .domain([0,d3.max(histbouts.map(function(i) { return i.length; }))])
+         .range([0,height]);
+      var yinvbouts=d3.scale.linear()
+         .domain([d3.max(histbouts.map(function(i) { return i.length; })),0])
+         .range([0,height]);
+
+      xrngwins = [d3.min(histwins.map(function(d) { if (d.x >= 0) return d.x - d.dx; })),d3.max(histwins.map(function(d) { return d.x + d.dx; }))]
+
+
+      var xwins=d3.scale.linear()
+         .domain(xrngwins)
+         .range([0,width]);                
+
+      var ywins=d3.scale.linear()
+         .domain([0,d3.max(histwins.map(function(i) { return i.length; }))])
+         .range([0,height]);
+      var yinvwins=d3.scale.linear()
+         .domain([d3.max(histwins.map(function(i) { return i.length; })),0])
+         .range([0,height]);
+
+      xrngkos = [d3.min(histkos.map(function(d) { if (d.x >= 0) return d.x - d.dx; })),d3.max(histkos.map(function(d) { return d.x + d.dx; }))]
+
+
+      var xkos=d3.scale.linear()
+         .domain(xrngkos)
+         .range([0,width]);                
+
+      var ykos=d3.scale.linear()
+         .domain([0,d3.max(histkos.map(function(i) { return i.length; }))])
+         .range([0,height]);
+      var yinvkos=d3.scale.linear()
+         .domain([d3.max(histkos.map(function(i) { return i.length; })),0])
+         .range([0,height]);
+
+
+///***********calculate means**************/
+
+      var boutsmean=0, boutsstd=0.0, agemean=0.0, agestd=0.0, winsmean=0.0, winsstd=0.0,kosmean=0.0,kosstd=0.0;
+
+      for (var i=0; i<age.length; i++) {
+		if (isNaN(age[i])){
+			console.log(age[i])
+                } else {
+		        agemean += age[i];
+		        agestd += age[i]*age[i];
+                }
+      }
+      agemean/= age.length;
+      agestd /= age.length;
+      agestd  = Math.sqrt(agestd - agemean*agemean);
+      
+
+      var gaa = [];			    
+      step=(d3.max(age)-d3.min(age))/100
+      ageh=histage.map(function (i){ return i.y});
+				    
+      for (i=0; i<100; i++) {
+            xga = d3.min(age) + step*i;
+            yga = Math.exp(-(xga-agemean)*(xga-agemean)/(2.0*agestd*agestd))
+            gaa.push({"x" : xga, "y" : d3.max(ageh)*yga});
+      }
+
+      for (var i=0; i<bouts.length; i++) {
+		if (isNaN(bouts[i])){
+			console.log(bouts[i])
+                } else {
+		        boutsmean += bouts[i];
+		        boutsstd += bouts[i]*bouts[i];
+                }
+      }
+      boutsmean/= bouts.length;
+      boutsstd /= bouts.length;
+      boutsstd  = Math.sqrt(boutsstd - boutsmean*boutsmean);
+      
+
+      var gab = [];			    
+      step=(d3.max(bouts)-d3.min(bouts))/100
+      boutsh=histbouts.map(function (i){ return i.y});
+      console.log(boutsmean,boutsstd, d3.max(boutsh));
+				  
+				    
+      for (i=0; i<100; i++) {
+            xga = d3.min(bouts) + step*i;
+            yga = Math.exp(-(xga-boutsmean)*(xga-boutsmean)/(2.0*boutsstd*boutsstd));
+            gab.push({"x" : xga, "y" : d3.max(boutsh)*yga});
+      }
+
+      for (var i=0; i<wins.length; i++) {
+		if (isNaN(wins[i])){
+			console.log(wins[i])
+                } else {
+           		winsmean += wins[i];
+ 	        	winsstd += wins[i]*wins[i];
+                }
+      }
+      winsmean/= wins.length;
+      winsstd /= wins.length;
+      winsstd  = Math.sqrt(winsstd - winsmean*winsmean);
+      
+
+      var gaw = [];			    
+      step=(d3.max(wins)-d3.min(wins))/100
+      winsh=histwins.map(function (i){ return i.y});
+      console.log(winsmean,winsstd, d3.max(winsh));
+				  
+				    
+      for (i=0; i<100; i++) {
+            xga = d3.min(wins) + step*i;
+            yga = Math.exp(-(xga-winsmean)*(xga-winsmean)/(2.0*winsstd*winsstd));
+            gaw.push({"x" : xga, "y" : d3.max(winsh)*yga});
+      }
+
+      for (var i=0; i<kos.length; i++) {
+		if (isNaN(kos[i])){
+			console.log(kos[i])
+		}else{
+			kosmean += kos[i];
+			kosstd += kos[i]*kos[i];
+		}
+      }
+      kosmean/= kos.length;
+      kosstd /= kos.length;
+      kosstd  = Math.sqrt(kosstd - kosmean*kosmean);
+      
+
+      var gak = [];			    
+      step=(d3.max(kos)-d3.min(kos))/100
+      kosh=histkos.map(function (i){ return i.y});
+      console.log(kosmean,kosstd, d3.max(kosh));
+				  
+				    
+      for (i=0; i<100; i++) {
+            xga = d3.min(kos) + step*i;
+            yga = Math.exp(-(xga-kosmean)*(xga-kosmean)/(2.0*kosstd*kosstd));
+            gak.push({"x" : xga, "y" : d3.max(kosh)*yga});
+      }
+
+
+
+
+     var canvasage = d3.select("body").append("svg")
+          .attr("width",(width+margin.left+margin.right))
+          .attr("height",(height+margin.bottom+margin.top))
+          .append("g")
+             .attr("transform","translate("+margin.left+","+margin.top+")");
+      canvasage.append("text")
+          .attr("x", 20)
+          .attr("y", 20)
+          .attr("fill","#000")
+          .attr("text-anchor","right")
+          .text("Age")
+
+      var xaxage = canvasage.append("g")
+         .attr("class","x axis")
+          .attr("transform","translate (0,"+height+")")
+          .call(xAxis
+            .scale(xage));
+      var yaxage = canvasage.append("g")
+         .attr("class","y axis")
+          .call(yAxis
+            .scale(yinvage));
+     
+
+     var barsage = canvasage.selectAll(".bar")
+          .data(histage)
+          .enter()
+          .append("g");
+
+
+     var varlinea = d3.svg.line()
+         .x(function(d) { return xage(d.x);})
+         .y(function(d) { return height-yage(d.y);})
+         .interpolate("linear");
+
+      canvasage.append("path")
+       	.style("stroke","#990000")
+	.style("stroke-width", 2)
+	.attr("x", margin.left)
+	.attr("y", margin.top)
+	.attr("stroke-opacity", 0.4)
+	.attr("fill-opacity", 0)
+	.attr("d", varlinea(gaa));
+
+
+     barsage.append("rect")
+          .attr("x",function(d){return xage(d.x-d.dx/2); })
+          .attr("y",function(d){return height-yage(d.y);})
+          .attr("width", function(d){return width*d.dx/(xrngage[1]-xrngage[0])-1; })
+          .attr("height",function(d){return yage(d.y); }) 
+          .attr("fill","steelblue")
+          .on("mouseover", function(d,i) {
+            d3.select("#a" + String(i))
+               .transition().duration(500)
+               .attr("y",function(d){return height-yage(d.y);})
+               .attr("font-size","10px");
+          })
+          .on("mouseout", function(d,i) {
+            d3.select("#a" + String(i))
+               .transition().duration(500)
+               .attr("y",height)
+               .attr("font-size","0px");
+          });
+
+     var barsageL = canvasage.selectAll(".bar")
+          .data(histageL)
+          .enter()
+          .append("g")
+      console.log(histageL)
+     barsageL.append("rect")
+          .attr("x",function(d){return xage(d.x-d.dx*1.0/3.0); })
+          .attr("y",function(d){return height-yage(d.y);})
+          .attr("width", function(d){return width*d.dx/3.0*2.0/(xrngage[1]-xrngage[0])-1; })
+          .attr("height",function(d){return yage(d.y); }) 
+          .attr("fill","#e377c2")
+          .attr("fill-opacity", 0.6);
+
+     barsage.append("text")
+          .attr("id", function(d,i){return "a" + String(i);})
+	  .attr("x",function(d){return xage(d.x); })
+          .attr("y",height)
+          .attr("fill","#fff")
+          .attr("dy","10px")
+          .attr("font-size","0px")
+          .attr("text-anchor","middle")
+          .text(function (d){return d.y;})
+          .on("mouseover", function(d,i) {
+            d3.select("#a" + String(i))
+               .transition().duration(100)
+               .attr("y",function(d){return height-yage(d.y);})
+               .attr("font-size","10px");
+          })
+          .on("mouseout", function(d,i) {
+            d3.select("#a" + String(i))
+               .transition().duration(100)
+               .attr("y",height)
+               .attr("font-size","0px");
+          });
+
+
+     var canvasbouts = d3.select("body").append("svg")
+          .attr("width",(width+margin.left+margin.right))
+          .attr("height",(height+margin.bottom+margin.top))
+          .append("g")
+             .attr("transform","translate("+(margin.left)+","+margin.top+")");
+      canvasbouts.append("text")
+          .attr("x", width-20)
+          .attr("y", 20)
+          .attr("fill","#000")
+          .attr("text-anchor","middle")
+          .text("career fights");
+
+      var xaxbouts = canvasbouts.append("g")
+         .attr("class","x axis")
+          .attr("transform","translate (0,"+height+")")
+          .call(xAxis
+             .ticks(10)
+             .scale(xbouts));
+      var yaxbouts = canvasbouts.append("g")
+         .attr("class","y axis")
+          .call(yAxis
+             .scale(yinvbouts));
+     
+
+     var barsbouts = canvasbouts.selectAll(".bar")
+          .data(histbouts)
+          .enter()
+          .append("g")
+
+     var varlineb = d3.svg.line()
+         .x(function(d) { return xbouts(d.x);})
+         .y(function(d) { return height-ybouts(d.y);})
+         .interpolate("linear");
+      for (var i=0; i<gab.length; i++) {
+	console.log(xbouts(gab[i].x), height-ybouts(gab[i].y));
+      }
+      canvasbouts.append("path")
+       	.style("stroke","#990000")
+	.style("stroke-width", 2)
+	.attr("x", margin.left)
+	.attr("y", margin.top)
+	.attr("stroke-opacity", 0.4)
+	.attr("fill-opacity", 0)
+	.attr("d", varlineb(gab));
+
+     barsbouts.append("rect")
+          .attr("x",function(d){return xbouts(d.x-d.dx/2); })
+          .attr("y",function(d){return height-ybouts(d.y);})
+          .attr("width", function(d){return width*d.dx/(xrngbouts[1]-xrngbouts[0])-1; })
+          .attr("height",function(d){return ybouts(d.y); }) 
+          .attr("fill","steelblue")
+          .on("mouseover", function(d,i) {
+            d3.select("#b" + String(i))
+               .transition().duration(500)
+               .attr("y",function(d){return height-ybouts(d.y);})
+               .attr("font-size","10px");
+          })
+          .on("mouseout", function(d,i) {
+            d3.select("#b" + String(i))
+               .transition().duration(500)
+               .attr("y",height)
+               .attr("font-size","0px");
+          });
+
+
+     barsbouts.append("text")
+          .attr("id", function(d,i){return "b" + String(i);})
+	  .attr("x",function(d){return xbouts(d.x); })
+          .attr("y",height)
+          .attr("fill","#fff")
+          .attr("dy","10px")
+          .attr("font-size","0px")
+          .attr("text-anchor","middle")
+          .text(function (d){return d.y;})
+          .on("mouseover", function(d,i) {
+            d3.select("#b" + String(i))
+               .transition().duration(100)
+               .attr("y",function(d){return height-ybouts(d.y);})
+               .attr("font-size","10px");
+          })
+          .on("mouseout", function(d,i) {
+            d3.select("#b" + String(i))
+               .transition().duration(100)
+               .attr("y",height)
+               .attr("font-size","0px");
+          });
+
+
+    var canvaswins = d3.select("body").append("svg")
+          .attr("width",(width+margin.left+margin.right))
+          .attr("height",(height+margin.bottom+margin.top))
+          .append("g")
+             .attr("transform","translate("+(margin.left)+","+margin.top+")");
+      canvaswins.append("text")
+          .attr("x", 20)
+          .attr("y", 20)
+          .attr("fill","#000")
+          .attr("text-anchor","right")
+          .text("Win ratio");
+
+      var xaxwins = canvaswins.append("g")
+         .attr("class","x axis")
+          .attr("transform","translate (0,"+height+")")
+          .call(xAxis 
+             .scale(xwins));
+      var yaxwins = canvaswins.append("g")
+         .attr("class","y axis")
+          .call(yAxis
+             .scale(yinvwins));
+     
+
+     var barswins = canvaswins.selectAll(".bar")
+          .data(histwins)
+          .enter()
+          .append("g")
+
+     var varlinew = d3.svg.line()
+         .x(function(d) { return xwins(d.x);})
+         .y(function(d) { return height-ywins(d.y);})
+         .interpolate("linear");
+
+      canvaswins.append("path")
+       	.style("stroke","#990000")
+	.style("stroke-width", 2)
+	.attr("x", margin.left)
+	.attr("y", margin.top)
+	.attr("stroke-opacity", 0.4)
+	.attr("fill-opacity", 0)
+	.attr("d", varlinew(gaw));
+
+
+     barswins.append("rect")
+          .attr("x",function(d){return xwins(d.x-d.dx/2); })
+          .attr("y",function(d){return height-ywins(d.y);})
+          .attr("width", function(d){return width*d.dx/(xrngwins[1]-xrngwins[0])-1; })
+          .attr("height",function(d){return ywins(d.y); }) 
+          .attr("fill","steelblue")
+          .on("mouseover", function(d,i) {
+            d3.select("#w" + String(i))
+               .transition().duration(500)
+               .attr("y",function(d){return height-ywins(d.y);})
+               .attr("font-size","10px");
+          })
+          .on("mouseout", function(d,i) {
+            d3.select("#w" + String(i))
+               .transition().duration(500)
+               .attr("y",height)
+               .attr("font-size","0px");
+          });
+
+
+     barswins.append("text")
+          .attr("id", function(d,i){return "w" + String(i);})
+	  .attr("x",function(d){return xwins(d.x); })
+          .attr("y",height)
+          .attr("fill","#fff")
+          .attr("dy","10px")
+          .attr("font-size","0px")
+          .attr("text-anchor","middle")
+          .text(function (d){return d.y;})
+          .on("mouseover", function(d,i) {
+            d3.select("#w" + String(i))
+               .transition().duration(100)
+               .attr("y",function(d){return height-ywins(d.y);})
+               .attr("font-size","10px");
+          })
+          .on("mouseout", function(d,i) {
+            d3.select("#w" + String(i))
+               .transition().duration(100)
+               .attr("y",height)
+               .attr("font-size","0px");
+          });
+
+     var barswinsL = canvaswins.selectAll(".bar")
+          .data(histwinsL)
+          .enter()
+          .append("g")
+     barswinsL.append("rect")
+          .attr("x",function(d){return xwins(d.x-d.dx*1.0/3.0); })
+          .attr("y",function(d){return height-ywins(d.y);})
+          .attr("width", function(d){return width*d.dx/3.0*2.0/(xrngwins[1]-xrngwins[0])-1; })
+          .attr("height",function(d){return ywins(d.y); }) 
+          .attr("fill","#e377c2")
+          .attr("fill-opacity", 0.6);
+
+    var canvaskos = d3.select("body").append("svg")
+          .attr("width",(width+margin.left+margin.right))
+          .attr("height",(height+margin.bottom+margin.top))
+          .append("g")
+             .attr("transform","translate("+(margin.left)+","+margin.top+")");
+        canvaskos.append("text")
+          .attr("x", width-20)
+          .attr("y", 20)
+          .attr("fill","#000")
+          .attr("text-anchor","right")
+          .text("KOs");
+
+
+
+      var xaxkos = canvaskos.append("g")
+         .attr("class","x axis")
+          .attr("transform","translate (0,"+height+")")
+          .call(xAxis 
+             .scale(xkos));
+      var yaxkos = canvaskos.append("g")
+         .attr("class","y axis")
+          .call(yAxis
+             .scale(yinvkos));
+     
+
+     var barskos = canvaskos.selectAll(".bar")
+          .data(histkos)
+          .enter()
+          .append("g");
+
+     var varlinek = d3.svg.line()
+         .x(function(d) { return xkos(d.x);})
+         .y(function(d) { return height-ykos(d.y);})
+         .interpolate("linear");
+
+      canvaskos.append("path")
+       	.style("stroke","#990000")
+	.style("stroke-width", 2)
+	.attr("x", margin.left)
+	.attr("y", margin.top)
+	.attr("stroke-opacity", 0.4)
+	.attr("fill-opacity", 0)
+	.attr("d", varlinek(gak));
+
+     barskos.append("rect")
+          .attr("x",function(d){return xkos(d.x-d.dx/2); })
+          .attr("y",function(d){return height-ykos(d.y);})
+          .attr("width", function(d){return width*d.dx/(xrngkos[1]-xrngkos[0])-1; })
+          .attr("height",function(d){return ykos(d.y); }) 
+          .attr("fill","steelblue")
+          .on("mouseover", function(d,i) {
+            d3.select("#k" + String(i))
+               .transition().duration(500)
+               .attr("y",function(d){return height-ykos(d.y);})
+               .attr("font-size","10px");
+          })
+          .on("mouseout", function(d,i) {
+            d3.select("#k" + String(i))
+               .transition().duration(500)
+               .attr("y",height)
+               .attr("font-size","0px");
+          });
+
+
+     barskos.append("text")
+          .attr("id", function(d,i){return "k" + String(i);})
+	  .attr("x",function(d){return xkos(d.x); })
+          .attr("y",height)
+          .attr("fill","#fff")
+          .attr("dy","10px")
+          .attr("font-size","0px")
+          .attr("text-anchor","middle")
+          .text(function (d){return d.y;})
+          .on("mouseover", function(d,i) {
+            d3.select("#k" + String(i))
+               .transition().duration(100)
+               .attr("y",function(d){return height-ykos(d.y);})
+               .attr("font-size","10px");
+          })
+          .on("mouseout", function(d,i) {
+            d3.select("#k" + String(i))
+               .transition().duration(100)
+               .attr("y",height)
+               .attr("font-size","0px");
+          });
+
+
+     var barskosL = canvaskos.selectAll(".bar")
+          .data(histkosL)
+          .enter()
+          .append("g")
+     barskosL.append("rect")
+          .attr("x",function(d){return xkos(d.x-d.dx*1.0/3.0); })
+          .attr("y",function(d){return height-ykos(d.y);})
+          .attr("width", function(d){return width*d.dx/3.0*2.0/(xrngkos[1]-xrngkos[0])-1; })
+          .attr("height",function(d){return ykos(d.y); }) 
+          .attr("fill","#e377c2")
+          .attr("fill-opacity", 0.6);
+      
+      })
+    </script>
+  </body>
+</html>

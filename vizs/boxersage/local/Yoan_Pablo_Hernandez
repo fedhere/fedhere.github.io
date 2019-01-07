@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MediaWiki API Result</title>
+</head>
+<body>
+<br />
+<small>
+You are looking at the HTML representation of the XML format.<br />
+HTML is good for debugging, but is unsuitable for application use.<br />
+Specify the format parameter to change the output format.<br />
+To see the non HTML representation of the XML format, set format=xml.<br />
+See the <a href='https://www.mediawiki.org/wiki/API'>complete documentation</a>, or
+<a href='/w/api.php'>API help</a> for more information.
+</small>
+<pre style='white-space: pre-wrap;'>
+<span style="color:blue;">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span style="color:blue;">&lt;api&gt;</span>
+  <span style="color:blue;">&lt;query&gt;</span>
+    <span style="color:blue;">&lt;normalized&gt;</span>
+      <span style="color:blue;">&lt;n from=&quot;Yoan_Pablo_Hernandez&quot; to=&quot;Yoan Pablo Hernandez&quot; /&gt;</span>
+    <span style="color:blue;">&lt;/normalized&gt;</span>
+    <span style="color:blue;">&lt;redirects&gt;</span>
+      <span style="color:blue;">&lt;r from=&quot;Yoan Pablo Hernandez&quot; to=&quot;Yoan Pablo Hernández&quot; /&gt;</span>
+    <span style="color:blue;">&lt;/redirects&gt;</span>
+    <span style="color:blue;">&lt;pages&gt;</span>
+      <span style="color:blue;">&lt;page pageid=&quot;8965172&quot; ns=&quot;0&quot; title=&quot;Yoan Pablo Hernández&quot;&gt;</span>
+        <span style="color:blue;">&lt;revisions&gt;</span>
+          <span style="color:blue;">&lt;rev contentformat=&quot;text/x-wiki&quot; contentmodel=&quot;wikitext&quot; xml:space=&quot;preserve&quot;&gt;</span>{{Infobox Boxer
+|name= Yoan Pablo Hernández
+|realname= Yoan Pablo Hernández Suárez
+|image=Yoan Pablo Hernández 2008.JPG
+|caption=Hernández in 2008
+|nationality= [[Cubans|Cuban]]/[[Germans|German]]
+|weight=[[Cruiserweight (boxing)|Cruiserweight]]
+|height={{convert|6|ft|4|in|m|2|abbr=on}}
+|reach=
+|birth_date={{Birth date and age|1984|10|28|df=y}}
+|birth_place= [[Pinar del Río]], [[Pinar del Río Province]], [[Cuba]]
+|death_date=
+|death_place=
+|residence= [[Halle an der Saale, Sachsen-Anhalt]], [[Germany]]
+|style=[[Southpaw stance|Southpaw]]
+|total=27
+|wins=26
+|KO=13
+|losses=1
+|draws=0
+|no contests=0
+|}}
+{{Spanish name 2|Hernández|Suárez}}
+{{MedalTableTop}}
+{{MedalSport | Men's [[Boxing]]}}
+{{MedalCountry | {{CUB}} }}
+{{MedalCompetition|[[Pan American Games]]}}
+{{MedalSilver| [[2003 Pan American Games|2003 Santo Domingo]] | Light Heavyweight}}
+{{MedalBottom}}
+
+'''Yoan Pablo Hernández Suárez''' (born 28 October 1984 in [[Havana, Cuba]]) is a [[Cubans|Cuban]]-[[Germans|German]] &amp;lt;ref&amp;gt;<a href="http://sport.t-online.de/box-weltmeister-yoan-pablo-hernandez-wird-deutscher/id_61439056/index&amp;lt;/ref&amp;gt;">http://sport.t-online.de/box-weltmeister-yoan-pablo-hernandez-wird-deutscher/id_61439056/index&amp;lt;/ref&amp;gt;</a> professional [[Boxing|boxer]]. Hernández fights in the [[Cruiserweight (boxing)|Cruiserweight]] division. He is the current [[Ring Magazine]] World Cruiserweight Champion as well as the [[International Boxing Federation|IBF]] Cruiserweight Champion.<span style="color:blue;">&lt;/rev&gt;</span>
+        <span style="color:blue;">&lt;/revisions&gt;</span>
+      <span style="color:blue;">&lt;/page&gt;</span>
+    <span style="color:blue;">&lt;/pages&gt;</span>
+  <span style="color:blue;">&lt;/query&gt;</span>
+<span style="color:blue;">&lt;/api&gt;</span>
+</pre>
+</body>
+</html>
+<!-- Served by mw1193 in 0.071 secs. -->

@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MediaWiki API Result</title>
+</head>
+<body>
+<br />
+<small>
+You are looking at the HTML representation of the XML format.<br />
+HTML is good for debugging, but is unsuitable for application use.<br />
+Specify the format parameter to change the output format.<br />
+To see the non HTML representation of the XML format, set format=xml.<br />
+See the <a href='https://www.mediawiki.org/wiki/API'>complete documentation</a>, or
+<a href='/w/api.php'>API help</a> for more information.
+</small>
+<pre style='white-space: pre-wrap;'>
+<span style="color:blue;">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span style="color:blue;">&lt;api&gt;</span>
+  <span style="color:blue;">&lt;query&gt;</span>
+    <span style="color:blue;">&lt;normalized&gt;</span>
+      <span style="color:blue;">&lt;n from=&quot;Juan_Estrada&quot; to=&quot;Juan Estrada&quot; /&gt;</span>
+    <span style="color:blue;">&lt;/normalized&gt;</span>
+    <span style="color:blue;">&lt;redirects&gt;</span>
+      <span style="color:blue;">&lt;r from=&quot;Juan Estrada&quot; to=&quot;Juan Alberto Estrada&quot; /&gt;</span>
+    <span style="color:blue;">&lt;/redirects&gt;</span>
+    <span style="color:blue;">&lt;pages&gt;</span>
+      <span style="color:blue;">&lt;page pageid=&quot;22907308&quot; ns=&quot;0&quot; title=&quot;Juan Alberto Estrada&quot;&gt;</span>
+        <span style="color:blue;">&lt;revisions&gt;</span>
+          <span style="color:blue;">&lt;rev contentformat=&quot;text/x-wiki&quot; contentmodel=&quot;wikitext&quot; xml:space=&quot;preserve&quot;&gt;</span>{{Infobox football biography
+ | name = Juan Alberto Estrada
+ | image = [[File:Juan Estrada 1940.jpg|180px]]
+ | caption = Estrada in 1940 covering &amp;lt;br&amp;gt;on ''[[El Gráfico]]'' magazine.
+ | fullname = Juan Alberto Estrada  
+ | height = 
+ | birth_date = {{birth date|1912|10|28|df=yes}}         
+ | birth_place = [[San Pedro, Buenos Aires|San Pedro]], [[Argentina]]
+ | death_date = {{death date and age|1985|5|28|1912|10|28|df=yes}}
+ | position = [[Goalkeeper (football)|Goalkeeper]]
+ | youthyears1 = 
+ | youthclubs1 = Sportivo Palermo
+ |  years1 = 1933-1937  
+| years2 = 1938-1943  
+| years3 = 1944-?
+ |  clubs1 = [[Club Atlético Huracán|Huracán]]  
+| clubs2 = [[Boca Juniors]]  
+| clubs3 = [[Defensor Sporting Club|Defensor]]
+ | caps1 = 102   
+| caps2 = 139   
+| caps3 = ?  
+| goals1 = 0  
+| goals2 = 0  
+| goals3 = ? 
+ | nationalyears1 = 1936-1941
+ | nationalteam1 = [[Argentina national football team|Argentina]]
+ | nationalcaps1 = 18  
+| nationalgoals1 = 0
+}}
+'''Juan Alberto Estrada''' (28 October 1912 - 28 May 1985) was an [[Argentina|Argentine]] [[Association football|football]] goalkeeper who won two [[Copa América]] championships with the [[Argentina national football team|Argentina national team]] and two [[Primera División Argentina|league titles]] with [[Boca Juniors]].<span style="color:blue;">&lt;/rev&gt;</span>
+        <span style="color:blue;">&lt;/revisions&gt;</span>
+      <span style="color:blue;">&lt;/page&gt;</span>
+    <span style="color:blue;">&lt;/pages&gt;</span>
+  <span style="color:blue;">&lt;/query&gt;</span>
+<span style="color:blue;">&lt;/api&gt;</span>
+</pre>
+</body>
+</html>
+<!-- Served by mw1148 in 0.046 secs. -->

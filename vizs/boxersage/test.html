@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+
+svg {
+  font: 10px sans-serif;
+}
+
+rect {
+opacity: 0.6;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+</style>
+<body>
+<p>hallo world</p>
+
+<script src="http://d3js.org/d3.v2.min.js?2.9.6"></script>
+<script>
+
+var margin = {top: 10, right: 500, bottom: 25, left: 60}, 
+    margin2 = {top: 10, right: 20, bottom: 25, left: 460},
+    width = 960 - margin.left - margin.right,
+    width2 = 960 - margin2.left - margin.right,
+    height = 450 - margin.bottom - margin.top ;
+
+var x = d3.time.scale().range([0, width]),
+    x2 = d3.time.scale().range([0, width2]),
+    y = d3.scale.linear().range([height, 0]),
+    y2 = d3.scale.linear().range([height, 0]);
+
+var xAxis =  d3.svg.axis().scale(x).orient("bottom"),
+    xAxis2 = d3.svg.axis().scale(x2).orient("bottom"),
+    yAxis =  d3.svg.axis().scale(y).orient("left");
+
+var svg = d3.select("body").append("svg")
+    .attr("width", 480+"px")
+    .attr("height", height + margin.top +margin.bottom+"px")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+var color = d3.scale.ordinal()
+    .range(["#e377c2","#1f77b4"]);
+
+var colors = ["#e377c2","#1f77b4"];
+
+
+
+d3.csv("age.csv", function(bins) {
+  // Coerce types.
+  bins.forEach(function(bin) {
+    bin.age = +bin.age;
+    bin.fighters = +bin.fighters;
+    bin.fighterspc = +bin.fighterspc;
+    bin.lfighters = +bin.lfighters;
+    bin.gauss=+bin.gauss;
+  });
+  // Normalize each bin to so that height = quantity/width;
+  // see http://en.wikipedia.org/wiki/Histogram#Examples
+
+ for (var i = 1, n = bins.length, bin; i < n; i++) {
+    bin = bins[i];
+    bin.offset = bins[i - 1].age;
+    bin.width = bins[1].age-bins[0].age;
+    bin.height = bin.fighters ;
+  }
+
+  // Set the scale domain.
+    rng = [20, d3.max(bins.map(function(d) { return d.offset + d.width; }))]; 
+    x.domain(rng); 
+    y.domain([0, d3.max(bins.map(function(d) { return d.height; }))]);
+
+
+ svg.selectAll("rect")
+      .data(bins)
+        .enter().append("rect")
+        .attr("class", "bin")
+        .attr("x", function(d) { return x(d.offset); })
+        .attr("width", function(d) { return width*d.width/(rng[1]-rng[0]) - 1; })
+        .attr("y", function(d) { return y(d.height); })
+        .attr("height", function(d) { return height - y(d.height); })
+        .style("fill", colors[1]);
+
+ svg.selectAll("rect")
+      .data(bins)
+        .enter().append("rect")
+        .attr("class", "bin")
+        .attr("x", function(d) { return x(d.offset)+10; })
+        .attr("width", function(d) { return width*d.width/(rng[1]-rng[0]) - 1; })
+        .attr("y", function(d) { return y(d.height); })
+        .attr("height", function(d) { return height - y(d.height); })
+        .style("fill", colors[0]);
+
+/*
+ var h1 = svg.append("g")
+          .attr("width",width)
+          .attr("height",height)
+          .attr("x",margin.left)
+          .attr("y",margin.top);
+
+ h1.append("g")					   
+      .attr("class", "x axis")
+      .attr("transform", "translate(0," + height + ")") 
+      .call(xAxis
+      .scale(x)
+      .orient("bottom"));
+
+     h1.append("g")
+      .attr("class", "y axis")
+      .call(yAxis
+        .scale(y)
+        .orient("left"));
+*/
+
+svg.append("g")
+   .attr("class", "x axis")
+   .attr("x", margin.left)
+   .attr("y", margin.top)
+   .call(xAxis)
+   .attr("transform", "translate(0, " + height + ")");
+
+svg.append("g")
+   .attr("class","y axis")
+   .attr("x", margin.left)
+   .attr("y", margin.top)
+   .call(yAxis);
+
+
+
+
+
+
+svg.selectAll(".bin")
+      .data(bins)
+    .enter().append("rect")
+      .attr("class", "bin")
+      .attr("x", function(d) { console.log("I'm in here..."); return x(d.offset)+40; })
+      .attr("width", function(d) { return width*d.width/(rng[1]-rng[0]) - 1; })
+      .attr("y", function(d) { return y(d.height); })
+      .attr("height", function(d) { return height - y(d.height); })
+      .style("fill", "#000000");
+
+
+svg.append("g")
+   .attr("class","y axis")
+   .attr("x", margin.left)
+   .attr("y", margin.top)
+   .call(yAxis)
+   .attr("transform", "translate(" + (width+margin.left) + ",0)");
+
+svg.append("g")
+   .attr("class","x axis")
+   .attr("x", margin.left)
+   .attr("y", margin.top)
+   .call(xAxis)
+   .attr("transform", "translate(" + (width+margin.left) + ","+height+")");
+});
+</script>
+

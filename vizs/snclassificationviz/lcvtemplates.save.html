@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+
+
+body {
+  font-family: "Raleway",  sans-serif;
+  margin: auto;
+  position: relative;
+  width: 960px;
+}
+
+.line  {
+  stroke: steelblue;
+  stroke-width: 3;
+  fill: none;
+}
+
+//.line:hover {
+//  stroke-width: 5;
+//	fille:none;
+//	tipIa.show;
+//}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: grey;
+	stroke-width: 2;
+	shape-rendering: crispEdges;
+}
+
+.Sline {
+	fill: none;
+	stroke: purple;
+	stroke-width: 3;
+	shape-rendering: crispEdges;
+}
+.Slabel {
+	font-size: 1.2em;;
+	stroke: purple;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+}
+
+.Siline {
+	fill: none;
+	stroke: red;
+	stroke-width: 3;
+	shape-rendering: crispEdges;
+}
+.Silabel {
+	font-size: 1.2em;;
+	stroke: red;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+}
+.Heline {
+	fill: none;
+	stroke: #00FF7F;
+	stroke-width: 3;
+	shape-rendering: crispEdges;
+}
+.Helabel {
+	font-size: 1.2em;;
+	stroke: #00FF7F;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+}
+
+.Hline {
+	fill: none;
+	stroke: #191970;
+	stroke-width: 4;
+	shape-rendering: crispEdges;
+}
+
+.Hlabel {
+	font-size: 1.2em;;
+	stroke: #191970;
+	stroke-width: 1;
+	shape-rendering: crispEdges;
+}
+
+
+.area {
+    fill: rgba(100,100,100,0.3);
+    stroke-width: 0;
+}
+
+text {
+	font-size: 1.2em;;
+	stroke : black;
+}
+
+
+text.xlabel {
+	font-size: 1.2em;;
+	stroke : black;
+}
+
+text.ylabel {
+	font-size: 1.2em;;
+	stroke : black;
+	-ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}
+
+text.sntype {
+	font-size: 1.6em;;
+	stroke: steelblue;
+	stroke-width:1;
+}
+
+text.snblur {
+	font-size: 1.2em;;
+	stroke: steelblue;
+	stroke-width:1;
+}
+text.red {
+	font-size: 1.2em;;
+	stroke : red;
+}
+
+text.sn  {
+	font-size: 1.6em ;
+	stroke : black;
+
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+.d3-tip2 {
+  line-height: 0;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(250,250,250, 1);
+
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+
+</style>
+<HTML>
+   <head>
+	   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	   <title>SN classification</title>
+    	   <script src="http://d3js.org/d3.v2.js"></script>
+	   <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+	   <script src="http://www.d3plus.org/js/d3plus.js"></script>
+   </head>
+  <body>
+    <div id="canvas1" style="float:left"></div>
+    <div id="canvas3" style="float:right"></div>
+    <div id="canvas2" style="float:left"></div>
+    
+    <script type="text/javascript">
+      
+
+
+var margin = {top: 30, right: 20, bottom: 30, left: 35},
+    width = 600 - margin.left - margin.right,
+    height = 220 - margin.top - margin.bottom-1;
+
+var x = d3.scale.linear().range([-150, width]);
+var y = d3.scale.linear().range([height, 0]);
+
+var xAxis = d3.svg.axis().scale(x)
+    .orient("bottom").ticks(5);
+
+var xAxisnotics = d3.svg.axis().scale(x)
+    .orient("bottom").ticks(0);
+
+var yAxis = d3.svg.axis().scale(y)
+    .orient("left").ticks(0);
+
+ // Define the line
+var myvalueline = d3.svg.line()
+	.x(function(d,c) { return x(d.t); })
+    .y(function(d) { return y(d.f); });
+
+
+
+var myarea = d3.svg.area()
+		.x(function(d) {return x(d.t);})
+		.y0(function(d) { return y(d.f-d.e); })
+		.y1(function(d) { return y(d.f+d.e); });
+
+
+
+var	svg = d3.select("#canvas1")
+	.append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom)
+	.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+var tipIa = "SN Ia are standard candles, and therefore they can be used in cosmology. They arise from the thermonuclear explosion of an accreting White Dwarf";
+
+var tipII = "SN II show distinct P-Cygni profiles even at early times, and display diverse photmetric behavior: SN IIP, SN IIL, and interaction with circumstellar material in SN IIn";
+
+var tipIb = "SN Ib show no H suggesting the progenitors have lost the H envelopes before explosion. Unlike Ic they show clear He features";
+
+var tipIc = "SN Ic show no He or H in their spectra. Features traditionally identified with Si have recently been questioned. Could they hide some H or He?";
+
+var tipIcBL = "SN IcBL seen in conjunction with long duration GRBs have stretched out features indicative of high explosion velocities";
+
+d3.json("/spectemplates_snIa.json", function(data) {
+  // Scale the range of the data
+	x.domain([0,d3.max(data, function(d) { return d.t; })]);
+	y.domain([0, d3.max(data, function(d) { return d.f; })]);
+
+	svg.append("rect")
+		.attr("x",0)
+		.attr("y",0)
+		.attr("width",width)
+		.attr("height",height)
+		.attr("fill","#ffffff")
+		.attr("opacity",0)
+		.on('mouseover',function(){
+			d3.select("#rect1")
+			.transition()
+			.duration(0)
+			.style("opacity", 1)
+			d3.select("#Ia")
+			.transition()
+			.duration(0)
+			.style("stroke-width", 5);
+			d3.select("#sniatext")
+			.transition()
+			.duration(1)
+			.style("opacity", 1);
+			})
+		.on('mouseout', function(){
+			d3.select("#rect1")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#Ia")
+			.transition()
+			.duration(30)
+			.style("stroke-width", 3);
+			d3.select("#sniatext")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);});
+
+
+
+   	svg.append("text")
+		.attr("class","sn")
+		.attr("x",200)
+		.attr("y",10)
+		.text("Thermonuclear SN");
+
+	// Add the myvalueline path.
+	svg.append("path")
+		.attr("class", "line")
+		.attr("id","Ia")
+		.attr("d", myvalueline(data,1.0))
+		.on('mouseover',function(){
+			d3.select("#rect1")
+			.transition()
+			.duration(0)
+			.style("opacity", 1)
+			d3.select("#Ia")
+			.transition()
+			.duration(0)
+			.style("stroke-width", 5);
+			d3.select("#sniatext")
+			.transition()
+			.duration(1)
+			.style("opacity", 1);
+			d3.select("#ialabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width", 2.5);
+			})
+		.on('mouseout', function(){
+			d3.select("#rect1")
+			.transition()
+			.duration(30)
+			.style("opacity", 0)
+			d3.select("#Ia")
+			.transition()
+			.duration(30)
+			.style("stroke-width", 3);
+			d3.select("#sniatext")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#ialabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width", 1);
+			});
+
+
+
+	svg.append("path")
+		.attr("class", "Sline")
+		.attr("d", myvalueline(data.filter(function(d)  {return d.t <5586 & d.t>5157;}),1.0));
+    svg.append("path")
+		.attr("class", "Siline")
+		.attr("d", myvalueline(data.filter(function(d)  {return d.t >3905 & d.t<4102;}),1.0));
+    svg.append("path")
+		.attr("class", "Siline")
+		.attr("d", myvalueline(data.filter(function(d)  {return d.t >5872 & d.t<6359;}),1.0));
+
+
+
+	// Add the X Axis
+	svg.append("g")
+		.attr("class", "x axis")
+		.attr("transform", "translate(0," + height + ")")
+		.call(xAxisnotics);
+
+	svg.append("text")
+		.attr("class","sntype")
+		.attr("id","ialabel")
+		.attr("x",480)
+		.attr("y",100)
+		.text("SN Ia");
+
+	// Add the Y Axis
+	svg.append("g")
+		.attr("class", "y axis")
+		.call(yAxis);
+
+
+
+   svg.append("text")
+		.attr("class","Slabel")
+		.attr("x",x(d3.mean(data.filter(function(d)  {return d.t <5586 & d.t>5157;}), function(d) { return d.t; }))-10)
+		.attr("y",y(d3.max(data.filter(function(d)  {return d.t <5586 & d.t>5157;}), function(d) { return d.f; }))-10)
+		.text("SII")
+	//console.log(myvalueline(data,1.0));
+
+
+
+	svg.append("text")
+		.attr("class","Silabel")
+		.attr("x",x(d3.mean(data.filter(function(d)  {return d.t >3905 & d.t<4102;}), function(d) { return d.t; }))-10)
+		.attr("y",y(d3.max(data.filter(function(d)  {return d.t >3905 & d.t<4102;}), function(d) { return d.f; }))-10)
+		.text("SiII")
+
+
+	svg.append("text")
+		.attr("class","Silabel")
+		.attr("x",x(d3.mean(data.filter(function(d)  {return d.t >5872 & d.t<6359;}), function(d) { return d.t; }))-10)
+		.attr("y",y(d3.max(data.filter(function(d)  {return d.t >5872 & d.t<6359;}), function(d) { return d.f; }))-10)
+		.text("SiII")
+
+});
+
+
+
+var	svg1 = d3.select("#canvas2")
+	.append("svg")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", 5*(height+ margin.top + margin.bottom))
+	.append("g")
+		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+d3.json("/spectemplates_snII.json", function(data) {
+
+
+    svg1.append("rect")
+		.attr("x",0)
+		.attr("y",0)
+		.attr("width",width)
+		.attr("height",6*height)
+		.attr("fill","#ffffff")
+		.on('mouseover',function(){
+			d3.select("#rect2")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);})
+		.on('mouseout', function(){
+			d3.select("#rect2")
+			.transition()
+			.duration(30)
+			.style("opacity", 0)});
+
+
+	svg1.append("text")
+		.attr("class","sn")
+		.attr("x",200)
+		.attr("y",-10)
+		.text("Core Collapse SN");
+
+
+   // Scale the range of the data
+	x.domain([0,d3.max(data, function(d) { return d.t; })]);
+	y.domain([0, d3.max(data, function(d) { return d.f; })]);
+
+	svg1.append("text")
+		.attr("class","sntype")
+		.attr("id","iilabel")
+		.attr("x",480)
+		.attr("y",100)
+		.text("SN II");
+
+	// Add the valueline path.
+	svg1.append("path")
+		.attr("class", "area")
+		.attr("d", myarea(data,1.0));
+
+
+	svg1.append("path")
+		.attr("class", "line")
+		.attr("id","II")
+		.attr("d", myvalueline(data,1.0))
+		.on('mouseover', function(){
+			d3.select("#rIb")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#sniitext")
+			.transition()
+			.duration(1)
+			.style("opacity", 1);
+			d3.select("#rIc")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#rect2")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#II")
+			.transition()
+			.duration(0)
+			.style("stroke-width", 5);
+			d3.select("#iilabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width",2.5);
+			})
+        .on('mouseout', function(){
+			d3.select("#rIb")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#rIc")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#rect2")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#sniitext")
+			.transition()
+			.duration(1)
+			.style("opacity", 0);
+			d3.select("#II")
+			.transition()
+			.duration(30)
+			.style("stroke-width", 3);
+			d3.select("#iilabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width",1);
+			});
+
+
+	svg1.append("path")
+		.attr("class", "Hline")
+		.attr("d", myvalueline(data.filter(function(d)  {return d.t > 4153 & d.t<4350;}),1.0));
+	svg1.append("path")
+		.attr("class", "Hline")
+		.attr("d", myvalueline(data.filter(function(d)  {return d.t > 4658 & d.t<4853;}),1.0));
+	svg1.append("path")
+		.attr("class", "Hline")
+		.attr("d", myvalueline(data.filter(function(d)  {return d.t > 6300 & d.t<6850;}),1.0));
+
+
+
+
+	// Add the Y Axis
+	svg1.append("g")
+		.attr("class", "y axis")
+		.call(yAxis);
+
+
+	svg1.append("g")
+		.attr("class", "y axis")
+		.call(yAxis);
+	svg1.append("text")
+		.attr("class","Hlabel")
+		.attr("x",x(d3.mean(data.filter(function(d)  {return d.t > 6300 & d.t<6850;}), function(d) { return d.t; }))-10)
+		.attr("y",y(d3.max(data.filter(function(d)  {return d.t > 6300 & d.t<6850;}), function(d) { return d.f; }))-20)
+		.text("H\u03b1")
+
+	svg1.append("text")
+		.attr("class","Hlabel")
+		.attr("x",x(d3.mean(data.filter(function(d)  {return d.t > 4658 & d.t<4853;}), function(d) { return d.t; }))-10)
+		.attr("y",y(d3.max(data.filter(function(d)  {return d.t > 4658 & d.t<4853;}), function(d) { return d.f; }))-20)
+		.text("H\u03b2")
+
+	svg1.append("text")
+		.attr("class","Hlabel")
+		.attr("x",x(d3.mean(data.filter(function(d)  {return d.t > 4153 & d.t<4350;}), function(d) { return d.t; }))-10)
+		.attr("y",y(d3.max(data.filter(function(d)  {return d.t > 4153 & d.t<4350;}), function(d) { return d.f; }))-20)
+		.text("H\u03b3")
+});
+
+
+
+
+
+
+
+d3.json("/spectemplates_snIb.json", function(data) {
+
+// Scale the range of the data
+	x.domain([0,d3.max(data, function(d) { return d.t; })]);
+	y.domain([0,d3.max(data, function(d) { return d.f; })]);
+
+
+	svg1.append("path")
+		.attr("class", "area")
+		.attr("d", myarea(data,1.0))
+		.attr("transform", "translate(0," + height + ")")
+		.on('mouseover', function(){
+			d3.select("#rII")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#rIc")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#rect2")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#snibtext")
+			.transition()
+			.duration(1)
+			.style("opacity", 1);
+			d3.select("#Ib")
+			.transition()
+			.duration(0)
+			.style("stroke-width", 5);
+			d3.select("#iblabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width", 2.5);
+			})
+        .on('mouseout', function(){
+			d3.select("#rII")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#rIc")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#rect2")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#Ib")
+			.transition()
+			.duration(30)
+			.style("stroke-width", 3);
+			d3.select("#snibtext")
+			.transition()
+			.duration(1)
+			.style("opacity", 0);
+			d3.select("#iblabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width", 1);
+			});
+
+	// Add the valueline path.
+	svg1.append("path")
+		.attr("class", "line")
+		.attr("id","Ib")
+		.attr("transform", "translate(0," + height + ")")
+		.attr("d", myvalueline(data,1.0))
+		.on('mouseover', function(){
+			d3.select("#rII")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#rIc")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#rect2")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#snibtext")
+			.transition()
+			.duration(1)
+			.style("opacity", 1);
+			d3.select("#Ib")
+			.transition()
+			.duration(0)
+			.style("stroke-width", 5);
+			d3.select("#iblabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width", 2.5);
+			})
+        .on('mouseout', function(){
+			d3.select("#rII")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#rIc")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#rect2")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#Ib")
+			.transition()
+			.duration(30)
+			.style("stroke-width", 3);
+			d3.select("#snibtext")
+			.transition()
+			.duration(1)
+			.style("opacity", 0);
+			d3.select("#iblabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width", 1);
+			});
+
+	svg1.append("path")
+		.attr("class", "Heline")
+		.attr("d", myvalueline(data.filter(function(d)  {return d.t > 6725 & d.t<6983;}),1.0))
+				.attr("transform", "translate(0," + height + ")");
+	svg1.append("path")
+		.attr("class", "Heline")
+		.attr("d", myvalueline(data.filter(function(d)  {return d.t > 6387 & d.t<6596;}),1.0))
+				.attr("transform", "translate(0," + height + ")");
+
+	svg1.append("path")
+		.attr("class", "Heline")
+		.attr("d", myvalueline(data.filter(function(d)  {return d.t > 5274 & d.t<5838;}),1.0))
+			.attr("transform", "translate(0," + height + ")");
+
+	svg1.append("path")
+		.attr("class", "Heline")
+		.attr("d", myvalueline(data.filter(function(d)  {return d.t > 4240 & d.t<4580;}),1.0))
+			.attr("transform", "translate(0," + height + ")");
+
+
+
+	svg1.append("text")
+		.attr("class","sntype")
+		.attr("id","iblabel")
+		.attr("x",480)
+		.attr("y",100)
+		.text("SN Ib")
+		.attr("transform", "translate(0," + height + ")");
+
+	// Add the Y Axis
+	svg1.append("g")
+		.attr("class", "y axis")
+		.attr("transform", "translate(0," + height + ")")
+		.call(yAxis);
+
+	svg1.append("text")
+		.attr("class","Helabel")
+		.attr("x",x(d3.mean(data.filter(function(d)  {return d.t > 6725 & d.t<6983;}), function(d) { return d.t; }))-10)
+		.attr("y",y(d3.max(data.filter(function(d)  {return d.t > 6725 & d.t<6983;}), function(d) { return d.f; }))-20)
+		.text("HeI")
+		.attr("transform", "translate(0," + height + ")");
+
+	svg1.append("text")
+		.attr("class","Helabel")
+		.attr("x",x(d3.mean(data.filter(function(d)  {return d.t > 6387 & d.t<6596;}), function(d) { return d.t; }))-10)
+		.attr("y",y(d3.max(data.filter(function(d)  {return d.t > 6387 & d.t<6596;}), function(d) { return d.f; }))-20)
+		.text("HeI")
+		.attr("transform", "translate(0," + height + ")");
+
+
+	svg1.append("text")
+		.attr("class","Helabel")
+		.attr("x",x(d3.mean(data.filter(function(d)  {return d.t > 5274 & d.t<5838;}), function(d) { return d.t; }))-10)
+		.attr("y",y(d3.max(data.filter(function(d)  {return d.t > 5274 & d.t<5838;}), function(d) { return d.f; }))-20)
+		.text("HeI")
+		.attr("transform", "translate(0," + height + ")");
+
+
+	svg1.append("text")
+		.attr("class","Helabel")
+		.attr("x",x(d3.mean(data.filter(function(d)  {return d.t > 4240 & d.t<4580;}), function(d) { return d.t; }))-10)
+		.attr("y",y(d3.max(data.filter(function(d)  {return d.t > 4240 & d.t<4580;}), function(d) { return d.f; }))-20)
+		.text("HeI")
+		.attr("transform", "translate(0," + height + ")");
+
+
+});
+
+
+
+
+d3.json("/spectemplates_snIc.json", function(data) {
+
+// Scale the range of the data
+	x.domain([0,d3.max(data, function(d) { return d.t; })]);
+	y.domain([0, d3.max(data, function(d) { return d.f; })]);
+
+
+	// Add the valueline path.
+
+
+   svg1.append("path")
+		.attr("class", "area")
+		.attr("d", myarea(data,1.0))
+		.attr("transform", "translate(0," + height*2 + ")")
+		.on('mouseover', function(){
+			d3.select("#rII")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#rIb")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#rect2")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#snictext")
+			.transition()
+			.duration(1)
+			.style("opacity", 1);
+			d3.select("#Ic")
+			.transition()
+			.duration(0)
+			.style("stroke-width", 5);
+			d3.select("#iclabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width", 2.5);
+			})
+        .on('mouseout', function(){
+			d3.select("#rII")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#rect2")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#rIb")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#Ic")
+			.transition()
+			.duration(30)
+			.style("stroke-width", 3);
+			d3.select("#snictext")
+			.transition()
+			.duration(1)
+			.style("opacity", 0);
+			d3.select("#iclabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width", 1);
+			});
+
+
+   svg1.append("path")
+		.attr("class", "line")
+		.attr("id","Ic")
+		.attr("d", myvalueline(data, 1.0))
+		.attr("transform", "translate(0," + height *2+ ")").on('mouseover', function(){
+			d3.select("#rII")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#rIb")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#rect2")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#snictext")
+			.transition()
+			.duration(1)
+			.style("opacity", 1);
+			d3.select("#Ic")
+			.transition()
+			.duration(0)
+			.style("stroke-width", 5);
+			d3.select("#iclabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width", 2.5);
+			})
+        .on('mouseout', function(){
+			d3.select("#rII")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#rect2")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#rIb")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#Ic")
+			.transition()
+			.duration(30)
+			.style("stroke-width", 3);
+			d3.select("#snictext")
+			.transition()
+			.duration(1)
+			.style("opacity", 0);
+			d3.select("#iclabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width", 1)
+			});
+
+
+
+	svg1.append("path")
+		.attr("class", "Siline")
+		.attr("d", myvalueline(data.filter(function(d)  {return d.t > 6161 & d.t<6435;}),1.0))
+		.attr("transform", "translate(0," + height*2 + ")");
+
+   svg1.append("text")
+		.attr("class","Silabel")
+		.attr("x",x(d3.mean(data.filter(function(d)  {return d.t > 6161 & d.t<6435;}), function(d) { return d.t; }))-10)
+		.attr("y",y(d3.max(data.filter(function(d)  {return d.t > 6161 & d.t<6435;}), function(d) { return d.f; }))-20)
+		.text("SiII")
+		.attr("transform", "translate(0," + height*2 + ")");
+
+	svg1.append("text")
+		.attr("class","sntype")
+		.attr("id","iclabel")
+		.attr("x",480)
+		.attr("y",100)
+		.text("SN Ic")
+		.attr("transform", "translate(0," + height*2 + ")");
+
+	// Add the Y Axis
+	svg1.append("g")
+		.attr("class", "y axis")
+		.attr("transform", "translate(0," + height*2 + ")")
+		.call(yAxis);
+
+
+});
+
+
+d3.json("/spectemplates_snIcBL.json", function(data) {
+
+// Scale the range of the data
+	x.domain([0,d3.max(data, function(d) { return d.t; })]);
+	y.domain([0, d3.max(data, function(d) { return d.f; })]);
+
+	// Add the valueline path.
+	svg1.append("path")
+		.attr("class", "area")
+		.attr("d", myarea(data,1.0))
+		.attr("transform", "translate(0," + height*3 + ")")
+		.on('mouseover', function(){
+			d3.select("#rII")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#rIb")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#rect2")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#snicBLtext")
+			.transition()
+			.duration(1)
+			.style("opacity", 1);
+			d3.select("#IcBL")
+			.transition()
+			.duration(0)
+			.style("stroke-width", 5)
+			d3.select("#icBLlabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width", 2.5);
+			})
+        .on('mouseout', function(){
+			d3.select("#rII")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#rect2")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#rIb")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#IcBL")
+			.transition()
+			.duration(30)
+			.style("stroke-width", 3);
+			d3.select("#snicBLtext")
+			.transition()
+			.duration(1)
+			.style("opacity", 0);
+			d3.select("#icbllabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width", 1);
+			});
+
+	svg1.append("path")
+		.attr("class", "line")
+		.attr("id",'IcBL')
+		.attr("d", myvalueline(data,1.0))
+		.attr("transform", "translate(0," + height*3 + ")")
+		.on('mouseover', function(){
+			d3.select("#rII")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#rIb")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#rect2")
+			.transition()
+			.duration(0)
+			.style("opacity", 1);
+			d3.select("#snicBLtext")
+			.transition()
+			.duration(1)
+			.style("opacity", 1);
+			d3.select("#IcBL")
+			.transition()
+			.duration(0)
+			.style("stroke-width", 5);
+			d3.select("#icBLlabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width", 2.5);
+			})
+        .on('mouseout', function(){
+			d3.select("#rII")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#rect2")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#rIb")
+			.transition()
+			.duration(30)
+			.style("opacity", 0);
+			d3.select("#IcBL")
+			.transition()
+			.duration(30)
+			.style("stroke-width", 3);
+			d3.select("#snicBLtext")
+			.transition()
+			.duration(1)
+			.style("opacity", 0);
+			d3.select("#icBLlabel")
+			.transition()
+			.duration(1)
+			.style("stroke-width", 1);
+			});
+
+
+   svg1.append("path")
+		.attr("class", "Siline")
+		.attr("d", myvalueline(data.filter(function(d)  {return d.t > 5774 & d.t<6335;}), 1.0))
+		.attr("transform", "translate(0," + height*3 + ")");
+
+   svg1.append("text")
+		.attr("class","Silabel")
+		.attr("x",x(d3.mean(data.filter(function(d)  {return d.t > 5774 & d.t<6335;}), function(d) { return d.t; }))-10)
+		.attr("y",y(d3.max(data.filter(function(d)  {return d.t > 5774 & d.t<6335;}), function(d) { return d.f; }))-20)
+		.text("SiII")
+		.attr("transform", "translate(0," + height*3 + ")");
+
+
+	svg1.append("text")
+		.attr("class","sntype")
+		.attr("id","icBLlabel")
+		.attr("x",450)
+		.attr("y",100)
+		.attr("font-size","1.2em")
+		.text("SN Ic broad-lined")
+		.attr("transform", "translate(-100," + height*2.8 + ")");
+
+	svg1.append("text")
+		.attr("class","red")
+		.attr("x",510)
+		.attr("y",100)
+		.text("+ long GRB")
+		.attr("transform", "translate(-50," + height*2.95 + ")");
+
+	// Add the X Axis
+	svg1.append("g")
+		.attr("class", "x axis")
+		.attr("transform", "translate(0," + height*4 + ")")
+		.call(xAxis);
+
+	// Add the Y Axis
+	svg1.append("g")
+		.attr("class", "y axis")
+		.attr("transform", "translate(0," + height*3 + ")")
+		.call(yAxis);
+
+	//x label
+	svg1.append("text")
+    .attr("class", "xlabel")
+    .attr("text-anchor", "center")
+    .attr("x", width/3)
+    .attr("y", height*4 +60)
+    .text("Rest Wavelength (\u212b)");
+	//y label
+	svg1.append("text")
+    .attr("class", "ylabel")
+    .attr("x", -width/1.5)
+    .attr("y", -margin.left/2)
+    .text("Scaled f(\u03bb) + Constant");
+
+});
+
+
+
+
+
+var	svg3 = d3.select("#canvas3")
+	.append("svg")
+		.attr("class","svg3")
+		.attr("width", 350)
+		.attr("height", 6*height)
+	.append("g")
+		.attr("transform", "translate(0," + height*0.9 + ")");
+     var circle = svg3.append("circle")
+        .attr("r", 10 )
+        .attr("cx", 120).attr("cy",-80)
+        .attr("stroke","black")
+        .attr("fill", "blue")
+
+    svg3.append("text")
+		.attr("class","sn")
+		.attr("x",60)
+		.attr("y",-100)
+		.text("progenitor:");
+	svg3.append("text")
+		.attr("class","sn")
+		.attr("x",25)
+		.attr("y",-50)
+		.text("CO White Dwarf");
+
+    /*Create the circle for each block */
+    var circle = svg3.append("circle")
+        .attr("r", 30 )
+        .attr("cx", 120).attr("cy",100)
+        .attr("stroke","black")
+        .attr("fill", "red")
+
+    /* Create the text for each block */
+    svg3.append("text")
+        .attr("dx", 100)
+        .attr("dy", 95)
+        .attr("font-size","1em")
+        .text("M>8");
+	svg3.append("text")
+        .attr("dx", 97)
+        .attr("dy", 115)
+        .attr("font-size","1em")
+        .text("Msun");
+	svg3.append("text")
+		.attr("class","sn")
+		.attr("x",60)
+		.attr("y",60)
+		.text("progenitor:");
+
+
+    svg3.append("image")
+        .attr("xlink:href", "SNClassification-PreExplosionStar.jpg")
+      	.attr("width", 378)
+    	.attr("height", 800)
+		.attr("class", "bg");
+
+    svg3.append("rect")
+    	.attr('id','rect2')
+    	.attr('x',0)
+    	.attr('y',-130)
+    	.attr("width", 350)
+    	.attr("height", height)
+		.attr('fill','#ffffff')
+		.attr('opacity',0);
+
+
+
+
+    svg3.append("rect")
+    	.attr('id','rect1')
+    	.attr('x',0)
+    	.attr('y',-30)
+    	.attr("width", 350)
+    	.attr("height", 6*height)
+		.attr('fill','#ffffff')
+		.attr('opacity',0)
+
+	svg3.append("text")
+		.attr('id','sniatext')
+		.attr('class','snblur')
+    	.attr("dy", 0)
+    	.attr('y',10)
+        .text(tipIa)
+		.attr('opacity',0);
+	wrap(d3.selectAll('#sniatext'),345);
+
+
+	svg3.append("rect")
+    	.attr('id','rII')
+    	.attr('x',0)
+    	.attr('y',140)
+    	.attr("width", 400)
+    	.attr("height", 220)
+		.attr('fill','#ffffff')
+		.attr('opacity',0);
+
+	svg3.append("text")
+		.attr('id','snibtext')
+		.attr('class','snblur')
+    	.attr("dy", 0)
+        .attr('y',160)
+        .text(tipIb)
+		.attr('opacity',0);
+	wrap(d3.selectAll('#snibtext'),345);
+
+
+	svg3.append("text")
+		.attr('id','snictext')
+		.attr('class','snblur')
+    	.attr("dy", 0)
+        .attr('y',160)
+        .text(tipIc)
+		.attr('opacity',0);
+	wrap(d3.selectAll('#snictext'),345);
+
+
+	svg3.append("text")
+		.attr('id','snicBLtext')
+		.attr('class','snblur')
+    	.attr("dy", 0)
+        .attr('y',160)
+        .text(tipIcBL)
+		.attr('opacity',0);
+	wrap(d3.selectAll('#snicBLtext'),345);
+
+	svg3.append("rect")
+    	.attr('id','rIb')
+    	.attr('x',-100)
+    	.attr('y',380)
+    	.attr("width", 400)
+    	.attr("height", 160)
+		.attr('fill','#ffffff')
+		.attr('opacity',0)
+		.attr("transform", "rotate(-10)");
+	svg3.append("text")
+		.attr('id','sniitext')
+		.attr('class','snblur')
+    	.attr('y',380)
+    	.attr("dy", 0)
+        .text(tipII)
+		.attr('opacity',0);
+	wrap(d3.selectAll('#sniitext'),345);
+
+
+	svg3.append("rect")
+    	.attr('id','rIc')
+    	.attr('x',-30)
+    	.attr('y',535)
+    	.attr("width", 400)
+    	.attr("height", 260)
+		.attr('fill','rgb(255,255,255)')
+		.attr('opacity',0)
+		.attr("transform", "rotate(-5)");
+
+
+function wrap(text, width) {
+      text.each(function() {
+        var text = d3.select(this),
+          words = text.text().split(/\s+/).reverse(),
+          word,
+          line = [],
+          lineNumber = 0,
+          lineHeight = 0.7, // ems
+          y = text.attr("y"),
+          dy = parseFloat(text.attr("dy")),
+          tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+        while (word = words.pop()) {
+          line.push(word);
+          tspan.text(line.join(" "));
+          if (tspan.node().getComputedTextLength() > width) {
+            line.pop();
+            tspan.text(line.join(" "));
+            line = [word];
+            tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * 2*lineHeight + "em").text(word);
+          }
+        }
+        d3.select(this.parentNode.children[0]).attr('height', 19 * (lineNumber+1));
+
+      });
+    }
+    </script>
+
+
+</BODY>
+</HTML>

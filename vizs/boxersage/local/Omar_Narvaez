@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MediaWiki API Result</title>
+</head>
+<body>
+<br />
+<small>
+You are looking at the HTML representation of the XML format.<br />
+HTML is good for debugging, but is unsuitable for application use.<br />
+Specify the format parameter to change the output format.<br />
+To see the non HTML representation of the XML format, set format=xml.<br />
+See the <a href='https://www.mediawiki.org/wiki/API'>complete documentation</a>, or
+<a href='/w/api.php'>API help</a> for more information.
+</small>
+<pre style='white-space: pre-wrap;'>
+<span style="color:blue;">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span style="color:blue;">&lt;api&gt;</span>
+  <span style="color:blue;">&lt;query&gt;</span>
+    <span style="color:blue;">&lt;normalized&gt;</span>
+      <span style="color:blue;">&lt;n from=&quot;Omar_Narvaez&quot; to=&quot;Omar Narvaez&quot; /&gt;</span>
+    <span style="color:blue;">&lt;/normalized&gt;</span>
+    <span style="color:blue;">&lt;redirects&gt;</span>
+      <span style="color:blue;">&lt;r from=&quot;Omar Narvaez&quot; to=&quot;Omar Andrés Narváez&quot; /&gt;</span>
+    <span style="color:blue;">&lt;/redirects&gt;</span>
+    <span style="color:blue;">&lt;pages&gt;</span>
+      <span style="color:blue;">&lt;page pageid=&quot;6302720&quot; ns=&quot;0&quot; title=&quot;Omar Andrés Narváez&quot;&gt;</span>
+        <span style="color:blue;">&lt;revisions&gt;</span>
+          <span style="color:blue;">&lt;rev contentformat=&quot;text/x-wiki&quot; contentmodel=&quot;wikitext&quot; xml:space=&quot;preserve&quot;&gt;</span>{{Infobox Boxer
+|image=Omara Narvaez .jpg
+|name=Omar Andrés Narváez
+|realname=Omar Andrés Narváez
+|nickname=El Huracán (The Hurricane)
+|weight=[[Flyweight]]
+|height=5 ft. 3 in. (160 cm.)
+|nationality=[[Argentine]]
+|birth_date={{Birth date and age|1975|7|10|mf=y}}
+|birth_place=[[Trelew]], [[Chubut Province|Chubut]]
+|death_date|=
+|death_place|=
+|style=[[Southpaw (boxing)|Southpaw]]
+|total=42
+|wins=39
+|losses=1
+|draws=2
+|no contests=0
+|KO=20
+|}}
+{{MedalTableTop}}
+{{MedalCountry | {{ARG}} }}
+{{MedalSport | Men's [[Boxing]]}}
+{{MedalCompetition|[[World Amateur Boxing Championships|World Amateur Championships]]}}
+{{MedalBronze| [[1997 World Amateur Boxing Championships|Budapest 1997]] | Flyweight}}
+{{MedalSilver| [[1999 World Amateur Boxing Championships|Houston 1999]] | Flyweight}}
+{{MedalCompetition|[[Pan American Games]]}}
+{{MedalGold| [[1999 Pan American Games|Winnipeg 1999]] | [[Boxing at the 1999 Pan American Games|Flyweight]]}}
+{{MedalBottom}}
+'''Omar Andrés Narváez''' (born July 10, 1975 in [[Trelew]], [[Chubut Province|Chubut]], [[Argentina]]) is an Argentine [[southpaw]] professional [[boxing|boxer]] in the [[super flyweight]] (115 [[pound (mass)|lb]]) division and is the [[WBO]] Junior Bantamweight champion. Narváez was also the first boxer from the 2000 Olympics to capture a major world title.<span style="color:blue;">&lt;/rev&gt;</span>
+        <span style="color:blue;">&lt;/revisions&gt;</span>
+      <span style="color:blue;">&lt;/page&gt;</span>
+    <span style="color:blue;">&lt;/pages&gt;</span>
+  <span style="color:blue;">&lt;/query&gt;</span>
+<span style="color:blue;">&lt;/api&gt;</span>
+</pre>
+</body>
+</html>
+<!-- Served by mw1120 in 0.087 secs. -->

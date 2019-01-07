@@ -1,0 +1,23 @@
+status: 301
+content-length: 332
+content-location: http://podcast.at/podcast_url344476.html
+expires: Mon, 29 Jul 2013 18:13:20 GMT
+vary: Accept-Encoding
+server: Apache/2.2.22 (Linux/SUSE)
+-content-encoding: gzip
+location: http://www.podcast.at/podcast_url344476.html
+cache-control: max-age=86400
+date: Sun, 28 Jul 2013 18:13:20 GMT
+-x-permanent-redirect-url: http://www.podcast.at/podcast_url344476.html
+content-type: text/html; charset=iso-8859-1
+-varied-accept-encoding: gzip, deflate
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="http://www.podcast.at/podcast_url344476.html">here</a>.</p>
+<hr>
+<address>Apache/2.2.22 (Linux/SUSE) Server at podcast.at Port 80</address>
+</body></html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Thanksgiving Map</title>
+<meta charset="utf-8">
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+<link href='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css' rel='stylesheet'>
+<link href='//api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css' rel='stylesheet'>
+<script src='http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.0.1/leaflet-omnivore.min.js'></script>
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+</head>
+<body>
+  <div id='thanksgivingmap' style='width: 45%; height: 400px'></div>
+  <div id='thanksgivingcluster' style='width: 45%; height: 400px'></div>
+  <div id="mapTitle" class="title">Thanksgiving maps</div>
+  <div id="mapcTitle" class="title">Thanksgiving cluster map</div>
+  <div>
+    <span style="font-family: inherit;"><br /></span>
+    <span style="background-color: white; color: #222222; line-height: 18px;"><span style="font-family: inherit;">Geotagged thanksgiving tweets (retrieved with <a href="http://www.tweepy.org/>">tweetpy,</a> displayed on the left), clustered in 5 clusters by <a href="http://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html"> AgglomerativeClustering (with skitlearn) </a>using distance on the great circle (<a href="https://pypi.python.org/pypi/geopy">geopy</a>)</span></span><br />
+  </div>  
+<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
+<style type="text/css">
+  body {
+  margin: 0;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  }
+
+  /* set the two maps side by side */
+  #thanksgivingmap {
+  width: 50%;
+  height: 100%;
+  }
+
+  #thanksgivingcluster {
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  position: absolute;
+  }
+
+  /* the cursor */
+  #cursor {
+  position: absolute;
+  z-index: 100;
+  }
+
+  /* map title bar along the top */
+  .title {
+  position: absolute;
+  z-index: 2;
+  opacity: 0.75;
+  top: 0px;
+  text-align: center;
+  font-weight: bold;
+  background-color: white;
+  }
+
+  /* position the individual title bars */
+  #mapTitle {
+  width: 50%;
+  }
+
+  #mapcTitle {
+  width: 50%;
+  left: 50%;
+  }
+</style>
+<script>
+  /*
+  * Extends L.Map to synchronize the interaction on one map to one or more other maps.
+  */
+
+  (function () {
+  'use strict';
+
+  L.Map = L.Map.extend({
+  sync: function (map, options) {
+  this._initSync();
+  options = options || {};
+
+  // prevent double-syncing the map:
+  var present = false;
+  this._syncMaps.forEach(function (other) {
+  if (map === other) {
+  present = true;
+  }
+  });
+
+  if (!present) {
+  this._syncMaps.push(map);
+  }
+
+  if (!options.noInitialSync) {
+  map.setView(this.getCenter(), this.getZoom(), {
+  animate: false,
+  reset: true
+  });
+  }
+  return this;
+  },
+
+  // unsync maps from each other
+  unsync: function (map) {
+  var self = this;
+
+  if (this._syncMaps) {
+  this._syncMaps.forEach(function (synced, id) {
+  if (map === synced) {
+  self._syncMaps.splice(id, 1);
+  }
+  });
+  }
+
+  return this;
+  },
+
+  // overload methods on originalMap to replay on _syncMaps;
+  _initSync: function () {
+  if (this._syncMaps) {
+  return;
+  }
+  var originalMap = this;
+
+  this._syncMaps = [];
+
+  L.extend(originalMap, {
+  setView: function (center, zoom, options, sync) {
+  if (!sync) {
+  originalMap._syncMaps.forEach(function (toSync) {
+  toSync.setView(center, zoom, options, true);
+  });
+  }
+  return L.Map.prototype.setView.call(this, center, zoom, options);
+  },
+
+  panBy: function (offset, options, sync) {
+  if (!sync) {
+  originalMap._syncMaps.forEach(function (toSync) {
+  toSync.panBy(offset, options, true);
+  });
+  }
+  return L.Map.prototype.panBy.call(this, offset, options);
+  },
+
+  _onResize: function (event, sync) {
+  if (!sync) {
+  originalMap._syncMaps.forEach(function (toSync) {
+  toSync._onResize(event, true);
+  });
+  }
+  return L.Map.prototype._onResize.call(this, event);
+  }
+  });
+
+  originalMap.on('zoomend', function () {
+  originalMap._syncMaps.forEach(function (toSync) {
+  toSync.setView(originalMap.getCenter(), originalMap.getZoom(), {
+  animate: false,
+  reset: false
+  });
+  });
+  }, this);
+
+  originalMap.dragging._draggable._updatePosition = function () {
+  L.Draggable.prototype._updatePosition.call(this);
+  var self = this;
+  originalMap._syncMaps.forEach(function (toSync) {
+  L.DomUtil.setPosition(toSync.dragging._draggable._element, self._newPos);
+  toSync.eachLayer(function (l) {
+  if (l._google !== undefined) {
+  l._google.setCenter(originalMap.getCenter());
+  }
+  });
+  toSync.fire('moveend');
+  });
+  };
+  }
+  });
+  })();
+
+var customIcon = L.icon({
+  iconUrl: 'circle-18.png',
+  iconSize: [10, 10], //size of the icon in pixels
+  iconAnchor: [9, 9], //point of the icon which will correspond to marker's location (the center)
+  popupAnchor: [0, 0] //point from which the popup should open relative to the iconAnchor
+  });
+var customIcon1 = L.icon({
+  iconUrl: 'circle-18.png',
+  iconSize: [8, 8], //size of the icon in pixels
+  iconAnchor: [9, 9], //point of the icon which will correspond to marker's location (the center)
+  popupAnchor: [0, 0] //point from which the popup should open relative to the iconAnchor
+  });
+var customIcon2 = L.icon({
+  iconUrl: 'circle-18.png',
+  iconSize: [10, 10], //size of the icon in pixels
+  iconAnchor: [9, 9], //point of the icon which will correspond to marker's location (the center)
+  popupAnchor: [0, 0] //point from which the popup should open relative to the iconAnchor
+});
+var customIcon3 = L.icon({
+  iconUrl: 'circle-18.png',
+  iconSize: [15, 15], //size of the icon in pixels
+  iconAnchor: [9, 9], //point of the icon which will correspond to marker's location (the center)
+  popupAnchor: [0, 0] //point from which the popup should open relative to the iconAnchor
+});
+var customIcon4 = L.icon({
+  iconUrl: 'circle-18.png',
+  iconSize: [20, 20], //size of the icon in pixels
+  iconAnchor: [9, 9], //point of the icon which will correspond to marker's location (the center)
+  popupAnchor: [0, 0] //point from which the popup should open relative to the iconAnchor
+});
+var customIcon5 = L.icon({
+  iconUrl: 'circle-18.png',
+  iconSize: [25, 25], //size of the icon in pixels
+  iconAnchor: [9, 9], //point of the icon which will correspond to marker's location (the center)
+  popupAnchor: [0, 0] //point from which the popup should open relative to the iconAnchor
+});
+var customIcon6 = L.icon({
+  iconUrl: 'circle-18.png',
+  iconSize: [35, 35], //size of the icon in pixels
+  iconAnchor: [9, 9], //point of the icon which will correspond to marker's location (the center)
+  popupAnchor: [0, 0] //point from which the popup should open relative to the iconAnchor
+});
+
+  
+//create a map centered on NYU    with zoom level 5
+var map = L.map('thanksgivingmap');
+var centerCoordinates = new L.LatLng(46.333, -75.11);
+var initialZoom = 4;
+map.setView(centerCoordinates, initialZoom);
+
+//add a basemap tile layer to the map and set maxZoom to how far you can zoom this tileset in
+var basemapURL = 'https://a.tiles.mapbox.com/v3/mapbox.world-dark/{z}/{x}/{y}.png'
+map.addLayer(new L.TileLayer(basemapURL, {maxZoom: 11, attribution: ''}));
+var initialZoom = 4;
+var mapc = L.map('thanksgivingcluster');
+mapc.setView(centerCoordinates, initialZoom); 
+mapc.addLayer(new L.TileLayer(basemapURL, {maxZoom: 11, attribution: ''}));
+
+map.sync(mapc);
+mapc.sync(map);
+
+omnivore.csv('geocoded.csv').on('ready', function(layer) {
+this.eachLayer(function(marker) {
+//change the icons for each point on the map
+marker.setIcon(customIcon);
+
+//create popup text to display the date, city, and country of the GPS data point
+var popupText =
+marker.toGeoJSON().properties.ts +
+'<br />Thanksgiving celebration in ' +
+marker.toGeoJSON().properties.city + ', ' +
+marker.toGeoJSON().properties.country;
+
+//bind the popup to each icon
+marker.bindPopup(popupText);
+marker.setOpacity(0.8);
+});
+})
+.addTo(map);
+
+omnivore.csv('thanksgivingclusters.csv').on('ready', function(layer) {
+this.eachLayer(function(marker) {
+if (marker.toGeoJSON().properties.size < 100 ){
+					 marker.setIcon(customIcon1);
+					 }
+else { if (marker.toGeoJSON().properties.size <200) {
+						     //change the icons for each point on the map
+						     marker.setIcon(customIcon2);
+						     }
+						     else if (marker.toGeoJSON().properties.size <400) {
+													//change the icons for each point on the map
+													marker.setIcon(customIcon3);
+													}
+													else if (marker.toGeoJSON().properties.size <800) {
+																			   //change the icons for each point on the map
+																			   marker.setIcon(customIcon4);
+																			   }
+																			   else if (marker.toGeoJSON().properties.size <1600) {
+																									       //change the icons for each point on the map
+																									       marker.setIcon(customIcon5);
+																									       }
+																									       else { marker.setIcon(customIcon6);
+										   }
+																									      marker.setOpacity(0.8);
+																									      }//create popup text to display the date, city, and country of the GPS data point
+																									      })}).addTo(mapc);
+																									      
+
+																									      
+
+																		</script>
+</body>
+</html>

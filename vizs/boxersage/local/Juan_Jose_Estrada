@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MediaWiki API Result</title>
+</head>
+<body>
+<br />
+<small>
+You are looking at the HTML representation of the XML format.<br />
+HTML is good for debugging, but is unsuitable for application use.<br />
+Specify the format parameter to change the output format.<br />
+To see the non HTML representation of the XML format, set format=xml.<br />
+See the <a href='https://www.mediawiki.org/wiki/API'>complete documentation</a>, or
+<a href='/w/api.php'>API help</a> for more information.
+</small>
+<pre style='white-space: pre-wrap;'>
+<span style="color:blue;">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span style="color:blue;">&lt;api&gt;</span>
+  <span style="color:blue;">&lt;query&gt;</span>
+    <span style="color:blue;">&lt;normalized&gt;</span>
+      <span style="color:blue;">&lt;n from=&quot;Juan_Jose_Estrada_(boxer)&quot; to=&quot;Juan Jose Estrada (boxer)&quot; /&gt;</span>
+    <span style="color:blue;">&lt;/normalized&gt;</span>
+    <span style="color:blue;">&lt;redirects&gt;</span>
+      <span style="color:blue;">&lt;r from=&quot;Juan Jose Estrada (boxer)&quot; to=&quot;Juan José Estrada (boxer)&quot; /&gt;</span>
+    <span style="color:blue;">&lt;/redirects&gt;</span>
+    <span style="color:blue;">&lt;pages&gt;</span>
+      <span style="color:blue;">&lt;page pageid=&quot;4990463&quot; ns=&quot;0&quot; title=&quot;Juan José Estrada (boxer)&quot;&gt;</span>
+        <span style="color:blue;">&lt;revisions&gt;</span>
+          <span style="color:blue;">&lt;rev contentformat=&quot;text/x-wiki&quot; contentmodel=&quot;wikitext&quot; xml:space=&quot;preserve&quot;&gt;</span>{{About|the Mexican boxer|the former Nicaraguan President|Juan José Estrada}}
+{{Infobox Boxer|name= Juan José Estrada
+|image=
+|realname          = Juan José Estrada
+|nickname          = Dinamita
+|weight            = [[Light Welterweight]]&amp;lt;br/&amp;gt;[[Lightweight]]&amp;lt;br/&amp;gt;[[Featherweight]]&amp;lt;br/&amp;gt;[[Super Bantamweight]]
+|height            = 5 ft 10 in (180 cm)
+|reach             = 73 in (185 cm)
+|nationality       = {{flagicon|Mexico}} [[Mexican people|Mexican]]
+|birth_date        = {{Birth date and age|1963|11|28}}
+|death_date        
+|birth_place       = [[Tijuana]], [[Baja California]], [[Mexico]]
+|home_town         = [[Tijuana]], [[Baja California]], [[Mexico]]
+|style             = [[Orthodox stance|Orthodox]]
+|total             = 47
+|wins              = 36
+|KO                = 30
+|losses            = 11
+|draws             = 0
+|no contests       = 0
+}}
+'''Juan José Estrada''' (born November 28, 1963 in [[Tijuana]], [[Baja California]], [[Mexico]]) was a [[Mexican people|Mexican]] [[boxing|boxer]] in the [[Super Bantamweight]] division. He is a former [[World Boxing Council|WBC International]] and the [[World Boxing Association|WBA World]] [[Super Bantamweight]] Champion.&amp;lt;ref&amp;gt;<a href="http://boxrec.com/media/index.php/Juan_Jose_Estrada&amp;lt;/ref&amp;gt;">http://boxrec.com/media/index.php/Juan_Jose_Estrada&amp;lt;/ref&amp;gt;</a><span style="color:blue;">&lt;/rev&gt;</span>
+        <span style="color:blue;">&lt;/revisions&gt;</span>
+      <span style="color:blue;">&lt;/page&gt;</span>
+    <span style="color:blue;">&lt;/pages&gt;</span>
+  <span style="color:blue;">&lt;/query&gt;</span>
+<span style="color:blue;">&lt;/api&gt;</span>
+</pre>
+</body>
+</html>
+<!-- Served by mw1202 in 0.065 secs. -->

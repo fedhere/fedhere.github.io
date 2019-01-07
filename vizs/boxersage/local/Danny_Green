@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>MediaWiki API Result</title>
+</head>
+<body>
+<br />
+<small>
+You are looking at the HTML representation of the XML format.<br />
+HTML is good for debugging, but is unsuitable for application use.<br />
+Specify the format parameter to change the output format.<br />
+To see the non HTML representation of the XML format, set format=xml.<br />
+See the <a href='https://www.mediawiki.org/wiki/API'>complete documentation</a>, or
+<a href='/w/api.php'>API help</a> for more information.
+</small>
+<pre style='white-space: pre-wrap;'>
+<span style="color:blue;">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span style="color:blue;">&lt;api&gt;</span>
+  <span style="color:blue;">&lt;query&gt;</span>
+    <span style="color:blue;">&lt;normalized&gt;</span>
+      <span style="color:blue;">&lt;n from=&quot;Danny_Green_(boxer)&quot; to=&quot;Danny Green (boxer)&quot; /&gt;</span>
+    <span style="color:blue;">&lt;/normalized&gt;</span>
+    <span style="color:blue;">&lt;pages&gt;</span>
+      <span style="color:blue;">&lt;page pageid=&quot;3489830&quot; ns=&quot;0&quot; title=&quot;Danny Green (boxer)&quot;&gt;</span>
+        <span style="color:blue;">&lt;revisions&gt;</span>
+          <span style="color:blue;">&lt;rev contentformat=&quot;text/x-wiki&quot; contentmodel=&quot;wikitext&quot; xml:space=&quot;preserve&quot;&gt;</span>{{Use dmy dates|date=January 2012}}
+{{Use Australian English|date=January 2012}}
+{{Infobox boxer
+|name        = Danny Green
+|image       = DannyGreenJuly2011.jpg
+|caption     = Green prior to the Tarver bout on 20 July 2011 in Sydney
+|nickname    = The Green Machine
+|height      = {{convert|1.85|m|ftin|abbr=on}}&amp;lt;ref name=&amp;quot;The Sunday Mail November 2012&amp;quot;/&amp;gt;
+|reach       = {{convert|185|cm|in|abbr=on}}&amp;lt;ref name=&amp;quot;The Sunday Mail November 2012&amp;quot;/&amp;gt;
+|weight      = [[Super-middleweight]]&amp;lt;br&amp;gt;[[Light-heavyweight]]&amp;lt;br&amp;gt;[[Cruiserweight (boxing)|Cruiserweight]]
+|nationality = Australian
+|birth_date  = {{Birth date and age|df=yes|1973|3|9}}
+|birth_place = [[Perth]], Western Australia
+|style       = [[Orthodox stance]]
+|total       = 38
+|wins        = 33
+|losses      = 5
+|draws       = 0
+|no contests = 0
+|KO          = 28
+|}}
+'''Daniel &amp;quot;Danny&amp;quot; Green''' (born 9 March 1973) is an Australian professional boxer who has had four world title wins in three weight classes – including the current IBO world cruiserweight title.&amp;lt;ref name=&amp;quot;Herald Sun 21 November 2012&amp;quot;/&amp;gt;&amp;lt;ref name=&amp;quot;The Age November 2012&amp;quot;/&amp;gt; He has had notable victories over former champion boxers such as [[Eric Lucas]], [[Stipe Drews]], [[Roy Jones, Jr.]], and [[Manny Siaca]]. Green's boxing nickname is &amp;quot;The Green Machine&amp;quot;.&amp;lt;ref name=&amp;quot;The Age November 2012&amp;quot;/&amp;gt;<span style="color:blue;">&lt;/rev&gt;</span>
+        <span style="color:blue;">&lt;/revisions&gt;</span>
+      <span style="color:blue;">&lt;/page&gt;</span>
+    <span style="color:blue;">&lt;/pages&gt;</span>
+  <span style="color:blue;">&lt;/query&gt;</span>
+<span style="color:blue;">&lt;/api&gt;</span>
+</pre>
+</body>
+</html>
+<!-- Served by mw1131 in 0.075 secs. -->

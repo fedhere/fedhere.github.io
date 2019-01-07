@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <title>title holder stats</title>
+    <script>
+      function clearForms(){
+      var i;
+      for (i = 0; (i < document.forms.length); i++) {
+		       document.forms[i].reset();
+		       }
+      }
+    </script>
+    <script src="http://d3js.org/d3.v2.min.js?2.9.6"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="hist.js"></script>
+    <script src="readparsedata.js"></script>
+    <script src="d3stuff.js"></script>
+
+</script></head>
+<body onLoad="clearForms()" onUnload="clearForms()">
+<p>fighter statistics, calculated by titles: fighters with more than one title are doublecounted per each title</p>
+  <form name="plotwhat" onload="this.reset()">
+    <label><input type="radio" id="#age" name="mode" value="age" checked> Age</label>
+    <label><input type="radio" id="#bouts" name="mode" value="bouts"> career fights</label>
+    <label><input type="radio" id="#wins" name="mode" value="wins"> win ratio</label>
+    <label><input type="radio" id="#kos" name="mode" value="kos"> KOs</label>
+  </form>
+  <script>
+    
+
+    var myfile="titleholders.csv";
+
+    var margin = {top: 10, right: 20, bottom: 40, left: 60}, 
+    width = 650 - margin.left - margin.right,
+    height = 400 - margin.bottom - margin.top ;
+    
+    var xAxis = d3.svg.axis()
+    .tickSize(1).tickSubdivide(true)
+    .ticks(20)
+    .orient("bottom");
+    
+    var yAxis = d3.svg.axis()
+    .ticks(5)
+    .tickSize(1).tickSubdivide(true)
+    .orient("left");
+    
+    window.onload=function() {
+    // next, attach the click event handler to the radio buttons
+    var radios = document.forms[0].elements["mode"];
+       console.log("im here now!!")
+    for (var i = [0]; i < radios.length; i++)
+			  radios[i].onclick=radioClicked;
+    }
+			  
+   console.log("************************************",myfile);
+
+   d3.csv(myfile,function(data){
+
+///********read in data and make histograms***********///
+
+   alldata=readparsedata(data)
+   age=alldata[0],histage=alldata[1],ageL=alldata[2],histageL=alldata[3],bouts=alldata[4],histbouts=alldata[5],wins=alldata[6],histwins=alldata[7],winsL=alldata[8],histwinsL=alldata[9],kos=alldata[10],histkos=alldata[11],kosL=alldata[12],histkosL=alldata[13];
+   change("age") 
+
+})
+
+
+    </script>
+  </body>
+</html>
